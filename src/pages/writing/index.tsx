@@ -1,5 +1,6 @@
 import { useForm } from 'react-hook-form';
 import { useEffect, useState } from 'react';
+import { SearchIcon } from '@heroicons/react/outline'; // Importa o ícone de lupa
 import Link from 'next/link';
 import { Container, Wrapper, SimpleLayout } from 'src/components/';
 import { getAllArticles } from 'src/lib/getAllArticles';
@@ -9,7 +10,6 @@ export const Articles = ({ articles }) => {
   const [filteredArticles, setFilteredArticles] = useState(articles);
 
   const onSubmit = (data) => {
-    // Lógica de filtragem dos artigos com base na busca
     const searchTerm = data.search.toLowerCase();
     const filtered = articles.filter((article) =>
       article.title.toLowerCase().includes(searchTerm) ||
@@ -19,7 +19,6 @@ export const Articles = ({ articles }) => {
   };
 
   useEffect(() => {
-    // Reinicia os artigos filtrados quando a lista de artigos muda
     setFilteredArticles(articles);
   }, [articles]);
 
@@ -27,18 +26,26 @@ export const Articles = ({ articles }) => {
     <>
       <Container title="Writing">
         <Wrapper>
-          <form onSubmit={handleSubmit(onSubmit)} className="mb-4">
-            <label htmlFor="search" className="sr-only">
-              Search
-            </label>
-            <input
-              type="text"
-              id="search"
-              placeholder="Search articles..."
-              {...register('search')}
-              className="p-2 border border-gray-300 rounded"
-            />
-            <button type="submit" className="ml-2 p-2 bg-blue-500 text-white rounded">
+          <form onSubmit={handleSubmit(onSubmit)} className="mb-4 flex items-center">
+            <div className="relative flex-grow">
+              <label htmlFor="search" className="sr-only">
+                Search
+              </label>
+              <input
+                type="text"
+                id="search"
+                placeholder="Search articles..."
+                {...register('search')}
+                className="p-2 pl-10 border border-gray-300 rounded focus:outline-none focus:border-blue-500 transition"
+              />
+              <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                <SearchIcon className="h-5 w-5 text-gray-500" />
+              </div>
+            </div>
+            <button
+              type="submit"
+              className="ml-2 p-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300 transition"
+            >
               Search
             </button>
           </form>
