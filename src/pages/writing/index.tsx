@@ -1,8 +1,8 @@
-import Link from 'next/link'
 import { useForm } from 'react-hook-form';
 import { useEffect, useState } from 'react';
-import { Container, Wrapper, SimpleLayout } from 'src/components/'
-import { getAllArticles } from 'src/lib/getAllArticles'
+import Link from 'next/link';
+import { Container, Wrapper, SimpleLayout } from 'src/components/';
+import { getAllArticles } from 'src/lib/getAllArticles';
 
 export const Articles = ({ articles }) => {
   const { register, handleSubmit, setValue } = useForm();
@@ -22,11 +22,26 @@ export const Articles = ({ articles }) => {
     // Reinicia os artigos filtrados quando a lista de artigos muda
     setFilteredArticles(articles);
   }, [articles]);
-  
+
   return (
     <>
       <Container title="Writing">
         <Wrapper>
+          <form onSubmit={handleSubmit(onSubmit)} className="mb-4">
+            <label htmlFor="search" className="sr-only">
+              Search
+            </label>
+            <input
+              type="text"
+              id="search"
+              placeholder="Search articles..."
+              {...register('search')}
+              className="p-2 border border-gray-300 rounded"
+            />
+            <button type="submit" className="ml-2 p-2 bg-blue-500 text-white rounded">
+              Search
+            </button>
+          </form>
           <SimpleLayout
             title="Product & Software Development"
             intro="You can read about my thoughts on product development and web design."
@@ -35,7 +50,7 @@ export const Articles = ({ articles }) => {
               role="list"
               className="mt-6 grid grid-cols-1 gap-x-12 gap-y-4 sm:grid-cols-1"
             >
-              {articles.map((article) => (
+              {filteredArticles.map((article) => (
                 <article
                   key={article.slug}
                   className="md:grid md:grid-cols-4 md:items-baseline"
@@ -64,15 +79,15 @@ export const Articles = ({ articles }) => {
         </Wrapper>
       </Container>
     </>
-  )
-}
+  );
+};
 
-export default Articles
+export default Articles;
 
 export async function getStaticProps() {
   return {
     props: {
       articles: (await getAllArticles()).map(({ component, ...meta }) => meta),
     },
-  }
+  };
 }
