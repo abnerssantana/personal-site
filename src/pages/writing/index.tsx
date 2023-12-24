@@ -1,9 +1,28 @@
 import Link from 'next/link'
+import { useForm } from 'react-hook-form';
+import { useEffect, useState } from 'react';
 import { Container, Wrapper, SimpleLayout } from 'src/components/'
-
 import { getAllArticles } from 'src/lib/getAllArticles'
 
 export const Articles = ({ articles }) => {
+  const { register, handleSubmit, setValue } = useForm();
+  const [filteredArticles, setFilteredArticles] = useState(articles);
+
+  const onSubmit = (data) => {
+    // Lógica de filtragem dos artigos com base na busca
+    const searchTerm = data.search.toLowerCase();
+    const filtered = articles.filter((article) =>
+      article.title.toLowerCase().includes(searchTerm) ||
+      article.description.toLowerCase().includes(searchTerm)
+    );
+    setFilteredArticles(filtered);
+  };
+
+  useEffect(() => {
+    // Reinicia os artigos filtrados quando a lista de artigos muda
+    setFilteredArticles(articles);
+  }, [articles]);
+  
   return (
     <>
       <Container title="Writing">
