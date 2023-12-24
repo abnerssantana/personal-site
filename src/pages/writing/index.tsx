@@ -40,7 +40,7 @@ export const Articles = ({ articles }) => {
           />
           <button
             type="submit"
-            className="p-2 bg-blue-500 text-white rounded-r hover:bg-blue-600 transition"
+            className="rounded-lg border px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors delay-150 hover:text-gray-900 hover:delay-[0ms] dark:text-gray-400 dark:hover:text-gray-100 border-gray-00 dark:border-gray-500"
           >
             Buscar
           </button>
