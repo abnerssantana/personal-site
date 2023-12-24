@@ -1,6 +1,5 @@
 import { useForm } from 'react-hook-form';
 import { useEffect, useState } from 'react';
-import { SearchIcon } from '@heroicons/react/outline'; // Importa o ícone de lupa
 import Link from 'next/link';
 import { Container, Wrapper, SimpleLayout } from 'src/components/';
 import { getAllArticles } from 'src/lib/getAllArticles';
