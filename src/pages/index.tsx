@@ -14,10 +14,10 @@ export const Home = () => {
               </h2>
               <h1
                 className={clsx(
-                  'font-serif text-4xl font-normal leading-tight text-gray-900 dark:text-gray-100 sm:text-5xl sm:leading-snug'
+                  'font-sans text-4xl font-normal leading-tight text-gray-900 dark:text-gray-100 sm:text-5xl sm:leading-snug'
                 )}
               >
-                Tech | Nerd | Marathoner | YouTuber
+                Tech | Marathoner | YouTuber
               </h1>
               <p className="text-base leading-8 text-gray-600 dark:text-gray-400">
               Faça menos, faça melhor, faça uma única vez e faça no lugar certo.
