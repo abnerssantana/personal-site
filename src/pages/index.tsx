@@ -20,7 +20,7 @@ export const Home = () => {
                 VIVENDO A CORRIDA
               </h1>
               <p className="text-base leading-8 text-gray-600 dark:text-gray-400">
-              faça menos, faça melhor, faça uma única vez e faça no lugar certo.
+              faça menos, faça melhor, faça uma única vez e faça no lugar certo
               </p>
               <div className="mt-8 flex justify-center gap-x-4">
                 <Link
