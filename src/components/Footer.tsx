@@ -14,12 +14,12 @@ export const Footer = () => {
                 <HeartIcon className="absolute h-4 w-auto animate-ping text-gray-600 opacity-60 dark:text-gray-400" />
                 <HeartIcon className="relative h-4 w-auto text-gray-700 dark:text-gray-500" />
               </span>{' '}
-              in Mexico
+              in Brazil
             </div>
             <div className="mt-6 flex flex-row justify-center md:mt-0 md:justify-start">
               <div className="text-gray-500 transition-colors hover:text-gray-900 dark:hover:text-gray-100">
                 <a
-                  href="https://github.com/ocordova/ocordova.me"
+                  href="https://github.com/abnerssantana"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center space-x-2 text-base"
