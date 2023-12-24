@@ -171,7 +171,7 @@ export function Header() {
                               Blog
                             </MobileNavLink>
                             <MobileNavLink href="/toolbox">
-                              Toolbox
+                              Ferramentas
                             </MobileNavLink>
                             <MobileNavLink href="/bookmarks">
                               Favoritos

@@ -9,11 +9,11 @@ export function NavLinks({}) {
   return (
     <>
       {[
-        ['About', '/about'],
-        ['Writing', '/writing'],
-        ['Toolbox', '/toolbox'],
-        ['Bookmarks', '/bookmarks'],
-        ['Bookshelf', '/bookshelf'],
+        ['Sobre', '/about'],
+        ['Blog', '/writing'],
+        ['Ferramentas', '/toolbox'],
+        ['Favoritos', '/bookmarks'],
+        ['Livros', '/bookshelf'],
       ].map(([label, href], index) => (
         <Link
           key={label}
