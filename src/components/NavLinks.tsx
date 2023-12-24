@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useRouter } from 'next/router'
 import clsx from 'clsx'
+import { SearchBox } from 'src/components'
 
 export function NavLinks({}) {
   let [hoveredIndex, setHoveredIndex] = useState(null)
@@ -42,7 +43,9 @@ export function NavLinks({}) {
             )}
           </AnimatePresence>
           <span className="relative z-10">{label}</span>
-        </Link>
+        <SearchBox />
+
+        </Link> 
       ))}
     </>
   )
