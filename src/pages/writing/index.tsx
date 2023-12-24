@@ -36,7 +36,7 @@ export const Articles = ({ articles }) => {
             id="search"
             placeholder="Pesquisar artigos..."
             {...register('search')}
-            className="hidden w-full lg:flex items-center text-sm leading-6 text-slate-400 rounded-md ring-1 ring-slate-900/10 shadow-sm py-1.5 pl-2 pr-3 hover:ring-slate-300 dark:bg-slate-800 dark:highlight-white/5 dark:hover:bg-slate-700"
+            className="rounded-lg border px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors delay-150 hover:text-gray-900 hover:delay-[0ms] dark:text-gray-400 dark:hover:text-gray-100 border-gray-00 dark:border-gray-500 focus:border-sky-500"
           />
           <button
             type="submit"
