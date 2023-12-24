@@ -10,14 +10,14 @@ export const Home = () => {
           <div className="mx-auto pb-20 pt-20 sm:pb-40 sm:pt-40">
             <div className="text-center">
               <h2 className="text-xl font-normal text-gray-600 dark:text-gray-400 sm:text-2xl">
-                Abner Santana
+              TECH - NERD - MARATHONER - YOUTUBER
               </h2>
               <h1
                 className={clsx(
                   'font-sans text-5xl uppercase font-black leading-tight text-gray-900 dark:text-gray-100 sm:text-5xl sm:leading-snug'
                 )}
               >
-                Tech Marathoner YouTuber
+                VIVENDO A CORRIDA
               </h1>
               <p className="text-base leading-8 text-gray-600 dark:text-gray-400">
               faça menos, faça melhor, faça uma única vez e faça no lugar certo.
