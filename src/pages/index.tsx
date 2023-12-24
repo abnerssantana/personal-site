@@ -14,7 +14,7 @@ export const Home = () => {
               </h2>
               <h1
                 className={clsx(
-                  'font-sans text-4xl font-black leading-tight text-gray-900 dark:text-gray-100 sm:text-5xl sm:leading-snug'
+                  'font-sans text-5xl uppercase font-black leading-tight text-gray-900 dark:text-gray-100 sm:text-5xl sm:leading-snug'
                 )}
               >
                 Tech Marathoner YouTuber
