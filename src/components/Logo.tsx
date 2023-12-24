@@ -1,7 +1,7 @@
 export const Logo = (props) => {
   return (
     <>
-      <span className="text-xl uppercase font-black leading-tight text-gray-900 dark:text-gray-100 sm:text-2xl">
+      <span className="text-xl font-semibold text-gray-600 dark:text-gray-400 sm:text-2xl">
         Abner Santana
       </span>
     </>
