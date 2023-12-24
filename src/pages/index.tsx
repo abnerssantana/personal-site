@@ -14,13 +14,13 @@ export const Home = () => {
               </h2>
               <h1
                 className={clsx(
-                  'font-sans text-4xl font-normal leading-tight text-gray-900 dark:text-gray-100 sm:text-5xl sm:leading-snug'
+                  'font-sans text-4xl font-black leading-tight text-gray-900 dark:text-gray-100 sm:text-5xl sm:leading-snug'
                 )}
               >
-                Tech | Marathoner | YouTuber
+                Tech Marathoner YouTuber
               </h1>
               <p className="text-base leading-8 text-gray-600 dark:text-gray-400">
-              Faça menos, faça melhor, faça uma única vez e faça no lugar certo.
+              faça menos, faça melhor, faça uma única vez e faça no lugar certo.
               </p>
               <div className="mt-8 flex justify-center gap-x-4">
                 <Link
