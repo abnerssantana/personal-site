@@ -36,16 +36,16 @@ export const Articles = ({ articles }) => {
                 id="search"
                 placeholder="Pesquisar artigos..."
                 {...register('search')}
-                className="w-full lg:w-auto text-sm leading-6 font-medium text-gray-700 
+                className="w-full text-sm leading-6 font-medium text-gray-700 
                 rounded-lg transition-colors delay-150 hover:text-gray-900 hover:delay-[0ms] 
-                dark:text-gray-400 dark:hover:text-gray-100 border-gray-300 dark:border-gray-500 
+                dark:text-gray-400 dark:hover:text-gray-100 border-gray-500 dark:border-gray-500 
                 focus:outline-none focus:border-gray-500 focus:ring focus:ring-gray-200"
               />
               <button
                 type="submit"
                 className="ml-2 px-3 py-1.5 text-sm font-medium text-gray-700 
     transition-colors delay-150 hover:text-gray-900 hover:delay-[0ms] hover:bg-slate-50 
-    dark:hover:bg-gray-800 dark:text-gray-400 dark:hover:text-gray-100 border-gray-300 dark:border-gray-500 focus:outline-none focus:border-blue-500 focus:ring focus:ring-blue-200 rounded-lg"
+    dark:hover:bg-gray-800 dark:text-gray-400 dark:hover:text-gray-100 border-gray-500 dark:border-gray-500 focus:outline-none focus:border-blue-500 focus:ring focus:ring-blue-200 rounded-lg"
               >
                 Buscar
               </button>
