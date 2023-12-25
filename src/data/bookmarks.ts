@@ -1,8 +1,8 @@
 export enum Category {
-  article = 'article',
-  resource = 'resource',
-  tool = 'tool',
-  video = 'video',
+  article = 'Artigo',
+  resource = 'Fonte',
+  tool = 'Ferramenta',
+  video = 'Vídeo',
 }
 
 export interface Bookmark {
@@ -39,7 +39,7 @@ export const bookmarks: Bookmark[] = [
   {
     title: 'CBAT',
     url: 'https://www.cbat.org.br/novo/index.php',
-    category: Category.article,
+    category: Category.resource,
     description:
       'A Confederação Brasileira de Atletismo é o órgão responsável pela organização dos eventos, pelo planejamento do esporte no Brasil.',
       icon: '/static/bookmarks/uxplanet.png',

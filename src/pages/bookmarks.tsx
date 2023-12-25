@@ -65,7 +65,7 @@ export const Bookmarks = () => {
       category: Category.article,
     },
     {
-      name: 'Estudos',
+      name: 'Fontes',
       category: Category.resource,
     },
     {
