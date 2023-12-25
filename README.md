@@ -1,6 +1,8 @@
-# vivendoacorrida.com
+#VIVENDO A CORRIDA
 
-Meu site pessoal, feito Next.js, Tailwind, Prisma e Vercel.
+Meu site pessoal, feito Next.js, Tailwind, Prisma e Vercel. 
+
+🌎 vivendoacorrida.com
 
 Feito pata complementar meu conteúdo online no YouTube e compartilhar meus interesses.
 
