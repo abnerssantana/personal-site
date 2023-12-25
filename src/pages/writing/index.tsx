@@ -36,7 +36,7 @@ export const Articles = ({ articles }) => {
                 id="search"
                 placeholder="Pesquisar artigos..."
                 {...register('search')}
-                className="w-full text-sm leading-6 px-3 py-1.5 font-medium text-gray-700 
+                className="w-11/12 text-sm leading-6 px-3 py-1.5 font-medium text-gray-700 
                 rounded-lg transition-colors delay-150 hover:text-gray-900 hover:delay-[0ms] 
                 dark:text-gray-400 dark:hover:text-gray-100 border-gray-500 dark:border-gray-500 
                 focus:outline-none focus:border-gray-500 focus:ring focus:ring-gray-200"
