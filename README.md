@@ -1,6 +1,6 @@
 # VIVENDO A CORRIDA
 
-Meu site pessoal @abnerssantana, feito Next.js, Tailwind, Prisma e Vercel. 
+Meu site pessoal, feito Next.js, Tailwind, Prisma e Vercel. 
 
 🌎 [vivendoacorrida.com](https://vivendoacorrida.com/)
 
