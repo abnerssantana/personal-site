@@ -41,7 +41,7 @@ export const About = () => {
               <li>Ler</li>
             </ul>
             <p>
-              Eu me aposentei das mídias sociais tradicionais. No entanto, se você quiser entrar em contato,
+              Eu me aposentei das redes sociais tradicionais. No entanto, se você quiser entrar em contato,
               pode fazê-lo via{' '}
               <TextLink
                 href="https://www.youtube.com/@abnerssantana"
