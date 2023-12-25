@@ -1,4 +1,7 @@
 # vivendoacorrida.com
 
-My personal site. Built with Next.js, Tailwind, Prisma and Vercel
+Meu site pessoal, feito Next.js, Tailwind, Prisma e Vercel.
 
+Feito pata complementar meu conteúdo online no YouTube e compartilhar meus interesses.
+
+Fique a vontade para utilizar em seus projetos.
