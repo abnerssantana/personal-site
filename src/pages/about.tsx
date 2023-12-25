@@ -49,6 +49,13 @@ export const About = () => {
                 rel="noopener noreferrer"
               >
                 Strava
+                {' '}
+              <TextLink
+                href="https://www.strava.com/athletes/abnerss"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                YouTube
               </TextLink>{' '}
               ou{' '}
               <TextLink
