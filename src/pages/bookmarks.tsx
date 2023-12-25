@@ -88,11 +88,11 @@ export const Bookmarks = () => {
 
   return (
     <>
-      <Container title="Bookmarks">
+      <Container title="Favoritos">
         <Wrapper>
           <SimpleLayout
-            title="My Saved Links"
-            intro="A collection of handpicked resources I find valuable."
+            title="Favoritos"
+            intro="Uma coleção de recursos escolhidos a dedo que eu acho valiosos."
           >
             <div className="flex w-full items-center justify-center">
               <div className="sm:hidden">

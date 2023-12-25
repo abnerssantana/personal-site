@@ -50,11 +50,11 @@ export const Toolbox = () => {
 
   return (
     <>
-      <Container title="Toolbox">
+      <Container title="Ferramentas">
         <Wrapper>
           <SimpleLayout
-            title="Toolbox"
-            intro="Here’s an extensive list of hardware and software I use every day and other things I recommend."
+            title="Ferramentas"
+            intro="Aqui está uma extensa lista de hardware e software que uso todos os dias e outras coisas que recomendo."
           >
             <div className="space-y-8">
               {categories.map((category, index) => {

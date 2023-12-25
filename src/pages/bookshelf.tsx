@@ -8,8 +8,11 @@ export const Bookshelf = () => {
       <Container title="Bookshelf">
         <Wrapper>
           <SimpleLayout
-            title="My personal favorites"
-            intro="Here are a few books I highly recommend that helped me improve my product management and software development skills."
+            title="Livros"
+            intro="Aqui estão alguns livros que tive o prazer de ler e que recomendo.
+            Eles abrangem uma variedade de temas, desde corrida, psicologia e treinamento, 
+            até desenvolvimento pessoal, literatura cristã, histórias inspiradoras e qualquer 
+            outro que tenha capturado minha atenção. Espero que você encontre algo interessante nesta lista diversificada!"
           >
             <ul
               role="list"
