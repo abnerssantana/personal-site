@@ -43,9 +43,10 @@ export const Articles = ({ articles }) => {
               />
               <button
                 type="submit"
-                className="ml-2 px-3 py-1.5 text-sm font-medium text-gray-700 
-    transition-colors delay-150 hover:text-gray-900 hover:delay-[0ms] hover:bg-slate-50 
-    dark:hover:bg-gray-800 dark:text-gray-400 dark:hover:text-gray-100 border-gray-500 dark:border-gray-500 focus:outline-none focus:border-blue-500 focus:ring focus:ring-blue-200 rounded-lg"
+                className="relative -mx-3 -my-2 rounded-lg border px-3 py-1.5 text-sm font-medium
+                text-gray-700 transition-colors delay-150 hover:text-gray-900 hover:delay-[0ms]
+                dark:text-gray-400 dark:hover:text-gray-100 border-gray-00 dark:border-gray-500 hover:bg-slate-50 
+                dark:hover:bg-gray-800"
               >
                 Buscar
               </button>
