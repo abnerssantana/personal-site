@@ -24,7 +24,7 @@ export const Home = () => {
               </p>
               <div className="mt-8 flex justify-center gap-x-4">
                 <Link
-                  href="/writing"
+                  href="/blog"
                   className="inline-flex items-center rounded-lg border border-transparent px-4 py-1.5 text-sm font-semibold text-gray-700 transition-colors hover:border-gray-400 dark:text-gray-100 "
                 >
                   Saiba mais

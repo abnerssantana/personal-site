@@ -167,7 +167,7 @@ export function Header() {
                         >
                           <div>
                             <MobileNavLink href="/about">Sobre</MobileNavLink>
-                            <MobileNavLink href="/writing">
+                            <MobileNavLink href="/blog">
                               Blog
                             </MobileNavLink>
                             <MobileNavLink href="/toolbox">

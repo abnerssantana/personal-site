@@ -23,7 +23,7 @@ export const Articles = ({ articles }) => {
 
   return (
     <>
-      <Container title="Writing">
+      <Container title="Blog">
         <Wrapper>
 
           <SimpleLayout
@@ -61,7 +61,7 @@ export const Articles = ({ articles }) => {
                   className="md:grid md:grid-cols-4 md:items-baseline"
                 >
                   <div className="group relative flex flex-col items-start md:col-span-3">
-                    <Link href={`/writing/${article.slug}`}>
+                    <Link href={`/blog/${article.slug}`}>
                       <h3 className="font-serif text-sm font-medium text-gray-900 dark:text-gray-100 sm:text-base">
                         <span className="absolute inset-0" />
                         {article.title}
