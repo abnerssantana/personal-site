@@ -5,7 +5,7 @@ import { Container, Wrapper } from 'src/components/'
 export const Home = () => {
   return (
     <>
-      <Container className="min-h-screen flex items-center justify-center">
+      <Container>
         <Wrapper>
           <div className="mx-auto pb-20 pt-20 sm:pb-40 sm:pt-40">
             <div className="text-center">
