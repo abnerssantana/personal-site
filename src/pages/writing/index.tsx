@@ -39,7 +39,7 @@ export const Articles = ({ articles }) => {
                 className="w-11/12 text-sm leading-6 px-3 py-1.5 font-medium text-gray-700 
                 rounded-lg transition-colors delay-150 hover:text-gray-900 hover:delay-[0ms] 
                 dark:text-gray-400 dark:hover:text-gray-100 border-gray-500 dark:border-gray-500 
-                focus:outline-none focus:border-gray-500 focus:ring focus:ring-gray-200"
+                focus:outline-none focus:border-gray-500 focus:ring focus:ring-gray-200 mr-2"
               />
               <button
                 type="submit"
@@ -51,7 +51,6 @@ export const Articles = ({ articles }) => {
                 Buscar
               </button>
             </form>
-
             <ul
               role="list"
               className="mt-6 grid grid-cols-1 gap-x-12 gap-y-4 sm:grid-cols-1"
