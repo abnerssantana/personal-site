@@ -12,67 +12,65 @@ export const About = () => {
                 'font-serif text-xl font-medium tracking-wide text-gray-900 dark:text-gray-100 sm:text-2xl'
               )}
             >
-              Hello I'm Ós!
+              E aí, Abner Santana
             </h1>
           </div>
           <div className="mt-2 space-y-4 text-justify font-serif text-sm text-gray-600 dark:text-gray-400 sm:text-base">
             <p>
-              I'm a Product Manager with a background in Software Engineering.
+              Analista de infraestrutura e segurança de TI | Corredor e entusiasta em treinamento e fisiologia
             </p>
             <p>
-              My product development approach focuses on continuous discovery
-              and delivery through user feedback and research. I believe that by
-              constantly exploring new ideas, experimenting with new features,
-              and testing hypotheses, we can create a successful product that
-              meets the needs of our users.
+              Trabalho com computadores, desde os 13 anos de idade, já atuei em diferentes áreas, iniciando em lojas de informática,
+              manutenção e instalações de rede, e me estabelecendo em infraestrutura e segurança.
+              Profissão que amo, e me empolga diariamente com os desafios.
             </p>
             <p>
-              I'm committed to defending and celebrating the legacies of Mexican
-              farmers and our rich food traditions, with an aspiration to bring
-              their flavors and culture to tables across my country. I'm
-              actively seeking ways to leverage my skills in this endeavor,
-              ensuring their stories and contributions continue to resonate.
+              A corrida me encontrou, esporte que me transforma diariamente, estou buscando performance,
+              competindo em grandes provas do país. Gosto muito de estudar os métodos de treinamento e fisiologia.
+              Aplicando o que aprendo no meu próprio treinamento, e compartilhando no meu canal.
             </p>
-            <p>Outside of work, here's what I like to do:</p>
+            <p>Fora trabalho e corrida, aqui está outras coisas que eu gosto de fazer:</p>
             <ul className="mt-4 list-inside list-disc pl-4 text-gray-600 dark:text-gray-400 md:columns-2">
-              <li>Cook</li>
-              <li>Code</li>
-              <li>Explore diverse cuisines</li>
-              <li>Tinkering with tech</li>
-              <li>Watch movies and lots of YouTube</li>
-              <li>Reading about cognitive psychology</li>
+              <li>Viajar de moto</li>
+              <li>Assitir séries e animes</li>
+              <li>Fotografia</li>
+              <li>Música</li>
+              <li>Cozinhar</li>
+              <li>Aprender</li>
+              <li>Mêcanica</li>
+              <li>Ler</li>
             </ul>
             <p>
-              I retired from traditional social media. However, if you wish to
-              get in touch, you can do it via{' '}
+              Eu me aposentei das mídias sociais tradicionais. No entanto, se você quiser entrar em contato,
+              pode fazê-lo via{' '}
               <TextLink
-                href="https://t.me/ocordova"
+                href="https://www.strava.com/athletes/abnerss"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Telegram
+                Strava
               </TextLink>{' '}
-              or{' '}
+              ou{' '}
               <TextLink
-                href="mailto:hola@ocordova.me"
+                href="mailto:abnerss@outlook.vom"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                email me
+                E-mail
               </TextLink>
-              , like in the old days.
+              , como nos velhos tempos.
             </p>
           </div>
           <div>
             <h2 className="mt-8 font-serif text-lg font-medium tracking-wide text-gray-900 dark:text-gray-100 sm:text-xl">
-              About this site
+              Sobre esse site
             </h2>
             <p className="mt-2 font-serif text-sm text-gray-600 dark:text-gray-400 sm:text-base">
-              In case you were wondering, this site is:
+              Caso você esteja se perguntando, este site é:
             </p>
             <ul className="mt-4 list-inside list-disc pl-4 font-serif text-sm text-gray-600 dark:text-gray-400 sm:text-base">
               <li>
-                Carefully hand-coded with{' '}
+                Cuidadosamente codificado à mão com{' '}
                 <TextLink
                   href="https://code.visualstudio.com/"
                   target="_blank"
@@ -82,7 +80,7 @@ export const About = () => {
                 </TextLink>
               </li>
               <li>
-                Built with{' '}
+                Construído com{' '}
                 <TextLink
                   href="https://nextjs.org/"
                   target="_blank"
@@ -92,7 +90,7 @@ export const About = () => {
                 </TextLink>
               </li>
               <li>
-                Styled with{' '}
+                Estilizado com{' '}
                 <TextLink
                   href="https://tailwindcss.com/"
                   target="_blank"
@@ -102,7 +100,7 @@ export const About = () => {
                 </TextLink>
               </li>
               <li>
-                Iconified with{' '}
+                Iconificado com{' '}
                 <TextLink
                   href="https://heroicons.com/"
                   target="_blank"
@@ -112,23 +110,13 @@ export const About = () => {
                 </TextLink>
               </li>
               <li>
-                Hosted on{' '}
+                Hospedado em{' '}
                 <TextLink
                   href="https://vercel.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Vercel
-                </TextLink>
-              </li>
-              <li>
-                Tracking data with{' '}
-                <TextLink
-                  href="https://plausible.io/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Plausible
                 </TextLink>
               </li>
             </ul>
