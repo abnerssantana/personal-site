@@ -57,23 +57,23 @@ export const Bookmarks = () => {
 
   const tabs = [
     {
-      name: 'All',
+      name: 'Tudo',
       category: null,
     },
     {
-      name: 'Articles',
+      name: 'Artigos',
       category: Category.article,
     },
     {
-      name: 'Resources',
+      name: 'Estudos',
       category: Category.resource,
     },
     {
-      name: 'Tools',
+      name: 'Ferramentas',
       category: Category.tool,
     },
     {
-      name: 'Videos',
+      name: 'Vídeos',
       category: Category.video,
     },
   ]
