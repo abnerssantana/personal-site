@@ -7,16 +7,20 @@ export const Home = () => {
     <>
       <Container>
         <Wrapper>
-          <div className="flex items-center justify-center h-screen">
-            <div className="mx-auto w-full sm:w-3/4 lg:w-2/3 xl:w-1/2 text-center">
+          <div className="mx-auto pb-20 pt-20 sm:pb-40 sm:pt-40">
+            <div className="text-center">
               <h2 className="text-xl font-normal text-gray-600 dark:text-gray-400 sm:text-2xl">
-                TECH - NERD - MARATHONER - YOUTUBER
+              TECH - NERD - MARATHONER - YOUTUBER
               </h2>
-              <h1 className={clsx('font-sans text-5xl uppercase font-black leading-tight text-gray-900 dark:text-gray-100 sm:text-5xl sm:leading-snug')}>
+              <h1
+                className={clsx(
+                  'font-sans text-5xl uppercase font-black leading-tight text-gray-900 dark:text-gray-100 sm:text-5xl sm:leading-snug'
+                )}
+              >
                 VIVENDO A CORRIDA
               </h1>
               <p className="text-base leading-8 text-gray-600 dark:text-gray-400">
-                faça menos, faça melhor, faça uma única vez e faça no lugar certo
+              faça menos, faça melhor, faça uma única vez e faça no lugar certo
               </p>
               <div className="mt-8 flex justify-center gap-x-4">
                 <Link
@@ -24,14 +28,16 @@ export const Home = () => {
                   className="inline-flex items-center rounded-lg border border-transparent px-4 py-1.5 text-sm font-semibold text-gray-700 transition-colors hover:border-gray-400 dark:text-gray-100 "
                 >
                   Saiba mais
-                  <span className="ml-1.5 text-gray-500 dark:text-gray-100" aria-hidden="true">
+                  <span
+                    className="ml-1.5 text-gray-500 dark:text-gray-100"
+                    aria-hidden="true"
+                  >
                     &rarr;
                   </span>
                 </Link>
               </div>
             </div>
           </div>
-
         </Wrapper>
       </Container>
     </>
