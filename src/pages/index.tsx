@@ -7,10 +7,10 @@ export const Home = () => {
     <>
       <Container>
         <Wrapper>
-          <div className="mx-auto pb-24 pt-24 md:pb-40 md:pt-40">
+          <div className="mx-auto pb-24 pt-24 md:pb-36 md:pt-36">
             <div className="text-center">
-              <h2 className="text-2xl font-normal text-gray-600 dark:text-gray-400 md:text-2xl">
-              TECH - NERD - MARATHONER - YOUTUBER
+              <h2 className="text-2xl font-normal text-gray-600 dark:text-gray-400 md:text-1xl">
+                TECH - NERD - MARATHONER - YOUTUBER
               </h2>
               <h1
                 className={clsx(
@@ -20,7 +20,7 @@ export const Home = () => {
                 VIVENDO A CORRIDA
               </h1>
               <p className="text-base leading-8 text-gray-600 dark:text-gray-400">
-              faça menos, faça melhor, faça uma única vez e faça no lugar certo
+                faça menos, faça melhor, faça uma única vez e faça no lugar certo
               </p>
               <div className="mt-8 flex justify-center gap-x-4">
                 <Link
