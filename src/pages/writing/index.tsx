@@ -27,7 +27,7 @@ export const Articles = ({ articles }) => {
         <Wrapper>
 
           <SimpleLayout
-            title="Product & Software Development"
+            title="Corrida, pensamentos e tecnologia"
             intro="You can read about my thoughts on product development and web design."
           >
             <form onSubmit={handleSubmit(onSubmit)} className="mb-4 flex items-center">
@@ -36,19 +36,18 @@ export const Articles = ({ articles }) => {
                 id="search"
                 placeholder="Pesquisar artigos..."
                 {...register('search')}
-                className="hidden w-5/6 rounded-lg border px-3 py-1.5 text-sm font-medium text-gray-700 
-                transition-colors delay-150 hover:text-gray-900 hover:delay-[0ms] hover:bg-slate-50 
-                dark:hover:bg-gray-800 dark:text-gray-400 dark:hover:text-gray-100 border-gray-00 dark:border-gray-500"
+                className="w-full lg:w-auto text-sm leading-6 font-medium text-gray-700 rounded-lg transition-colors delay-150 hover:text-gray-900 hover:delay-[0ms] dark:text-gray-400 dark:hover:text-gray-100 border-gray-300 dark:border-gray-500 focus:outline-none focus:border-blue-500 focus:ring focus:ring-blue-200"
               />
               <button
                 type="submit"
-                className="rounded-lg border px-3 py-1.5 text-sm font-medium text-gray-700 
-                transition-colors delay-150 hover:text-gray-900 hover:delay-[0ms] hover:bg-slate-50 
-                dark:hover:bg-gray-800 dark:text-gray-400 dark:hover:text-gray-100 border-gray-00 dark:border-gray-500"
+                className="ml-2 px-3 py-1.5 text-sm font-medium text-gray-700 
+    transition-colors delay-150 hover:text-gray-900 hover:delay-[0ms] hover:bg-slate-50 
+    dark:hover:bg-gray-800 dark:text-gray-400 dark:hover:text-gray-100 border-gray-300 dark:border-gray-500 focus:outline-none focus:border-blue-500 focus:ring focus:ring-blue-200 rounded-lg"
               >
                 Buscar
               </button>
             </form>
+
             <ul
               role="list"
               className="mt-6 grid grid-cols-1 gap-x-12 gap-y-4 sm:grid-cols-1"
