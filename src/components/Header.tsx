@@ -166,9 +166,11 @@ export function Header() {
                           className="absolute inset-x-0 top-0 z-0 origin-top bg-white px-6 pb-6 pt-24 shadow-2xl shadow-gray-900/20 dark:bg-[#08070b]"
                         >
                           <div>
-                            <MobileNavLink href="/about">Sobre</MobileNavLink>
                             <MobileNavLink href="/blog">
                               Blog
+                            </MobileNavLink>
+                            <MobileNavLink href="/bookshelf">
+                              Livros
                             </MobileNavLink>
                             <MobileNavLink href="/toolbox">
                               Ferramentas
@@ -176,8 +178,8 @@ export function Header() {
                             <MobileNavLink href="/bookmarks">
                               Favoritos
                             </MobileNavLink>
-                            <MobileNavLink href="/bookshelf">
-                              Livros
+                            <MobileNavLink href="/about">
+                              Sobre
                             </MobileNavLink>
                           </div>
                           <div className="mt-8">
