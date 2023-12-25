@@ -4,7 +4,7 @@ import clsx from 'clsx'
 export const About = () => {
   return (
     <>
-      <Container title="About me">
+      <Container title="Sobre">
         <Wrapper>
           <div>
             <h1
@@ -44,18 +44,19 @@ export const About = () => {
               Eu me aposentei das mídias sociais tradicionais. No entanto, se você quiser entrar em contato,
               pode fazê-lo via{' '}
               <TextLink
-                href="https://www.strava.com/athletes/abnerss"
+                href="https://www.youtube.com/@abnerssantana"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Strava
-                {' '}
+                YouTube
+              </TextLink>
+              {' '}
               <TextLink
                 href="https://www.strava.com/athletes/abnerss"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                YouTube
+                Strava
               </TextLink>{' '}
               ou{' '}
               <TextLink
