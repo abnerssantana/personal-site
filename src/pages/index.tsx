@@ -13,9 +13,9 @@ export const Home = () => {
                 TECH - NERD - MARATHONER - YOUTUBER
               </h2>
               <h1
-                className={
-                  'font-sans text-8xl uppercase font-black leading-tight text-gray-900 dark:text-gray-100 md:text-5xl md:leading-snug'
-                }
+                className={clsx(
+                  'font-sans text-7xl uppercase font-black leading-tight text-gray-900 dark:text-gray-100 md:leading-snug'
+                )}
               >
                 VIVENDO A CORRIDA
               </h1>
