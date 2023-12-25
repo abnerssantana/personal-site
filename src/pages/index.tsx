@@ -7,14 +7,14 @@ export const Home = () => {
     <>
       <Container>
         <Wrapper>
-          <div className="mx-auto pb-24 pt-24 sm:pb-40 sm:pt-40">
+          <div className="mx-auto pb-24 pt-24 md:pb-40 md:pt-40">
             <div className="text-center">
-              <h2 className="text-2xl font-normal text-gray-600 dark:text-gray-400 sm:text-2xl">
+              <h2 className="text-2xl font-normal text-gray-600 dark:text-gray-400 md:text-2xl">
               TECH - NERD - MARATHONER - YOUTUBER
               </h2>
               <h1
                 className={clsx(
-                  'font-sans text-6xl uppercase font-black leading-tight text-gray-900 dark:text-gray-100 sm:text-5xl sm:leading-snug'
+                  'font-sans text-6xl uppercase font-black leading-tight text-gray-900 dark:text-gray-100 md:text-5xl md:leading-snug'
                 )}
               >
                 VIVENDO A CORRIDA
