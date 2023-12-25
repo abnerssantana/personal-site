@@ -23,11 +23,11 @@ export function ArticleLayout({
             {back ? (
               <div className="flex">
                 <Link
-                  href="/writing"
+                  href="/blog"
                   className="flex text-sm font-medium text-gray-500 hover:text-gray-700"
                 >
                   <ArrowSmallLeftIcon className="h-6 w-6 flex-none" />
-                  <span className="mr-2.5">Back to writing</span>
+                  <span className="mr-2.5">Voltar para todos os posts</span>
                 </Link>
               </div>
             ) : null}
