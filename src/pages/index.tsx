@@ -7,7 +7,7 @@ export const Home = () => {
     <>
       <Container>
         <Wrapper>
-          <div className="mx-auto pb-20 pt-20 sm:pb-40 sm:pt-40">
+          <div className="mx-auto pb-24 pt-24 sm:pb-40 sm:pt-40">
             <div className="text-center">
               <h2 className="text-xl font-normal text-gray-600 dark:text-gray-400 sm:text-2xl">
               TECH - NERD - MARATHONER - YOUTUBER
