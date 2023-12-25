@@ -38,7 +38,7 @@ const modeScript = `
 
 export default function Document() {
   return (
-    <Html className="h-full antialiased" lang="en">
+    <Html className="h-full antialiased" lang="pt-BR">
       <Head>
         <link
           rel="apple-touch-icon"

@@ -9,12 +9,12 @@ export const Home = () => {
         <Wrapper>
           <div className="mx-auto pb-24 pt-24 md:pb-36 md:pt-36">
             <div className="text-center">
-              <h2 className="text-3xl font-normal text-gray-600 dark:text-gray-400 md:text-lg">
+              <h2 className="text-2xl font-normal text-gray-600 dark:text-gray-400 md:text-lg">
                 TECH - NERD - MARATHONER - YOUTUBER
               </h2>
               <h1
                 className={clsx(
-                  'font-sans text-7xl uppercase font-black leading-tight text-gray-900 dark:text-gray-100 md:leading-snug'
+                  'font-sans text-6xl uppercase font-black leading-tight text-gray-900 dark:text-gray-100 md:leading-snug'
                 )}
               >
                 VIVENDO A CORRIDA

@@ -27,8 +27,8 @@ export const Articles = ({ articles }) => {
         <Wrapper>
 
           <SimpleLayout
-            title="Corrida, pensamentos e tecnologia"
-            intro="You can read about my thoughts on product development and web design."
+            title="Meus pensamentos"
+            intro="Corrida, tecnologia, reflexões e um pouco de choro/drama as vezes..."
           >
             <form onSubmit={handleSubmit(onSubmit)} className="mb-4 flex items-center">
               <input
