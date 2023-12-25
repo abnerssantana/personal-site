@@ -43,7 +43,7 @@ export const Articles = ({ articles }) => {
               />
               <button
                 type="submit"
-                className="relative -mx-3 -my-2 rounded-lg border px-3 py-1.5 text-sm font-medium
+                className="rounded-lg border leading-6 px-3 py-1.5 text-sm font-medium
                 text-gray-700 transition-colors delay-150 hover:text-gray-900 hover:delay-[0ms]
                 dark:text-gray-400 dark:hover:text-gray-100 border-gray-00 dark:border-gray-500 hover:bg-slate-50 
                 dark:hover:bg-gray-800"
