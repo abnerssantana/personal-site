@@ -43,7 +43,7 @@ const LatestVideos = ({ videoCount }) => {
               loading="lazy"
               src={video.snippet.thumbnails.high.url}
               alt={video.snippet.title}
-              className="mb-2 rounded h-44 w-80"
+              className="mb-2 rounded w-fit h-fit"
             />
           </a>
           <h3 className="text-xs font-sans font-bold text-gray-900 dark:text-gray-100">
