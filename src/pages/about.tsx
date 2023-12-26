@@ -127,6 +127,16 @@ export const About = () => {
                   Vercel
                 </TextLink>
               </li>
+              <li>
+                Baseado no projeto{' '}
+                <TextLink
+                  href="https://github.com/ocordova"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Vercel
+                </TextLink>
+              </li>
             </ul>
           </div>
         </Wrapper>
