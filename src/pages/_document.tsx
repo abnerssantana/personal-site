@@ -60,7 +60,7 @@ export default function Document() {
         <link
           rel="mask-icon"
           href="/favicons/safari-pinned-tab.svg"
-          color="#5bbad5"
+          color="#091215"
         />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
