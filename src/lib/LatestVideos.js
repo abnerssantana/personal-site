@@ -14,7 +14,7 @@ const LatestVideos = ({ videoCount }) => {
           maxResults: videoCount,
           order: 'date',
           type: 'video',
-          videoDuration: 'short',
+          videoDuration: 'medium',
           key: 'AIzaSyDZ4X2oLeEYyAkQvOxtIET-terp-SZWonk',
         },
       });
@@ -43,7 +43,7 @@ const LatestVideos = ({ videoCount }) => {
               loading="lazy"
               src={video.snippet.thumbnails.high.url}
               alt={video.snippet.title}
-              className="mb-2 rounded w-fit h-fit"
+              className="mb-2 rounded"
             />
           </a>
           <h3 className="text-xs font-sans font-bold text-gray-900 dark:text-gray-100">
