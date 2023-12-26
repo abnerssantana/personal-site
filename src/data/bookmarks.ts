@@ -72,4 +72,16 @@ export const bookmarks: Bookmark[] = [
     category: Category.article,
     description: 'Os atletas que participam de esportes de elite estão expostos a altas cargas de treinamento e calendários de competição cada vez mais saturados. Evidências emergentes indicam que o mau gerenciamento de carga é um importante fator de risco para lesões.',
   },
+  {
+    title: 'have i been pwned?',
+    url: 'https://haveibeenpwned.com',
+    category: Category.tool,
+    description: 'Verifique se o seu endereço de e-mail está em um vazamento de dados.',
+  },
+  {
+    title: 'Sauce for Strava',
+    url: 'https://www.sauce.llc',
+    category: Category.tool,
+    description: 'A extensão Sauce atualiza o Strava.com com melhores informações sobre ciclismo e corrida. É uma adição JavaScript simples, leve, de código aberto e pura do lado do cliente.',
+  },
 ]
