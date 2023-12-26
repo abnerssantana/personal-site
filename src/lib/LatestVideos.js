@@ -12,7 +12,7 @@ const LatestVideos = ({ videoCount }) => {
           part: 'snippet',
           channelId: 'UCKl5xev9VFkTV0YTHO74DIQ',
           maxResults: videoCount,
-          order: 'date',
+          order: 'viewCount',
           type: 'video',
           videoDuration: 'any',
           key: 'AIzaSyDZ4X2oLeEYyAkQvOxtIET-terp-SZWonk',
