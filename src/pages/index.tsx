@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import Link from 'next/link'
 import { Container, Wrapper } from 'src/components/'
-import { LatestVideos } from 'src/lib/LatestVideos';
+import LatestVideos from 'src/lib/LatestVideos';
 
 export const Home = () => {
   return (
