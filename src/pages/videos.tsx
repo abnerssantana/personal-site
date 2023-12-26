@@ -10,6 +10,7 @@ export const videos = () => {
         <Wrapper>
           <div className="mx-auto min-h-full pt-20 pb-20 text-center sm:pt-40 sm:pb-40">
           <LatestVideos videoCount={12} />
+          </div>
         </Wrapper>
       </Container>
     </>

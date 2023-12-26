@@ -3,13 +3,9 @@ import axios from 'axios';
 
 const LatestVideos = () => {
   const [latestVideos, setLatestVideos] = useState([]);
-  const [videoCount, setVideoCount] = useState(0);
 
   const fetchLatestVideos = async () => {
     try {
-      const oneWeekAgo = new Date();
-      oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
-
       const response = await axios.get(
         'https://www.googleapis.com/youtube/v3/search', {
         params: {
@@ -19,13 +15,11 @@ const LatestVideos = () => {
           order: 'date',
           type: 'video',
           videoDuration: 'any',
-          publishedAfter: oneWeekAgo.toISOString(),
           key: 'AIzaSyDZ4X2oLeEYyAkQvOxtIET-terp-SZWonk',
         },
       });
 
       setLatestVideos(response.data.items);
-      setVideoCount(response.data.pageInfo.totalResults);
     } catch (error) {
       console.error('Erro ao obter vídeos do YouTube', error);
     }
@@ -38,7 +32,7 @@ const LatestVideos = () => {
   return (
     <div className="mt-6">
       <h2 className="text-2xl font-normal text-gray-600 dark:text-gray-400 md:text-lg">
-        Últimos vídeos - {videoCount} vídeos
+        Últimos vídeos
       </h2>
 
       <div className="grid grid-cols-1 gap-x-12 gap-y-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
