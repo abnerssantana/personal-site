@@ -116,7 +116,7 @@ export function Header() {
       <nav>
         <div className="relative z-50 mx-auto flex max-w-4xl justify-between px-6 py-8 sm:px-0">
           <div className="relative z-10 flex w-full items-center justify-between gap-8">
-            <Link href="/" aria-label="Home">
+            <Link href="/" aria-label="Abner Santana">
               <Logo className="h-10 w-auto text-gray-900 dark:text-white" />
             </Link>
             <div className="hidden lg:flex lg:gap-8">

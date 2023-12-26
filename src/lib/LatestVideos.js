@@ -6,9 +6,6 @@ const LatestVideos = ({ videoCount }) => {
 
   const fetchLatestVideos = async () => {
     try {
-      const oneDayAgo = new Date();
-      oneDayAgo.setDate(oneDayAgo.getDate() - 1);
-
       const response = await axios.get(
         'https://www.googleapis.com/youtube/v3/search', {
         params: {
@@ -18,7 +15,6 @@ const LatestVideos = ({ videoCount }) => {
           order: 'date',
           type: 'video',
           videoDuration: 'any',
-          publishedAfter: oneDayAgo.toISOString(),
           key: 'AIzaSyDZ4X2oLeEYyAkQvOxtIET-terp-SZWonk',
         },
       });
@@ -35,33 +31,34 @@ const LatestVideos = ({ videoCount }) => {
 
   return (
     <div className="mt-6">
-      <div className="grid grid-cols-1 gap-x-12 gap-y-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
-        {latestVideos.map((video) => (
-          <div key={video.id.videoId} className="flex flex-col items-center">
+    <div className="grid grid-cols-1 gap-x-12 gap-y-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
+      {latestVideos.map((video) => (
+        <div key={video.id.videoId} className="flex flex-col items-center">
+          <a
+            href={`https://www.youtube.com/watch?v=${video.id.videoId}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              loading="lazy"
+              src={video.snippet.thumbnails.high.url}
+              alt={video.snippet.title}
+              className="mb-2 rounded h-44 w-80"
+            />
+          </a>
+          <h3 className="text-xs font-sans font-bold text-gray-900 dark:text-gray-100">
             <a
               href={`https://www.youtube.com/watch?v=${video.id.videoId}`}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                src={video.snippet.thumbnails.medium.url}
-                alt={video.snippet.title}
-                className="mb-2 rounded"
-              />
+              {video.snippet.title}
             </a>
-            <h3 className="text-xs font-sans font-bold text-gray-900 dark:text-gray-100">
-              <a
-                href={`https://www.youtube.com/watch?v=${video.id.videoId}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {video.snippet.title}
-              </a>
-            </h3>
-          </div>
-        ))}
-      </div>
+          </h3>
+        </div>
+      ))}
     </div>
+  </div>
   );
 };
 
