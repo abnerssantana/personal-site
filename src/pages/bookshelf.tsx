@@ -34,11 +34,11 @@ export const Bookshelf = () => {
                     <div className="sm:col-span-6 sm:ml-2">
                       <div className="space-y-3">
                         <div className="space-y-1">
-                          <h3 className="font-serif text-base font-medium text-gray-900 dark:text-gray-50 sm:text-lg">
+                          <h3 className="text-lg font-bold text-gray-900 dark:text-gray-50 sm:text-xl">
                             {book.title}
                           </h3>
                           <p className="text-sm font-medium text-gray-500 dark:text-gray-500">
-                            by {book.author}
+                            Autor {book.author}
                           </p>
                         </div>
                         <p className="dark:text-gray-4000 text-justify font-sans text-sm text-gray-600 dark:text-gray-400">
