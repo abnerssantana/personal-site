@@ -17,21 +17,6 @@ export const categories = [
         icon: '/static/tools/dracula.png',
       },
       {
-        name: 'FiraCode',
-        description:
-          "Great monospaced font. It's easier to read and has ligatures.",
-        url: 'https://github.com/tonsky/FiraCode',
-        icon: '/static/tools/fira-code.png',
-      },
-      {
-        name: 'GitHub Copilot',
-        description:
-          'The code completion is impressive, helping you code faster, write tests, and learn new things.',
-        url: 'https://copilot.github.com/',
-        icon: '/static/tools/github-copilot.png',
-      },
-
-      {
         name: 'Visual Studio Code',
         description:
           "After using Sublime for many years, I switched to VSCode like everyone else. It's fast, lightweight, and has numerous extensions.",
@@ -41,32 +26,20 @@ export const categories = [
     ],
   },
   {
-    name: 'Terminal',
-    tools: [
-      {
-        name: 'Warp',
-        description:
-          "I used to use Hyper with Fig, but a friend recommended Warp. It's fast, has smooth scrolling, and offers efficient bookmark management.",
-        url: 'https://warp.dev/',
-        icon: '/static/tools/warp.png',
-      },
-    ],
-  },
-  {
     name: 'Design',
     tools: [
       {
-        name: 'Adobe Creative Cloud',
+        name: 'Affinity Photo 2',
         description:
-          "I use Photoshop, Illustrator, InDesign and After Effects. I'm used to the Adobe shortcuts and makes me work faster.",
-        url: 'https://www.adobe.com/creativecloud.html',
-        icon: '/static/tools/adobe-creative-cloud.png',
+          "Diferente do Photoshop da Adobe, o Affinity trabalha com licenciamento de software de compra única, o que é mais prático para uso pessoal, até mesmo corporativo, ferramenta completa e com novos recursos. Curva de aprendizado pequena.",
+        url: 'https://affinity.serif.com/pt-br/photo',
+        icon: '/static/tools/affinity.svg',
       },
       {
-        name: 'Figma',
+        name: 'DaVinci Resolve Studio',
         description:
-          'I use Figma for interface and web design and Adobe Creative Cloud for everything else.',
-        url: 'https://www.figma.com/',
+          'Editor de vídeo que utilizo no meu canal, a versão free já bem completa, mas os recuros de IA, do Studio me ajudam muito na criação e poupando meu tempo de edições.',
+        url: 'https://www.blackmagicdesign.com/br/products/davinciresolve',
         icon: '/static/tools/figma.png',
       },
     ],
@@ -74,12 +47,6 @@ export const categories = [
   {
     name: 'Apps',
     tools: [
-      {
-        name: 'Cron',
-        description: 'Best calendar app for Mac and mobile.',
-        url: 'https://cron.com/',
-        icon: '/static/tools/cron.png',
-      },
       {
         name: 'DaisyDisk',
         description:

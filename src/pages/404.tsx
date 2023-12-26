@@ -10,7 +10,7 @@ export const NotFound = () => {
               404
             </p>
             <h1 className="mt-3 font-serif text-4xl font-normal leading-tight text-gray-900 dark:text-gray-100 sm:text-5xl sm:leading-snug">
-              Page not found
+                Desculpe, não conseguimos encontrar a página que você está procurando
             </h1>
             <p className="mt-2 text-base leading-8 text-gray-600 dark:text-gray-400">
               Sorry, we couldn’t find the page you’re looking for
