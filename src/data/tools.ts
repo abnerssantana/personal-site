@@ -31,16 +31,16 @@ export const categories = [
       {
         name: 'Affinity Photo 2',
         description:
-          "Diferente do Photoshop da Adobe, o Affinity trabalha com licenciamento de software de compra única, o que é mais prático para uso pessoal, até mesmo corporativo, ferramenta completa e com novos recursos. Curva de aprendizado pequena.",
+          "Diferente do Photoshop da Adobe que tem um custo mensal, o Affinity trabalha com licenciamento de software, o que é mais barato para uso pessoal, até mesmo corporativo, ferramenta completa e com recursos diferentes. Curva de aprendizado pequena.",
         url: 'https://affinity.serif.com/pt-br/photo',
         icon: '/static/tools/affinity.svg',
       },
       {
         name: 'DaVinci Resolve Studio',
         description:
-          'Editor de vídeo que utilizo no meu canal, a versão free já bem completa, mas os recuros de IA, do Studio me ajudam muito na criação e poupando meu tempo de edições.',
+          'Editor de vídeo que utilizo no meu canal, a versão free já é bem completa, mas os recuros de IA, do Studio me ajudam muito na criação, poupando meu tempo de edições.',
         url: 'https://www.blackmagicdesign.com/br/products/davinciresolve',
-        icon: '/static/tools/figma.png',
+        icon: '/static/tools/davinci.png',
       },
     ],
   },
@@ -252,12 +252,12 @@ export const categories = [
       {
         name: 'MacBook Air M1 (2020)',
         description:
-          'The M1 chip is fantastic. It has plenty of power to run all the apps I need, even Adobe CS and Android Studio.',
+          'O chip M1 é fantástico. Ele tem potência suficiente para executar todos os aplicativos de que preciso.',
         url: 'https://www.apple.com/mx/shop/buy-mac/macbook-air/m1-chip',
         icon: '/static/tools/macbook-air-m1.png',
       },
       {
-        name: 'Samsung 34" Monitor Ultra WQHD',
+        name: 'LG 25" Monitor Ultra Wide FHD',
         description:
           'Easier to work with two windows or more side by side. Perfect for frontend development and design',
         url: 'https://www.samsung.com/us/computing/monitors/uhd-and-wqhd/34-sj55w-ultra-wqhd-monitor-ls34j550wqnxza/',
@@ -290,30 +290,11 @@ export const categories = [
     name: 'Audio',
     tools: [
       {
-        name: 'AirPods Pro (1st gen)',
+        name: 'Jaybird Vista',
         description:
-          'I use my AirPods Pro for everything. I love the noise cancellation and the transparency mode; I wish they had volume controls and multiple-device support.',
-        url: 'https://www.apple.com//airpods-pro/',
-        icon: '/static/tools/airpods-pro.png',
-      },
-    ],
-  },
-  {
-    name: 'Reading',
-    tools: [
-      {
-        name: 'Audible',
-        description:
-          "I like to listen to audiobooks while I do exercise or while I'm cooking.",
-        url: 'https://www.audible.com/',
-        icon: '/static/tools/audible.png',
-      },
-      {
-        name: 'Kindle Paperwhite (8 GB)',
-        description:
-          'It took me years to finally move to an e-reader. Fantastic for text books and long reads.',
-        url: 'https://www.amazon.com/Kindle-Paperwhite-adjustable-Ad-Supported/dp/B08KTZ8249',
-        icon: '/static/tools/kindle.png',
+          'Utilizo os fones de ouvido Jaybird Vista, principalmente por ser resistente a suor, mas a qualidade de áudio também está em um nível premium. Fone que me acompanha em várias corridas, e diariamente, 2 anos de uso, sem perder autonomia e qualidade.',
+        url: 'https://www.jaybirdsport.com/pt-br/vista.985-000868.html',
+        icon: '/static/tools/jaybird.webp',
       },
     ],
   },
