@@ -31,7 +31,7 @@ const LatestVideos = ({ videoCount }) => {
 
   return (
     <div className="mt-6">
-    <div className="grid grid-cols-1 gap-x-12 gap-y-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
+    <div className="grid grid-cols-1 gap-x-12 gap-y-4 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
       {latestVideos.map((video) => (
         <div key={video.id.videoId} className="flex flex-col items-center">
           <a
