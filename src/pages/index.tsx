@@ -37,7 +37,7 @@ export const Home = () => {
                   </span>
                 </Link>
               </div>
-              <h2 className="text-2xl font-normal text-gray-600 dark:text-gray-400 md:text-lg">
+              <h2 className="text-2xl pt-24 font-normal text-gray-600 dark:text-gray-400 md:text-lg">
                 ÚLTIMOS VÍDEOS
               </h2>
               <LatestVideos videoCount={4} />
