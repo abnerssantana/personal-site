@@ -38,7 +38,7 @@ export const Bookshelf = () => {
                             {book.title}
                           </h3>
                           <p className="text-sm font-medium text-gray-500 dark:text-gray-500">
-                            Autor {book.author}
+                            Autor: {book.author}
                           </p>
                         </div>
                         <p className="dark:text-gray-4000 text-justify font-sans text-sm text-gray-600 dark:text-gray-400">

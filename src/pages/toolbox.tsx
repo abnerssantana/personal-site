@@ -35,7 +35,7 @@ export const Toolbox = () => {
               ) : null}
             </div>
             <div className="text-center">
-              <h2 className="mt-4 font-serif text-base font-semibold text-gray-900 dark:text-gray-50">
+              <h2 className="mt-4 text-base font-semibold text-gray-900 dark:text-gray-50">
                 {name}
               </h2>
               <p className="mt-1 text-sm text-gray-700 dark:text-gray-400">
