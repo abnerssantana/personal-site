@@ -46,20 +46,6 @@ export const Bookshelf = () => {
                         </p>
                         <div className="space-x-3">
                           <Button
-                            href={book.literalUrl}
-                            variant="outline"
-                            target="_blank"
-                          >
-                            Literal
-                          </Button>
-                          <Button
-                            href={book.goodReadsUrl}
-                            variant="outline"
-                            target="_blank"
-                          >
-                            Goodreads
-                          </Button>
-                          <Button
                             href={book.amazonUrl}
                             variant="outline"
                             target="_blank"
