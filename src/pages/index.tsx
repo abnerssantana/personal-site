@@ -37,8 +37,8 @@ export const Home = () => {
                   </span>
                 </Link>
               </div>
-              <LatestVideos />
             </div>
+            <LatestVideos />
           </div>
         </Wrapper>
       </Container>

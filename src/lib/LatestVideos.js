@@ -2,18 +2,23 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const LatestVideos = () => {
-  const [latestVideos, setLatestVideos] = useState([]);
-
-  const fetchLatestVideos = async () => {
-    try {
-      const response = await axios.get(
+    const [latestVideos, setLatestVideos] = useState([]);
+  
+    const fetchLatestVideos = async () => {
+      try {
+        const oneWeekAgo = new Date();
+        oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
+  
+        const response = await axios.get(
         'https://www.googleapis.com/youtube/v3/search', {
         params: {
           part: 'snippet',
           channelId: 'UCKl5xev9VFkTV0YTHO74DIQ',
           maxResults: 4,
-          type: 'video',
           order: 'date',
+          type: 'video',
+          videoDuration: 'any',
+          publishedAfter: oneWeekAgo.toISOString(),
           key: 'AIzaSyDZ4X2oLeEYyAkQvOxtIET-terp-SZWonk',
         },
       });
