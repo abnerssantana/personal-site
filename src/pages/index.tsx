@@ -40,7 +40,7 @@ export const Home = () => {
               <h2 className="text-2xl pt-24 font-normal text-gray-600 dark:text-gray-400 md:text-lg">
                 ÚLTIMOS VÍDEOS
               </h2>
-              <LatestVideos videoCount={3} />
+              <LatestVideos videoCount={4} />
             </div>
           </div>
         </Wrapper>

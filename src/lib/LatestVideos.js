@@ -31,7 +31,7 @@ const LatestVideos = ({ videoCount }) => {
 
   return (
     <div className="mt-6">
-    <div className="grid grid-cols-1 gap-x-12 gap-y-4 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
+    <div className="grid grid-cols-1 gap-x-12 gap-y-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
       {latestVideos.map((video) => (
         <div key={video.id.videoId} className="flex flex-col items-center">
           <a
@@ -41,9 +41,9 @@ const LatestVideos = ({ videoCount }) => {
           >
             <img
               loading="lazy"
-              src={video.snippet.thumbnails.high.url}
+              src={video.snippet.thumbnails.medium.url}
               alt={video.snippet.title}
-              className="mb-2 rounded"
+              className="mb-2 rounded w-fit h-fit"
             />
           </a>
           <h3 className="text-xs font-sans font-bold text-gray-900 dark:text-gray-100">
