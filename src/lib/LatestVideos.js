@@ -14,7 +14,7 @@ const LatestVideos = ({ videoCount }) => {
           maxResults: videoCount,
           order: 'date',
           type: 'video',
-          videoDuration: 'any',
+          videoDuration: 'short',
           key: 'AIzaSyDZ4X2oLeEYyAkQvOxtIET-terp-SZWonk',
         },
       });
