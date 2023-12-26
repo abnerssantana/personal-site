@@ -6,15 +6,19 @@ const LatestVideos = ({ videoCount }) => {
 
   const fetchLatestVideos = async () => {
     try {
+      const oneDayAgo = new Date();
+      oneDayAgo.setDate(oneDayAgo.getDate() - 1);
+
       const response = await axios.get(
         'https://www.googleapis.com/youtube/v3/search', {
         params: {
           part: 'snippet',
           channelId: 'UCKl5xev9VFkTV0YTHO74DIQ',
           maxResults: videoCount,
-          order: 'viewCount',
+          order: 'date',
           type: 'video',
           videoDuration: 'any',
+          publishedAfter: oneDayAgo.toISOString(),
           key: 'AIzaSyDZ4X2oLeEYyAkQvOxtIET-terp-SZWonk',
         },
       });
