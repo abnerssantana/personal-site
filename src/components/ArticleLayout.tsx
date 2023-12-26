@@ -33,7 +33,7 @@ export function ArticleLayout({
             ) : null}
             <article className="mt-8">
               <header className="flex flex-col">
-                <h1 className="font-serif text-2xl font-medium tracking-wide text-gray-800 dark:text-gray-100 sm:text-3xl">
+                <h1 className="font-sans text-2xl font-bold tracking-wide text-gray-800 dark:text-gray-100 sm:text-3xl">
                   {meta.title}
                 </h1>
                 <time
