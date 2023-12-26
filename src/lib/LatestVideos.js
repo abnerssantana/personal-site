@@ -29,9 +29,27 @@ const LatestVideos = () => {
   return (
     <div className="mt-6 grid grid-cols-1 gap-x-12 gap-y-4 sm:grid-cols-1">
       {latestVideos.map((video) => (
-        <div key={video.id.videoId}>
-          <h3>{video.snippet.title}</h3>
-          {/* Adicione mais detalhes do vídeo conforme necessário */}
+        <div key={video.id.videoId} className="flex flex-col items-center">
+          <a
+            href={`https://www.youtube.com/watch?v=${video.id.videoId}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={video.snippet.thumbnails.medium.url}
+              alt={video.snippet.title}
+              className="mb-2 rounded"
+            />
+          </a>
+          <h3 className="text-sm font-sans font-bold text-gray-900 dark:text-gray-100">
+            <a
+              href={`https://www.youtube.com/watch?v=${video.id.videoId}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {video.snippet.title}
+            </a>
+          </h3>
         </div>
       ))}
     </div>
