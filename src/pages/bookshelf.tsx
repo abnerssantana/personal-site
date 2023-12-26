@@ -5,7 +5,7 @@ import { books } from 'src/data/books'
 export const Bookshelf = () => {
   return (
     <>
-      <Container title="Bookshelf">
+      <Container title="Livros">
         <Wrapper>
           <SimpleLayout
             title="Livros"
