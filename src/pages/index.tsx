@@ -1,7 +1,6 @@
 import clsx from 'clsx'
 import Link from 'next/link'
 import { Container, Wrapper } from 'src/components/'
-import LatestVideos from 'src/lib/LatestVideos';
 
 export const Home = () => {
   return (
@@ -37,10 +36,6 @@ export const Home = () => {
                   </span>
                 </Link>
               </div>
-              <h2 className="text-2xl pt-24 font-normal text-gray-600 dark:text-gray-400 md:text-lg">
-                ÚLTIMOS VÍDEOS
-              </h2>
-              <LatestVideos videoCount={3} />
             </div>
           </div>
         </Wrapper>

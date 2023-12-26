@@ -24,8 +24,7 @@
     "**/*.ts",
     "**/*.tsx",
     "src/lib/getAllArticles.js",
-    "src/lib/generateRssFeed.js",
-    "src/lib/LatestVideos.js"
+    "src/lib/generateRssFeed.js"
   ],
   "exclude": ["node_modules"]
 }
