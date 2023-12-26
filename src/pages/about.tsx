@@ -134,7 +134,7 @@ export const About = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Vercel
+                  Ós Córdova
                 </TextLink>
               </li>
             </ul>
