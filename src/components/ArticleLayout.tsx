@@ -19,7 +19,7 @@ export function ArticleLayout({
     <>
       <Container title={meta.title} description={meta.description}>
         <div className="xl:relative">
-          <div className="mx-auto max-w-2xl">
+          <div className="mx-auto max-w-4xl">
             {back ? (
               <div className="flex">
                 <Link
