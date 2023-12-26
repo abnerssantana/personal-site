@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const LatestVideos = () => {
+const LatestVideos = ({ videoCount }) => {
   const [latestVideos, setLatestVideos] = useState([]);
 
   const fetchLatestVideos = async () => {
@@ -11,7 +11,7 @@ const LatestVideos = () => {
         params: {
           part: 'snippet',
           channelId: 'UCKl5xev9VFkTV0YTHO74DIQ',
-          maxResults: 4,
+          maxResults: videoCount, // Utilizando a propriedade videoCount
           order: 'date',
           type: 'video',
           videoDuration: 'any',
@@ -27,7 +27,7 @@ const LatestVideos = () => {
 
   useEffect(() => {
     fetchLatestVideos();
-  }, []);
+  }, [videoCount]); // Adicionando videoCount como dependência para atualizar quando a propriedade mudar
 
   return (
     <div className="mt-6">
