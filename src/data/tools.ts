@@ -14,7 +14,7 @@ export const categories = [
         description:
           "Diferente do Photoshop da Adobe que tem um custo mensal, o Affinity trabalha com licenciamento de software, o que é mais barato para uso pessoal, até mesmo corporativo, ferramenta completa e com recursos diferentes. Curva de aprendizado pequena.",
         url: 'https://affinity.serif.com/pt-br/photo',
-        icon: '/static/tools/affinity.svg',
+        icon: '/static/tools/affinity.png',
       },
       {
         name: 'DaVinci Resolve Studio',
@@ -39,7 +39,7 @@ export const categories = [
     ],
   },
   {
-    name: 'Services',
+    name: 'Serviços',
     tools: [
       {
         name: 'Trakt',
