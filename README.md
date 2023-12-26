@@ -12,5 +12,6 @@ Feito para complementar o conteúdo online no YouTube https://youtube.com/@abner
   - artigos
   - séries
   - filmes
+  - videos
   
 Fique a vontade para utilizar em seus projetos.
