@@ -2,9 +2,7 @@ interface Book {
   title: string
   author: string
   cover: string
-  goodReadsUrl: string
   amazonUrl: string
-  literalUrl: string
   review: string
 }
 
