@@ -16,19 +16,11 @@ export const About = () => {
             </h1>
           </div>
           <div className="mt-2 space-y-4 text-justify font-serif text-sm text-gray-600 dark:text-gray-400 sm:text-base">
-            <p>
-              Analista de infraestrutura e segurança de TI | Corredor e entusiasta em treinamento e fisiologia
-            </p>
-            <p>
-              Trabalho com computadores, desde os 13 anos de idade, já atuei em diferentes áreas, iniciando em lojas de informática,
-              manutenção e instalações de rede, e me estabelecendo em infraestrutura e segurança.
-              Profissão que amo, e me empolga diariamente com os desafios.
-            </p>
-            <p>
-              A corrida me encontrou, esporte que me transforma diariamente, estou buscando performance,
-              competindo em grandes provas do país. Gosto muito de estudar os métodos de treinamento e fisiologia.
-              Aplicando o que aprendo no meu próprio treinamento, e compartilhando no meu canal.
-            </p>
+            <p>Desde os 13 anos, venho imerso no universo da computação, trilhando diferentes caminhos que moldaram minha trajetória. Iniciei minha jornada em lojas de informática, onde adquiri conhecimentos sólidos em manutenção e instalações de rede. Com o tempo, direcionei meu foco para a área que verdadeiramente me apaixonou: a infraestrutura e segurança de TI.</p>
+            <p>Minha carreira é um constante aprendizado e evolução, enfrentando diariamente desafios que impulsionam minha paixão pela profissão. A capacidade de solucionar problemas complexos e aprimorar a segurança dos sistemas são aspectos que me motivam intensamente.</p>
+            <p>Paralelamente, a corrida entrou em minha vida como um catalisador de transformações. Engajado em buscar performance, participei de grandes competições e me tornei um atleta federado. Essa jornada esportiva não é apenas física; é também uma fonte constante de aprendizado sobre treinamento e fisiologia.</p>
+            <p>Minha paixão por estudar métodos de treinamento e compreender a fisiologia do corpo humano se reflete em meu compromisso de aplicar esses conhecimentos em meu próprio treinamento. Além disso, compartilho essas experiências e aprendizados através do meu canal no YouTube, buscando inspirar e contribuir.</p>
+            <p>Unindo minha expertise em TI com minha dedicação ao esporte, busco constantemente integrar as lições aprendidas em ambos os campos. Sou um profissional resiliente, apaixonado por desafios e comprometido em alcançar o melhor desempenho, tanto na carreira quanto nas pistas de corrida.</p>
             <p>Fora trabalho e corrida, aqui está outras coisas que eu gosto de fazer:</p>
             <ul className="mt-4 list-inside list-disc pl-4 text-gray-600 dark:text-gray-400 md:columns-2">
               <li>Viajar de moto</li>
