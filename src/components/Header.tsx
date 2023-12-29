@@ -172,11 +172,17 @@ export function Header() {
                             <MobileNavLink href="/bookshelf">
                               Livros
                             </MobileNavLink>
-                            <MobileNavLink href="/toolbox">
-                              Ferramentas
+                            <MobileNavLink href="/tv">
+                              Séries
+                            </MobileNavLink>
+                            <MobileNavLink href="/music">
+                              Músicas
                             </MobileNavLink>
                             <MobileNavLink href="/bookmarks">
-                              Favoritos
+                              Links
+                            </MobileNavLink>
+                            <MobileNavLink href="/toolbox">
+                              Ferramentas
                             </MobileNavLink>
                             <MobileNavLink href="/about">
                               Sobre
