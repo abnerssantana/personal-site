@@ -1,34 +1,89 @@
-interface Book {
-  title: string
-  author: string
-  cover: string
-  amazonUrl: string
-  review: string
+export enum genres {
+  acao = 'Ação',
+  drama = 'Drama',
+  romance = 'Romance',
+  comedia = 'Comédia',
+  crime = 'Crime',
+  aventura ='Aventura'
 }
 
-export const books: Book[] = [
+export interface show {
+  title: string
+  url: string
+  category: genres
+  description: string
+  img?: string
+}
+
+export const shows: show[] = [
   {
-    title: 'Fórmula de Corrida de Daniels',
-    author: 'Jack Daniels',
-    cover: 'static/books/JackDaniels.jpg',
-    amazonUrl: 'https://www.amazon.com.br/Fórmula-Corrida-Daniels-Jack/dp/8565852032',
-    review:
-    "Me sinto como um discípulo de Jack Daniels, de tanto que prego sobre seus ensinos, para mim o melhor e mais completo livro sobre treinamento de corrida, para corredores dos 800m até a maratona.",
-  }, 
-  {
-    title: 'Ester na Casa da Pérsia: e a Vida Cristã no Exílio Secular',
-    author: 'Emilio Garofalo Neto',
-    cover: 'static/books/ester.jpg',
-    amazonUrl: 'https://www.amazon.com.br/Ester-Na-Casa-Pérsia-Secular/dp/6557230263',
-    review:
-    "Ester na Casa da Pérsia, Emilio Garofalo Neto transporta os leitores para um cenário tanto distante quanto surpreendentemente próximo à nossa própria época. Ao explorar a vida de Ester e do povo de Deus na antiga Pérsia do século V a.C., o autor revela notáveis semelhanças com a experiência da vida cristã no mundo secular contemporâneo.",
+    title: 'PB Viewer',
+    url: 'https://pbviewer.com',
+    category: genres.acao,
+    description: 'Conecte-se ao Strava para visualizar seus registros pessoais de corrida. Você pode classificar e filtrar distâncias de 400m a 50km.',
+    img: '/static/bookmarks/pb.png',
   },
   {
-    title: 'Advanced Marathoning',
-    author: 'Pete Pfitzinger, Scott Douglas',
-    cover: 'static/books/marathoning.jpg',
-    amazonUrl: 'https://www.amazon.com/Advanced-Marathoning-Pete-Pfitzinger/dp/0736074600',
-    review:
-    "Ótima opcão para quem está treinando para sua primeira maratona ou quer melhorar seu tempo, treinando com base no tempo alvo e volume correto para cada objetivo, um treinamento mais prazeroso e seguro.",
-  }
+    title: 'Stats Hunters',
+    url: 'https://www.statshunters.com',
+    category: genres.acao,
+    description: 'O StatsHunters oferece muitos recursos extras, para analisar suas atividades além dos seus dados do Strava.',
+  },
+  {
+    title: 'Calculadora de Pace',
+    url: 'https://www.omnicalculator.com/sports/pace',
+    category: genres.acao,
+    description: 'Calcule o ritmo para diferentes distâncias e formatos, /km, /m, /km/h...',
+  },
+  {
+    title: 'CBAT',
+    url: 'https://www.cbat.org.br/novo/index.php',
+    category: genres.resource,
+    description: 'A Confederação Brasileira de Atletismo é o órgão responsável pela organização dos eventos, pelo planejamento do esporte no Brasil.',
+    img: '/static/bookmarks/uxplanet.png',
+  },
+  {
+    title: 'Calendar Hack',
+    url: 'https://defy.org/hacks/calendarhack/?d=2024-05-19&p=c25k&s=1&u=mi',
+    category: genres.acao,
+    description: 'Planilha de treinamento de corrida, para diversas distâncias, baseados em grandes métodos de treinamentoes e livros.',
+    img: '/static/bookmarks/the-product-manifesto.png',
+  },
+  {
+    title: 'Anatomia Cirurgicamente Relevante das Regiões Medial e Lateral do Joelho',
+    url: 'https://www.sciencedirect.com/science/article/pii/S106018722200020X',
+    category: genres.aventura,
+    description: 'Compreender as relações dos aspectos mediais e laterais do joelho tem um papel clínico crítico para o atendimento ao paciente.',
+  },
+  {
+    title: 'Train like the worlds best endurance athletes',
+    url: 'https://www.youtube.com/watch?v=MALsI0mJ09I&t=2s',
+    category: genres.comedia,
+    description: 'Como "pessoas normais" podem treinar como os melhores atletas de resistência do mundo | Stephen Seiler',
+    img: '/static/bookmarks/youtube.svg',
+  },
+  {
+    title: 'Defining Training and Performance Caliber',
+    url: 'https://journals.humankinetics.com/view/journals/ijspp/17/2/article-p317.xml',
+    category: genres.crime,
+    description: 'Ao longo da literatura de ciência do esporte e medicina esportiva, o termo “elite” pode ser um dos termos mais mal usado e definido.',
+  },
+  {
+    title: 'International Olympic Committee consensus statement on load in sport and risk of injury',
+    url: 'https://bjsm.bmj.com/content/50/17/1030',
+    category: genres.article,
+    description: 'Os atletas que participam de esportes de elite estão expostos a altas cargas de treinamento e calendários de competição cada vez mais saturados. Evidências emergentes indicam que o mau gerenciamento de carga é um importante fator de risco para lesões.',
+  },
+  {
+    title: 'have i been pwned?',
+    url: 'https://haveibeenpwned.com',
+    category: genres.comedia,
+    description: 'Verifique se o seu endereço de e-mail está em um vazamento de dados.',
+  },
+  {
+    title: 'Sauce for Strava',
+    url: 'https://www.sauce.llc',
+    category: genres.romance,
+    description: 'A extensão Sauce atualiza o Strava.com com melhores informações sobre ciclismo e corrida. É uma adição JavaScript simples, leve, de código aberto e pura do lado do cliente.',
+  },
 ]
