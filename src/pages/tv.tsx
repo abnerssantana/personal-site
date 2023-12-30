@@ -52,7 +52,7 @@ export const Card = ({ title, description, url, img, category }: show) => {
   )
 }
 
-export const shows = () => {
+export const Shows = () => {
   const [current, setCurrent] = useState(null)
 
   const tabs = [
@@ -86,12 +86,12 @@ export const shows = () => {
     },
   ]
 
-  const filteredshows = shows.filter((Show) => {
+  const filteredShows = shows.filter((Show) => {
     if (current == null) {
       return true
     }
 
-    return Show.category == current
+    return show.category == current
   })
 
   return (
@@ -141,7 +141,7 @@ export const shows = () => {
               </div>
             </div>
             <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
-              {filteredshows.map((show) => {
+              {filteredShows.map((show) => {
                 return <Card key={show.title} {...show} />
               })}
             </div>
