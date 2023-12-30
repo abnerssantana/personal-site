@@ -7,7 +7,7 @@ import { Show, shows, Genres } from 'src/data/tv'
 import clsx from 'clsx'
 import { useState } from 'react'
 
-export const Card = ({ title, description, url, img, category }: show) => {
+export const Card = ({ title, description, url, img, category }: Show) => {
   const { hostname } = new URL(url)
 
   return (
