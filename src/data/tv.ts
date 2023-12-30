@@ -4,7 +4,7 @@ export enum Genres {
   romance = 'Romance',
   comedia = 'Comédia',
   crime = 'Crime',
-  aventura ='Aventura'
+  aventura ='Aventura',
 }
 
 export interface Show {
