@@ -152,4 +152,4 @@ export const Shows = () => {
   )
 }
 
-export default Tv
+export default Shows
