@@ -38,7 +38,7 @@ export const shows: show[] = [
   {
     title: 'CBAT',
     url: 'https://www.cbat.org.br/novo/index.php',
-    category: genres.resource,
+    category: genres.crime,
     description: 'A Confederação Brasileira de Atletismo é o órgão responsável pela organização dos eventos, pelo planejamento do esporte no Brasil.',
     img: '/static/bookmarks/uxplanet.png',
   },
@@ -71,7 +71,7 @@ export const shows: show[] = [
   {
     title: 'International Olympic Committee consensus statement on load in sport and risk of injury',
     url: 'https://bjsm.bmj.com/content/50/17/1030',
-    category: genres.article,
+    category: genres.romance,
     description: 'Os atletas que participam de esportes de elite estão expostos a altas cargas de treinamento e calendários de competição cada vez mais saturados. Evidências emergentes indicam que o mau gerenciamento de carga é um importante fator de risco para lesões.',
   },
   {
