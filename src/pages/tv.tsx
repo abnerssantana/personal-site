@@ -91,7 +91,7 @@ export const Shows = () => {
       return true
     }
 
-    return show.category == current
+    return Show.category == current
   })
 
   return (
