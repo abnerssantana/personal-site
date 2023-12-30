@@ -16,7 +16,7 @@ export const Card = ({ title, description, url, img, category }: Show) => {
       role="list"
       className="mt-8 grid grid-cols-1 divide-y divide-gray-200 dark:divide-gray-800">
 
-      <li key={book.title} className="flex py-8">
+      <li key={title} className="flex py-8">
         <div className="space-y-4 sm:grid sm:grid-cols-8 sm:items-start sm:gap-4 sm:space-y-0">
           <div className="aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4 w-32 sm:col-span-2 sm:w-40">
             {img ? (
