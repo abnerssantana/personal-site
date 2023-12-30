@@ -16,12 +16,12 @@ export const Card = ({ title, description, url, img, category }: show) => {
         <div className="relative overflow-hidden rounded-lg p-6">
           <div className="flex w-full items-center justify-between">
             <div className="relative h-8 w-8 object-cover">
-              {icon ? (
+              {img ? (
                 <Image
                   quality={100}
                   width={32}
                   height={32}
-                  src={icon}
+                  src={img}
                   alt={title}
                   className="rounded-full"
                 />
@@ -62,36 +62,36 @@ export const shows = () => {
     },
     {
       name: 'Ação',
-      category: genres.acao,
+      category: Genres.acao,
     },
     {
       name: 'Drama',
-      category: genres.drama,
+      category: Genres.drama,
     },
     {
       name: 'Romance',
-      category: genres.romance,
+      category: Genres.romance,
     },
     {
       name: 'Comédia',
-      category: genres.comedia,
+      category: Genres.comedia,
     },
     {
       name: 'Crime',
-      category: genres.crime,
+      category: Genres.crime,
     },
     {
       name: 'Aventura',
-      category: genres.aventura,
+      category: Genres.aventura,
     },
   ]
 
-  const filteredBookmarks = bookmarks.filter((show) => {
+  const filteredshows = shows.filter((Show) => {
     if (current == null) {
       return true
     }
 
-    return show.category == current
+    return Show.category == current
   })
 
   return (
@@ -141,7 +141,7 @@ export const shows = () => {
               </div>
             </div>
             <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
-              {filteredBookmarks.map((show) => {
+              {filteredshows.map((show) => {
                 return <Card key={show.title} {...show} />
               })}
             </div>
@@ -152,4 +152,4 @@ export const shows = () => {
   )
 }
 
-export default Bookmarks
+export default Tv
