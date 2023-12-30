@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Container, Wrapper } from 'src/components/'
 import axios from 'axios';
 
-const ProfileInfo = () => {
+const Strava = () => {
   const [stravaData, setStravaData] = useState(null);
 
   useEffect(() => {
@@ -33,7 +33,6 @@ const ProfileInfo = () => {
         <div>
           <p>Nome: {stravaData.firstname} {stravaData.lastname}</p>
           <p>Distância Total: {stravaData.all_ride_totals.distance}</p>
-          {/* Adicione mais informações conforme necessário */}
         </div>
       )}
       </div>
@@ -43,4 +42,4 @@ const ProfileInfo = () => {
   );
 };
 
-export default strava
+export default Strava
