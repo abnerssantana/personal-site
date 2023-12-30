@@ -3,7 +3,7 @@ import { Container, Wrapper, SimpleLayout } from 'src/components/'
 import { LinkIcon } from '@heroicons/react/20/solid'
 import Link from 'next/link'
 
-import { show, shows, genres } from 'src/data/tv'
+import { Show, shows, Genres } from 'src/data/tv'
 import clsx from 'clsx'
 import { useState } from 'react'
 

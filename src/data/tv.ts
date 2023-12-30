@@ -1,4 +1,4 @@
-export enum genres {
+export enum Genres {
   acao = 'Ação',
   drama = 'Drama',
   romance = 'Romance',
@@ -7,7 +7,7 @@ export enum genres {
   aventura ='Aventura'
 }
 
-export interface show {
+export interface Show {
   title: string
   url: string
   category: genres
@@ -15,7 +15,7 @@ export interface show {
   img?: string
 }
 
-export const shows: show[] = [
+export const shows: Show[] = [
   {
     title: 'PB Viewer',
     url: 'https://pbviewer.com',
