@@ -15,15 +15,15 @@ export const Card = ({ title, description, url, img, category }: Show) => {
       <div className="group relative h-full rounded-lg border border-gray-200 border-transparent transition-colors hover:border-gray-400 dark:border-gray-800 dark:hover:border-gray-500 ">
         <div className="relative overflow-hidden rounded-lg p-6">
           <div className="flex w-full items-center justify-between">
-            <div className="relative h-8 w-8 object-cover">
+            <div className="aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4 w-32 sm:col-span-2 sm:w-40">
               {img ? (
                 <Image
                   quality={100}
-                  width={32}
-                  height={32}
+                  width={160}
+                  height={140}
                   src={img}
                   alt={title}
-                  className="rounded-full"
+                  className="object-cover"
                 />
               ) : null}
             </div>
@@ -96,11 +96,11 @@ export const Shows = () => {
 
   return (
     <>
-      <Container title="Links">
+      <Container title="Minha coleção de Séries">
         <Wrapper>
           <SimpleLayout
-            title="Links"
-            intro="Uma coleção de recursos escolhidos a dedo que eu acho valiosos, explore!"
+            title="Séries"
+            intro="Séries que eu assisti e recomendo, alguns reviews também."
           >
             <div className="flex w-full items-center justify-center">
               <div className="sm:hidden">
@@ -140,7 +140,7 @@ export const Shows = () => {
                 </nav>
               </div>
             </div>
-            <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
+            <div className="mt-8 grid grid-cols-1 gap-6">
               {filteredShows.map((show) => {
                 return <Card key={show.title} {...show} />
               })}

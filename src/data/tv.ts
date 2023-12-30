@@ -21,7 +21,7 @@ export const shows: Show[] = [
     url: 'https://pbviewer.com',
     category: Genres.acao,
     description: 'Conecte-se ao Strava para visualizar seus registros pessoais de corrida. Você pode classificar e filtrar distâncias de 400m a 50km.',
-    img: '/static/bookmarks/pb.png',
+    img: 'static/books/ester.jpg',
   },
   {
     title: 'Stats Hunters',

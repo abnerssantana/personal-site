@@ -28,7 +28,7 @@ export const Bookshelf = () => {
                         height={140}
                         className="object-cover"
                         src={book.cover}
-                        alt=""
+                        alt={book.title}
                       />
                     </div>
                     <div className="sm:col-span-6 sm:ml-2">
