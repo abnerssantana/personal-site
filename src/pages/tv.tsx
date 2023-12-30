@@ -45,22 +45,16 @@ export const Card = ({ title, description, url, img, category }: Show) => {
               </p>
 
               <div className="space-x-3">
-                <Button
-                  href={url}
-                  variant="outline"
-                  target="_blank"
-                >
-                  Review
-                </Button>
+              <p className="relative z-10 mt-6 flex text-sm font-medium text-gray-700 transition dark:text-gray-500">
+            <LinkIcon className="h-5 w-5 flex-none" />
+            <span className="ml-2">{url}</span>
+          </p>
               </div>
             </div>
           </div>
         </div>
       </li>
     </ul>
-
-
-
   )
 }
 
