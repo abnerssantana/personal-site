@@ -31,21 +31,19 @@ export const bookmarks: Bookmark[] = [
     title: 'Calculadora de Pace',
     url: 'https://www.omnicalculator.com/sports/pace',
     category: Category.tool,
-    description: 'Calcule o ritmo para diferentes distâncias e formatos, /km, /m, /km/h...',
+    description: 'Calcule o ritmo para diferentes distâncias e formatos.',
   },
   {
     title: 'CBAT',
     url: 'https://www.cbat.org.br/novo/index.php',
     category: Category.resource,
     description: 'A Confederação Brasileira de Atletismo é o órgão responsável pela organização dos eventos, pelo planejamento do esporte no Brasil.',
-    icon: '/static/bookmarks/uxplanet.png',
   },
   {
     title: 'Calendar Hack',
     url: 'https://defy.org/hacks/calendarhack/?d=2024-05-19&p=c25k&s=1&u=mi',
     category: Category.tool,
     description: 'Planilha de treinamento de corrida, para diversas distâncias, baseados em grandes métodos de treinamentoes e livros.',
-    icon: '/static/bookmarks/the-product-manifesto.png',
   },
   {
     title: 'Anatomia Cirurgicamente Relevante das Regiões Medial e Lateral do Joelho',
