@@ -28,7 +28,7 @@ export const categories = [
         description:
         'Métricas de corrida avançadas como potência de corrida, eficiência de corrida, tempo de contato com o solo, equilíbrio esquerdo/direito, altura de passo, proporção de passo, comprimento de passo e cadência.',
         url: 'https://coros.com/pod',
-        icon: '/static/tools/corospod.png',
+        icon: '/static/tools/corospod.jpeg',
       },
       {
         name: 'TomatoBar',
