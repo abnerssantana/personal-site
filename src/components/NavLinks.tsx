@@ -11,8 +11,6 @@ export function NavLinks({}) {
       {[
         ['Blog', '/blog'],
         ['Livros', '/bookshelf'],
-        ['Séries', '/tv'],
-        ['Músicas', '/music'],
         ['Ferramentas', '/toolbox'],
         ['Links', '/bookmarks'],
         ['Sobre', '/about'],
