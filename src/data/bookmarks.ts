@@ -20,7 +20,7 @@ export const bookmarks: Bookmark[] = [
     url: 'https://pt.aliexpress.com/store/all-wholesale-products/911405025.html',
     category: Category.blog,
     description: 'Uniformes de atletismo utilizado por atletas patrocinados por grandes marcas ou atletas olímpicos.',
-    icon: '/static/bookmarks/dcrainmaker.ico',
+    icon: '/static/bookmarks/aliexpress.png',
   },
   {
     title: 'DC Rainmaker',
