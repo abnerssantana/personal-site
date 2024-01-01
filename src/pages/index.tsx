@@ -23,7 +23,7 @@ export const Home = () => {
                 faça menos, faça melhor, faça uma única vez e faça no lugar certo
               </p>
               
-              <h2 className="text-2xl font-normal text-gray-600 dark:text-gray-400 md:text-lg">
+              <h2 className="text-2xl font-bold text-gray-600 dark:text-gray-400 md:text-lg pt-24 md:pt-36">
                 Apoiam minha jornada na corrida:
               </h2>
               <p className="text-lg leading-8 text-gray-600 dark:text-gray-400">
