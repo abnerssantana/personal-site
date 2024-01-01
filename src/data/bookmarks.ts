@@ -18,7 +18,7 @@ export const bookmarks: Bookmark[] = [
   {
     title: 'Uniformes de corridas Aliexpress',
     url: 'https://pt.aliexpress.com/store/all-wholesale-products/911405025.html',
-    category: Category.blog,
+    category: Category.resource,
     description: 'Uniformes de atletismo utilizado por atletas patrocinados por grandes marcas ou atletas olímpicos.',
     icon: '/static/bookmarks/aliexpress.png',
   },
