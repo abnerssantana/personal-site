@@ -30,12 +30,6 @@ export const categories = [
         url: 'https://coros.com/pod',
         icon: '/static/tools/corospod.jpeg',
       },
-      {
-        name: 'TomatoBar',
-        description: 'O temporizador Pomodoro mais legal do mundo para a barra de menus do macOS.',
-        url: 'https://github.com/ivoronin/TomatoBar',
-        icon: '/static/tools/tomato-bar.png',
-      },
     ],
   },
   {
