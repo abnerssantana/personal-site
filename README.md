@@ -1,19 +1,17 @@
 # VIVENDO A CORRIDA
 
-Meu site pessoal, feito Next.js, Tailwind, Prisma e Vercel. 
+My personal website, made Next.js, Tailwind, Prisma and Vercel.
 
-🌎 [vivendoacorrida.com](https://vivendoacorrida.com/)
+🌎 vivendoacorrida.com
 
-Feito para complementar o conteúdo online no YouTube https://youtube.com/@abnerssantana e compartilhar meus interesses.
+Made to complement the online content on YouTube https://youtube.com/@abnerssantana and share my interests.
 
-  - equipamentos
-  - livros
-  - links
-  - artigos
-  - séries
-  - filmes
-  - videos
-  
-Fique a vontade para utilizar em seus projetos.
+- Equipment
+- Books
+- Links
+- Articles
+- Series
+- Movies
+- Videos
 
-Baseado no projeto: https://github.com/ocordova/ocordova.me
+Feel free to use it in your projects.
