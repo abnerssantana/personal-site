@@ -23,11 +23,17 @@ export const Home = () => {
                 faça menos, faça melhor, faça uma única vez e faça no lugar certo
               </p>
               <div className="mt-8 flex justify-center gap-x-4">
+              <h2 className="text-2xl font-normal text-gray-600 dark:text-gray-400 md:text-lg">
+                Apoiam minha jornada na corrida:
+              </h2>
+              <p className="text-lg leading-8 text-gray-600 dark:text-gray-400">
+              Rafael Cordeiro, Dhyocleyson, Marcus vinicius e Ivan Simei
+              </p>
                 <Link
-                  href="/blog"
+                  href="https://www.youtube.com/channel/UCKl5xev9VFkTV0YTHO74DIQ/join"
                   className="inline-flex items-center rounded-lg border border-transparent px-4 py-1.5 text-sm font-semibold text-gray-700 transition-colors hover:border-gray-400 dark:text-gray-100 "
                 >
-                  Saiba mais
+                  Seja membro
                   <span
                     className="ml-1.5 text-gray-500 dark:text-gray-100"
                     aria-hidden="true"
