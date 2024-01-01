@@ -7,6 +7,38 @@ export interface Tool {
 
 export const categories = [
   {
+    name: 'Corrida',
+    tools: [
+      {
+        name: 'Coros Pace 2',
+        description:
+          "Coros é a marca que me conquistou, relógios com as mais recentes tecnologia, plataforma com muitos recursos únicos, atualizações de melhores constantes. A minha versão é a do Eliud Kipchoge.",
+        url: 'https://www.polar.com/br/sensores/sensor-de-frequencia-cardiaca/h10',
+        icon: '/static/tools/corospace2.png',
+      },
+      {
+        name: 'Polar H10',
+        description:
+          'Para quem quer dados com precisão sobre treinamento, ter uma cinta de frequencia cardiaca é fundamental, a melhor opção é a Polar.',
+        url: 'https://www.blackmagicdesign.com/br/products/davinciresolve',
+        icon: '/static/tools/polarh10.png',
+      },
+      {
+        name: 'Coros Pod',
+        description:
+        'Métricas de corrida avançadas como potência de corrida, eficiência de corrida, tempo de contato com o solo, equilíbrio esquerdo/direito, altura de passo, proporção de passo, comprimento de passo e cadência.',
+        url: 'https://coros.com/pod',
+        icon: '/static/tools/corospod.png',
+      },
+      {
+        name: 'TomatoBar',
+        description: 'O temporizador Pomodoro mais legal do mundo para a barra de menus do macOS.',
+        url: 'https://github.com/ivoronin/TomatoBar',
+        icon: '/static/tools/tomato-bar.png',
+      },
+    ],
+  },
+  {
     name: 'Apps',
     tools: [
       {
