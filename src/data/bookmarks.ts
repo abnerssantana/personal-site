@@ -3,6 +3,7 @@ export enum Category {
   resource = 'Fonte',
   tool = 'Ferramenta',
   video = 'Vídeo',
+  blog = 'Blog',
 }
 
 export interface Bookmark {
@@ -14,6 +15,20 @@ export interface Bookmark {
 }
 
 export const bookmarks: Bookmark[] = [
+  {
+    title: 'Uniformes de corridas Aliexpress',
+    url: 'https://pt.aliexpress.com/store/all-wholesale-products/911405025.html',
+    category: Category.blog,
+    description: 'Uniformes de atletismo utilizado por atletas patrocinados por grandes marcas ou atletas olímpicos.',
+    icon: '/static/bookmarks/dcrainmaker.ico',
+  },
+  {
+    title: 'DC Rainmaker',
+    url: 'https://www.dcrainmaker.com/about-me',
+    category: Category.blog,
+    description: 'O melhor analista de equipamentos esportivos, relógios, monitores, sensores e apps.',
+    icon: '/static/bookmarks/dcrainmaker.ico',
+  },
   {
     title: 'PB Viewer',
     url: 'https://pbviewer.com',
@@ -31,7 +46,7 @@ export const bookmarks: Bookmark[] = [
     title: 'Calculadora de Pace',
     url: 'https://www.omnicalculator.com/sports/pace',
     category: Category.tool,
-    description: 'Calcule o ritmo para diferentes distâncias e formatos.',
+    description: 'Calcule o ritmo para diferentes distâncias e formatos. Muito bom para descobrir ritmos para determinados tempos e distâncias. Funciona muito bem mobile',
   },
   {
     title: 'CBAT',
