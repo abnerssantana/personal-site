@@ -16,6 +16,13 @@ export interface Bookmark {
 
 export const bookmarks: Bookmark[] = [
   {
+    title: 'David Goggins: How to Build Immense Inner Strength',
+    url: 'https://www.youtube.com/watch?v=nDLb8_wgX50',
+    category: Category.video,
+    description: 'Excelente podcast com David Goggins sobre construir força interior.',
+    icon: '/static/bookmarks/youtube.svg',
+  },
+  {
     title: 'Uniformes de corridas Aliexpress',
     url: 'https://pt.aliexpress.com/store/all-wholesale-products/911405025.html',
     category: Category.resource,
