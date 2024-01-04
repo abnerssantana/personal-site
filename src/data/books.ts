@@ -10,7 +10,7 @@ export const books: Book[] = [
   {
     title: 'Ayrton. O Heroi Revelado',
     author: 'Ernesto Rodrigues',
-    cover: 'static/books/ayrton-heroi-revelado.jpeg',
+    cover: 'static/books/ayrton-heroi-revelado.jpg',
     amazonUrl: 'https://www.amazon.com.br/Ayrton-Heroi-Revelado-Ernesto-Rodrigues/dp/8573026022?&_encoding=UTF8&tag=abnerssantana-20&linkCode=ur2&linkId=bd0a112d7725862cd582ecd2840d15af&camp=1789&creative=9325',
     review:
     "Este é um ótimo livro sobre a história do Ayrton Senna, aborda desde sua infância até seu status de herói nacional, explorando seus feitos nas pistas e sua influência fora delas.",
