@@ -39,7 +39,7 @@ export const categories = [
         name: 'HRV4Training',
         description:
           "Insights sobre Variabilidade da Frequência Cardíaca (HRV) para ajudá-lo a quantificar o estresse, melhorar o equilíbrio de treinamento e estilo de vida, e melhorar seu desempenho.",
-        url: '',
+        url: 'https://www.hrv4training.com',
         icon: '/static/tools/hrv4training.png',
       },
       {
