@@ -36,6 +36,13 @@ export const categories = [
     name: 'Apps',
     tools: [
       {
+        name: 'HRV4Training',
+        description:
+          "Insights sobre Variabilidade da Frequência Cardíaca (HRV) para ajudá-lo a quantificar o estresse, melhorar o equilíbrio de treinamento e estilo de vida, e melhorar seu desempenho.",
+        url: '',
+        icon: '/static/tools/hrv4training.png',
+      },
+      {
         name: 'Affinity Photo 2',
         description:
           "Diferente do Photoshop da Adobe que tem um custo mensal, o Affinity trabalha com licenciamento de software, o que é mais barato para uso pessoal, até mesmo corporativo, ferramenta completa e com recursos diferentes. Curva de aprendizado pequena.",
