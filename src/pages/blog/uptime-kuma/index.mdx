@@ -1,6 +1,7 @@
 import { ArticleLayout } from 'src/components'
 import Image from 'next/image'
 import kuma from 'public/static/blog/uptimekuma.jpg'
+import kuma from 'page-status-kuma-uptime.png'
 
 export const meta = {
   author: 'Abner Santana',
@@ -12,9 +13,9 @@ export const meta = {
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
-<Image src={kuma} alt="Uptime Kuma" />
-
 Uptime Kuma destaca-se como uma ferramenta de monitoramento auto-hospedada, notável por sua facilidade de uso e modernidade. Enquanto existem diversos sistemas de monitoramento gratuitos, como o conhecido Zabbix, a escolha pelo Uptime Kuma é respaldada por sua praticidade, rapidez e interface amigável.
+
+<Image src={kuma} alt="Uptime Kuma" />
 
 A implementação do Uptime Kuma é simplificada, pois roda em um container do Docker. Essa escolha não apenas facilita a instalação, mas também otimiza os recursos necessários para manter a ferramenta em pleno funcionamento. A interface web é intuitiva, tornando a compreensão e navegação acessíveis mesmo para usuários menos experientes.
 
@@ -22,24 +23,26 @@ Dentro da plataforma, é possível adicionar sites ou servidores para monitorar,
 
 Destaca-se a capacidade de criar notificações personalizadas para diversos serviços, com uma lista abrangente de opções de configuração disponíveis.
 
-Páginas de Status
+## Páginas de Status
 
 Uma funcionalidade relevante do Uptime Kuma é a possibilidade de criar páginas de status com monitores específicos. Essas páginas proporcionam aos clientes uma visão detalhada dos serviços oferecidos, exibindo o status individual de cada um deles em uma única página dedicada.
 
-⭐ Principais Recursos
+<Image src={kumapage} alt="Uptime Kuma" />
 
--Monitoramento de uptime para HTTP(s) / TCP / HTTP(s) Keyword / HTTP(s) Json Query / Ping / DNS Record / Push / Steam Game Server / Docker Containers
--Interface moderna e reativa, proporcionando uma experiência rápida
--Notificações via Telegram, Discord, Gotify, Slack, Pushover, Email (SMTP) e mais de 90 serviços de notificação
--Intervalos de 20 segundos para monitoramento
--Suporte a múltiplos idiomas
--Múltiplas páginas de status
--Associação de páginas de status a domínios específicos
--Gráfico de ping
--Informações sobre certificados
--Suporte a proxy
--Autenticação de dois fatores (2FA)
+## ⭐ Principais Recursos
 
-Conforme destacado pelo desenvolvedor responsável, <a href="https://github.com/louislam" target="_blank">Louis Lam</a>, trata-se de uma solução "Zero-config". Basta copiar o código de instalação do Docker e começar a utilizar a ferramenta em poucos minutos. Para mais detalhes sobre a instalação, consulte a <a href="https://github.com/louislam/uptime-kuma/" target="_blank">página oficial do projeto no Github</a>.
+- Monitoramento de uptime para HTTP(s) / TCP / HTTP(s) Keyword / HTTP(s) Json Query / Ping / DNS Record / Push / Steam Game Server / Docker Containers
+- Interface moderna e reativa, proporcionando uma experiência rápida
+- Notificações via Telegram, Discord, Gotify, Slack, Pushover, Email (SMTP) e mais de 90 serviços de notificação
+- Intervalos de 20 segundos para monitoramento
+- Suporte a múltiplos idiomas
+- Múltiplas páginas de status
+- Associação de páginas de status a domínios específicos
+- Gráfico de ping
+- Informações sobre certificados
+- Suporte a proxy
+- Autenticação de dois fatores (2FA)
 
-Experimente agora o Uptime Kuma nesse link, e veja na prática como otimizar o monitoramento e garantir a estabilidade dos seus serviços.
+Conforme destacado pelo desenvolvedor responsável, **<a href="https://github.com/louislam" target="_blank">Louis Lam</a>**, trata-se de uma solução "Zero-config". Basta copiar o código de instalação do Docker e começar a utilizar a ferramenta em poucos minutos. Para mais detalhes sobre a instalação, consulte a **<a href="https://github.com/louislam/uptime-kuma/" target="_blank">página oficial do projeto no Github</a>**.
+
+Experimente agora o Uptime Kuma **<a href="https://demo.uptime.kuma.pet/">Demo Uptime Kuma</a>, e veja na prática como otimizar o monitoramento e garantir a estabilidade dos seus serviços.
