@@ -1,64 +1,156 @@
 import Image from 'next/image'
-import { Container, Wrapper, SimpleLayout, Button } from 'src/components/'
-import { books } from 'src/data/books'
+import { Container, Wrapper, SimpleLayout } from 'src/components/'
+import { LinkIcon } from '@heroicons/react/20/solid'
+import Link from 'next/link'
 
-export const Bookshelf = () => {
+import { Show, shows, Genres } from 'src/data/music'
+import clsx from 'clsx'
+import { useState } from 'react'
+
+export const Card = ({ title, description, url, img, category }: Show) => {
+  const { hostname } = new URL(url)
+
+  return (
+
+    <ul
+      role="list"
+      className="mt-8 grid grid-cols-1 divide-y divide-gray-200 dark:divide-gray-800">
+
+      <li key={title} className="flex py-8">
+        <div className="space-y-4 sm:grid sm:grid-cols-8 sm:items-start sm:gap-4 sm:space-y-0">
+          <div className="aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4 w-32 sm:col-span-2 sm:w-40">
+            {img ? (
+              <Image
+                quality={100}
+                width={160}
+                height={140}
+                src={img}
+                alt={title}
+                className="object-cover"
+              />
+            ) : null}
+          </div>
+          <div className="sm:col-span-6 sm:ml-2">
+            <div className="space-y-3">
+              <div className="space-y-1">
+                <h3 className="text-lg font-bold text-gray-900 dark:text-gray-50 sm:text-xl">
+                  {title}
+                </h3>
+                <p className="text-sm font-medium text-gray-500 dark:text-gray-500">
+                  Autor: {category}
+                </p>
+              </div>
+              <p className="dark:text-gray-4000 text-justify font-sans text-sm text-gray-600 dark:text-gray-400">
+                {description}
+              </p>
+
+              <div className="space-x-3">
+              <p className="relative z-10 mt-6 flex text-sm font-medium text-gray-700 transition dark:text-gray-500">
+            <LinkIcon className="h-5 w-5 flex-none" />
+            <span className="ml-2">{url}</span>
+          </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  )
+}
+
+export const Shows = () => {
+  const [current, setCurrent] = useState(null)
+
+  const tabs = [
+    {
+      name: 'Tudo',
+      category: null,
+    },
+    {
+      name: 'Ação',
+      category: Genres.acao,
+    },
+    {
+      name: 'Drama',
+      category: Genres.drama,
+    },
+    {
+      name: 'Romance',
+      category: Genres.romance,
+    },
+    {
+      name: 'Comédia',
+      category: Genres.comedia,
+    },
+    {
+      name: 'Crime',
+      category: Genres.crime,
+    },
+    {
+      name: 'Aventura',
+      category: Genres.aventura,
+    },
+  ]
+
+  const filteredShows = shows.filter((Show) => {
+    if (current == null) {
+      return true
+    }
+
+    return Show.category == current
+  })
+
   return (
     <>
-      <Container title="Livros">
+      <Container title="Minha coleção de Séries">
         <Wrapper>
           <SimpleLayout
-            title="Livros"
-            intro="Aqui estão alguns livros que tive o prazer de ler e que recomendo.
-            Eles abrangem uma variedade de temas, desde corrida, psicologia e treinamento, 
-            até desenvolvimento pessoal, literatura cristã, histórias inspiradoras e qualquer 
-            outro que tenha capturado minha atenção. Espero que você encontre algo interessante nesta lista diversificada!"
+            title="Séries"
+            intro="Séries que eu assisti e recomendo, alguns reviews também."
           >
-            <ul
-              role="list"
-              className="mt-8 grid grid-cols-1 divide-y divide-gray-200 dark:divide-gray-800"
-            >
-              {books.map((book) => (
-                <li key={book.title} className="flex py-8">
-                  <div className="space-y-4 sm:grid sm:grid-cols-8 sm:items-start sm:gap-4 sm:space-y-0">
-                    <div className="aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4 w-32 sm:col-span-2 sm:w-40">
-                      <Image
-                        quality={100}
-                        width={160}
-                        height={140}
-                        className="object-cover"
-                        src={book.cover}
-                        alt=""
-                      />
+            <div className="flex w-full items-center justify-center">
+              <div className="sm:hidden">
+                <label htmlFor="tabs" className="sr-only">
+                  Select a tab
+                </label>
+                <select
+                  id="tabs"
+                  name="tabs"
+                  className="block w-full rounded-md border-gray-300 focus:border-gray-500 focus:ring-gray-500"
+                  defaultValue={null}
+                  onChange={(e) => setCurrent(e.target.value)}
+                >
+                  {tabs.map((tab) => (
+                    <option key={tab.name} value={tab.category}>
+                      {tab.name}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              <div className="hidden sm:block">
+                <nav className="flex space-x-4" aria-label="Tabs">
+                  {tabs.map((tab) => (
+                    <div
+                      key={tab.name}
+                      onClick={() => setCurrent(tab.category)}
+                      className={clsx(
+                        current == tab.category
+                          ? 'border border-gray-300 bg-gray-100 text-gray-800 dark:border-gray-800 dark:bg-gray-500/10 dark:text-gray-200'
+                          : 'text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300',
+                        'cursor-pointer rounded-md px-4 py-1.5 text-sm font-medium'
+                      )}
+                    >
+                      {tab.name}
                     </div>
-                    <div className="sm:col-span-6 sm:ml-2">
-                      <div className="space-y-3">
-                        <div className="space-y-1">
-                          <h3 className="text-lg font-bold text-gray-900 dark:text-gray-50 sm:text-xl">
-                            {book.title}
-                          </h3>
-                          <p className="text-sm font-medium text-gray-500 dark:text-gray-500">
-                            Autor: {book.author}
-                          </p>
-                        </div>
-                        <p className="dark:text-gray-4000 text-justify font-sans text-sm text-gray-600 dark:text-gray-400">
-                          {book.review}
-                        </p>
-                        <div className="space-x-3">
-                          <Button
-                            href={book.amazonUrl}
-                            variant="outline"
-                            target="_blank"
-                          >
-                            Amazon
-                          </Button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              ))}
-            </ul>
+                  ))}
+                </nav>
+              </div>
+            </div>
+            <div className="mt-8 grid grid-cols-1 gap-6">
+              {filteredShows.map((show) => {
+                return <Card key={show.title} {...show} />
+              })}
+            </div>
           </SimpleLayout>
         </Wrapper>
       </Container>
@@ -66,4 +158,4 @@ export const Bookshelf = () => {
   )
 }
 
-export default Bookshelf
+export default Shows
