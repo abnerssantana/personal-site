@@ -17,7 +17,7 @@ export function ArticleLayout({
 
   return (
     <>
-      <Container title={meta.title} description={meta.description}>
+      <Container title={meta.title} description={meta.description} image={meta.image}>
         <div className="xl:relative">
           <div className="mx-auto max-w-4xl">
             {back ? (
