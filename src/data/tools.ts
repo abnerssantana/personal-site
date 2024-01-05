@@ -97,8 +97,15 @@ export const categories = [
         name: 'MacBook Air M1 (2020)',
         description:
           'O chip M1 é fantástico. Ele tem potência suficiente para executar todos os aplicativos de que preciso.',
-        url: 'https://www.apple.com/mx/shop/buy-mac/macbook-air/m1-chip',
+        url: 'https://www.apple.com/br/shop/buy-mac/macbook-air/m1-chip',
         icon: '/static/tools/macbook-air-m1.png',
+      },
+      {
+        name: 'iPhone 13',
+        description:
+          'O chip M1 é fantástico. Ele tem potência suficiente para executar todos os aplicativos de que preciso.',
+        url: 'https://www.apple.com/br/shop/buy-iphone/iphone-13',
+        icon: '/static/tools/iphone13.png',
       },
       {
         name: 'LG 25" Monitor Ultra Wide FHD',
@@ -117,7 +124,7 @@ export const categories = [
     ],
   },
   {
-    name: 'Audio',
+    name: 'Audio e Video',
     tools: [
       {
         name: 'Jaybird Vista',
