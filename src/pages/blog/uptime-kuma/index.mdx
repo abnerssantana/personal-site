@@ -1,6 +1,6 @@
 import { ArticleLayout } from 'src/components'
 import Image from 'next/image'
-import uptime from 'public/static/blog/uptimekuma.jpg'
+import kuma from 'public/static/blog/uptimekuma.jpg'
 
 export const meta = {
   author: 'Abner Santana',
@@ -8,10 +8,11 @@ export const meta = {
   title: 'Monitoramento de sites e servidores: Uptime Kuma',
   image: '/static/blog/uptimekuma.jpg',
   description: 'Uptime Kuma destaca-se como uma ferramenta de monitoramento auto-hospedada, notável por sua facilidade de uso e modernidade'
+}
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
-<Image src={uptime} alt="Don L" />
+<Image src={kuma} alt="Uptime Kuma" />
 
 Uptime Kuma destaca-se como uma ferramenta de monitoramento auto-hospedada, notável por sua facilidade de uso e modernidade. Enquanto existem diversos sistemas de monitoramento gratuitos, como o conhecido Zabbix, a escolha pelo Uptime Kuma é respaldada por sua praticidade, rapidez e interface amigável.
 
