@@ -1,19 +1,33 @@
-import { useForm } from 'react-hook-form';
-import { useEffect, useState } from 'react';
-import Link from 'next/link';
-import { Container, Wrapper, SimpleLayout } from 'src/components/';
-import { getAllArticles } from 'src/lib/getAllArticles';
-import { format } from 'date-fns';
+import { useForm } from "react-hook-form";
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import { Container, Wrapper, SimpleLayout } from "src/components/";
+import { getAllArticles } from "src/lib/getAllArticles";
+import { format } from "date-fns";
 
 export const Articles = ({ articles }) => {
   const { register, handleSubmit, setValue } = useForm();
   const [filteredArticles, setFilteredArticles] = useState(articles);
+  const [availableTags, setAvailableTags] = useState([]);
+
+  useEffect(() => {
+    // Extrair todas as tags únicas dos artigos
+    const tags = [
+      ...new Set(articles.flatMap((article) => article.meta.tags || [])),
+    ];
+    setAvailableTags(tags);
+  }, [articles]);
 
   const onSubmit = (data) => {
     const searchTerm = data.search.toLowerCase();
-    const filtered = articles.filter((article) =>
-      article.title.toLowerCase().includes(searchTerm) ||
-      article.description.toLowerCase().includes(searchTerm)
+    const selectedTags = data.tags || [];
+
+    const filtered = articles.filter(
+      (article) =>
+        (article.meta.title.toLowerCase().includes(searchTerm) ||
+          article.meta.description.toLowerCase().includes(searchTerm)) &&
+        (selectedTags.length === 0 ||
+          selectedTags.every((tag) => article.meta.tags.includes(tag)))
     );
     setFilteredArticles(filtered);
   };
@@ -26,17 +40,19 @@ export const Articles = ({ articles }) => {
     <>
       <Container title="Blog">
         <Wrapper>
-
           <SimpleLayout
             title="Meus pensamentos"
             intro="Corrida, tecnologia, reflexões e um pouco de choro/drama as vezes..."
           >
-            <form onSubmit={handleSubmit(onSubmit)} className="mb-4 flex items-center">
+            <form
+              onSubmit={handleSubmit(onSubmit)}
+              className="mb-4 flex items-center"
+            >
               <input
                 type="text"
                 id="search"
                 placeholder="Pesquisar artigos..."
-                {...register('search')}
+                {...register("search")}
                 className="w-11/12 text-sm leading-6 px-3 py-1.5 font-medium text-gray-700 
                 rounded-lg transition-colors delay-150 hover:text-gray-900 hover:delay-[0ms] 
                 dark:text-gray-400 dark:hover:text-gray-100 border-gray-500 dark:border-gray-500 
@@ -76,7 +92,7 @@ export const Articles = ({ articles }) => {
                     dateTime={article.datetime}
                     className="relative z-10 order-first mb-3 mt-1 flex items-center text-sm text-gray-500 dark:text-gray-500 md:block"
                   >
-                    {format(new Date(article.date), 'dd/MM/yyyy')}
+                    {format(new Date(article.date), "dd/MM/yyyy")}
                   </time>
                 </article>
               ))}

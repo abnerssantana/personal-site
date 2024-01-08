@@ -44,7 +44,6 @@ export function ArticleLayout({
                 </time>
               </header>
               <Prose className="mt-8 text-justify">{children}</Prose>
-              <span>{meta.tags}</span>
             </article>
           </div>
         </div>
