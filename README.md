@@ -1,6 +1,6 @@
 # VIVENDO A CORRIDA
 
-My personal website, made Next.js, Tailwind, Prisma and Vercel.
+My personal website, made Next.js, Tailwind and Vercel.
 
 🌎 vivendoacorrida.com
 
