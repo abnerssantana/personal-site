@@ -22,18 +22,22 @@ export const Card = ({ title, description, url, img, category }: Show) => {
             {img ? (
               <Image
                 quality={100}
-                width={160}
-                height={140}
+                width={200}
+                height={200}
                 src={img}
                 alt={title}
-                className="object-cover"
+                style={{
+                  aspectRatio: "200/200",
+                  objectFit: "cover",
+                }}
+                className="object-cover w-full h-60 rounded-lg"
               />
             ) : null}
           </div>
           <div className="sm:col-span-6 sm:ml-2">
             <div className="space-y-3">
               <div className="space-y-1">
-                <h3 className="text-lg font-bold text-gray-900 dark:text-gray-50 sm:text-xl">
+                <h3 className="text-lg font-bold text-gray-900 dark:text-gray-50 sm:text-xl mt-4">
                   {title}
                 </h3>
                 <p className="text-sm font-medium text-gray-500 dark:text-gray-500">
