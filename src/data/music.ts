@@ -15,7 +15,7 @@ export interface Album {
   img?: string 
 }
 
-export const songs: Album[] = [
+export const albuns: Album[] = [
   {
     title: 'Bohemian Rhapsody',
     url: 'https://www.youtube.com/watch?v=fJ9rUzIMcZQ',
