@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import { Container, Wrapper, SimpleLayout, Button } from 'src/components/';
-import { LinkIcon } from '@heroicons/react/20/solid';
 import Link from 'next/link';
 import { Album, albums, Genres } from 'src/data/music';
 import clsx from 'clsx';
@@ -51,6 +50,7 @@ export const SongCard = ({ title, description, spotify, deezer, img, category }:
                 href={deezer}
                 variant="outline"
                 target="_blank"
+                className="ml-6"
               >
                 Deezer
               </Button>
