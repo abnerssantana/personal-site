@@ -7,7 +7,7 @@ export enum Genres {
   classical = 'Classical',
 }
 
-export interface Song {
+export interface Album {
   title: string
   url: string
   category: Genres
@@ -15,7 +15,7 @@ export interface Song {
   img?: string 
 }
 
-export const songs: Song[] = [
+export const songs: Album[] = [
   {
     title: 'Bohemian Rhapsody',
     url: 'https://www.youtube.com/watch?v=fJ9rUzIMcZQ',
