@@ -13,7 +13,7 @@ export const SongCard = ({ title, description, url, img, category }: Album) => {
   return (
     <div
       key={title}
-      className="my-custom-card flex flex-col items-center bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md p-4"
+      className="my-custom-card flex flex-col items-center bg-white dark:bg-gray-800 rounded-lg overflow-hidden border p-4"
     >
       <div className="w-full aspect-w-3 aspect-h-2 mb-4">
         {img ? (
