@@ -7,7 +7,6 @@ import clsx from 'clsx';
 import { useState } from 'react';
 
 export const SongCard = ({ title, description, spotify, deezer, img, category }: Album) => {
-  const { hostname } = new URL(url);
 
   return (
     <div
