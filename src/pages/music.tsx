@@ -2,7 +2,6 @@ import Image from 'next/image';
 import { Container, Wrapper, SimpleLayout, Button } from 'src/components/';
 import { LinkIcon } from '@heroicons/react/20/solid';
 import Link from 'next/link';
-
 import { Album, albums, Genres } from 'src/data/music';
 import clsx from 'clsx';
 import { useState } from 'react';
@@ -34,7 +33,7 @@ export const SongCard = ({ title, description, url, img, category }: Album) => {
               {title}
             </h3>
             <p className="text-sm font-medium text-gray-500 dark:text-gray-500">
-              Artista: {category}
+               Gênero: {category}
             </p>
           </div>
           <p className="dark:text-gray-4000 text-justify font-sans text-sm text-gray-600 dark:text-gray-400">
@@ -54,7 +53,6 @@ export const SongCard = ({ title, description, url, img, category }: Album) => {
         </div>
       </div>
     </div>
-
   );
 };
 
@@ -94,8 +92,8 @@ export const Albums = () => {
       <Container title="Minha coleção de Álbuns">
         <Wrapper>
           <SimpleLayout
-            title="Álbuns"
-            intro="Álbuns que eu ouvi e recomendo, alguns reviews também."
+            title="Playlists"
+            intro="Playlists que gosto de ouvir, para correr, trabalhar e curtir."
           >
             <div className="flex w-full items-center justify-center">
               <div className="sm:hidden">
