@@ -3,62 +3,61 @@ import { Container, Wrapper, SimpleLayout } from 'src/components/'
 import { LinkIcon } from '@heroicons/react/20/solid'
 import Link from 'next/link'
 
-import { Show, shows, Genres } from 'src/data/music'
+import { Album, albums, Genres } from 'src/data/music'  // Assuming you have an "Album" type and an "albums" array
 import clsx from 'clsx'
 import { useState } from 'react'
 
-export const Card = ({ title, description, url, img, category }: Show) => {
+export const SongCard = ({ title, description, url, img, category }: Song) => {
   const { hostname } = new URL(url)
 
   return (
-
-    <ul role="list" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-6xl">
-    <li key={title} class="flex flex-col items-center bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md">
-      <div class="space-y-4 sm:grid sm:grid-cols-8 sm:items-start sm:gap-4 sm:space-y-0">
-        <div class="aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4 w-32 sm:col-span-2 sm:w-40">
-          {img ? (
-            <Image
-              quality={100}
-              width={200}
-              height={200}
-              src={img}
-              alt={title}
-              style={{
-                aspectRatio: "200/200",
-                objectFit: "cover",
-              }}
-              class="object-cover w-full h-60 rounded-lg"
-            />
-          ) : null}
-        </div>
-        <div class="sm:col-span-6 sm:ml-2">
-          <div class="space-y-3">
-            <div class="space-y-1">
-              <h3 class="text-lg font-bold text-gray-900 dark:text-gray-50 sm:text-xl mt-4">
-                {title}
-              </h3>
-              <p class="text-sm font-medium text-gray-500 dark:text-gray-500">
-                Autor: {category}
+    <ul role="list" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-6xl">
+      <li key={title} className="flex flex-col items-center bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md">
+        <div className="space-y-4 sm:grid sm:grid-cols-8 sm:items-start sm:gap-4 sm:space-y-0">
+          <div className="aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4 w-32 sm:col-span-2 sm:w-40">
+            {img ? (
+              <Image
+                quality={100}
+                width={200}
+                height={200}
+                src={img}
+                alt={title}
+                style={{
+                  aspectRatio: "200/200",
+                  objectFit: "cover",
+                }}
+                className="object-cover w-full h-60 rounded-lg"
+              />
+            ) : null}
+          </div>
+          <div className="sm:col-span-6 sm:ml-2">
+            <div className="space-y-3">
+              <div className="space-y-1">
+                <h3 className="text-lg font-bold text-gray-900 dark:text-gray-50 sm:text-xl mt-4">
+                  {title}
+                </h3>
+                <p className="text-sm font-medium text-gray-500 dark:text-gray-500">
+                  Artista: {category}
+                </p>
+              </div>
+              <p className="dark:text-gray-4000 text-justify font-sans text-sm text-gray-600 dark:text-gray-400">
+                {description}
               </p>
-            </div>
-            <p class="dark:text-gray-4000 text-justify font-sans text-sm text-gray-600 dark:text-gray-400">
-              {description}
-            </p>
-            <div class="space-x-3">
-              <p class="relative z-10 mt-6 flex text-sm font-medium text-gray-700 transition dark:text-gray-500">
-                <LinkIcon class="h-5 w-5 flex-none" />
-                <span class="ml-2">{url}</span>
-              </p>
+              <div className="space-x-3">
+                <p className="relative z-10 mt-6 flex text-sm font-medium text-gray-700 transition dark:text-gray-500">
+                  <LinkIcon className="h-5 w-5 flex-none" />
+                  <span className="ml-2">{url}</span>
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </li>
-  </ul>
-  
+      </li>
+    </ul>
+  )
 }
 
-export const Shows = () => {
+export const Albums = () => {
   const [current, setCurrent] = useState(null)
 
   const tabs = [
@@ -67,46 +66,35 @@ export const Shows = () => {
       category: null,
     },
     {
-      name: 'Ação',
-      category: Genres.acao,
+      name: 'Rock',
+      category: Genres.rock,
     },
     {
-      name: 'Drama',
-      category: Genres.drama,
+      name: 'Pop',
+      category: Genres.pop,
     },
     {
-      name: 'Romance',
-      category: Genres.romance,
+      name: 'Hip Hop',
+      category: Genres.hipHop,
     },
-    {
-      name: 'Comédia',
-      category: Genres.comedia,
-    },
-    {
-      name: 'Crime',
-      category: Genres.crime,
-    },
-    {
-      name: 'Aventura',
-      category: Genres.aventura,
-    },
+    // Add more genres as needed
   ]
 
-  const filteredShows = shows.filter((Show) => {
+  const filteredAlbums = albums.filter((Album) => {
     if (current == null) {
       return true
     }
 
-    return Show.category == current
+    return Album.category == current
   })
 
   return (
     <>
-      <Container title="Minha coleção de Séries">
+      <Container title="Minha coleção de Álbuns">
         <Wrapper>
           <SimpleLayout
-            title="Séries"
-            intro="Séries que eu assisti e recomendo, alguns reviews também."
+            title="Álbuns"
+            intro="Álbuns que eu ouvi e recomendo, alguns reviews também."
           >
             <div className="flex w-full items-center justify-center">
               <div className="sm:hidden">
@@ -147,8 +135,8 @@ export const Shows = () => {
               </div>
             </div>
             <div className="mt-8 grid grid-cols-1 gap-6">
-              {filteredShows.map((show) => {
-                return <Card key={show.title} {...show} />
+              {filteredAlbums.map((album) => {
+                return <SongCard key={album.title} {...album} />
               })}
             </div>
           </SimpleLayout>
@@ -158,4 +146,4 @@ export const Shows = () => {
   )
 }
 
-export default Shows
+export default Albums

@@ -1,13 +1,13 @@
 export enum Genres {
-  acao = 'Ação',
-  drama = 'Drama',
-  romance = 'Romance',
-  comedia = 'Comédia',
-  crime = 'Crime',
-  aventura ='Aventura',
+  rock = 'Rock',
+  pop = 'Pop',
+  hipHop = 'Hip Hop',
+  electronic = 'Electronic',
+  jazz = 'Jazz',
+  classical = 'Classical',
 }
 
-export interface Show {
+export interface Song {
   title: string
   url: string
   category: Genres
@@ -15,75 +15,47 @@ export interface Show {
   img?: string 
 }
 
-export const shows: Show[] = [
+export const songs: Song[] = [
   {
-    title: 'PB Viewer',
-    url: 'https://pbviewer.com',
-    category: Genres.acao,
-    description: 'Conecte-se ao Strava para visualizar seus registros pessoais de corrida. Você pode classificar e filtrar distâncias de 400m a 50km.',
-    img: 'static/books/ester.jpg',
+    title: 'Bohemian Rhapsody',
+    url: 'https://www.youtube.com/watch?v=fJ9rUzIMcZQ',
+    category: Genres.rock,
+    description: 'A legendary rock ballad by Queen, known for its operatic sections and iconic guitar solos.',
+    img: 'static/music/bohemian_rhapsody.jpg',
   },
   {
-    title: 'Stats Hunters',
-    url: 'https://www.statshunters.com',
-    category: Genres.acao,
-    description: 'O StatsHunters oferece muitos recursos extras, para analisar suas atividades além dos seus dados do Strava.',
+    title: 'Blinding Lights',
+    url: 'https://www.youtube.com/watch?v=4NRXx6U8ABQ',
+    category: Genres.pop,
+    description: 'A popular pop song by The Weeknd, characterized by its synthwave and '80s-inspired sound.',
+    img: 'static/music/blinding_lights.jpg',
   },
   {
-    title: 'Calculadora de Pace',
-    url: 'https://www.omnicalculator.com/sports/pace',
-    category: Genres.acao,
-    description: 'Calcule o ritmo para diferentes distâncias e formatos, /km, /m, /km/h...',
+    title: 'Sicko Mode',
+    url: 'https://www.youtube.com/watch?v=6ONRf7h3Mdk',
+    category: Genres.hipHop,
+    description: 'A rap song by Travis Scott featuring Drake, known for its unconventional structure and energetic beats.',
+    img: 'static/music/sicko_mode.jpg',
   },
   {
-    title: 'CBAT',
-    url: 'https://www.cbat.org.br/novo/index.php',
-    category: Genres.crime,
-    description: 'A Confederação Brasileira de Atletismo é o órgão responsável pela organização dos eventos, pelo planejamento do esporte no Brasil.',
-    img: '/static/bookmarks/uxplanet.png',
+    title: 'Strobe',
+    url: 'https://www.youtube.com/watch?v=tKi9Z-f6qX4',
+    category: Genres.electronic,
+    description: 'An electronic music masterpiece by Deadmau5, famous for its progressive house elements and mesmerizing melodies.',
+    img: 'static/music/strobe.jpg',
   },
   {
-    title: 'Calendar Hack',
-    url: 'https://defy.org/hacks/calendarhack/?d=2024-05-19&p=c25k&s=1&u=mi',
-    category: Genres.acao,
-    description: 'Planilha de treinamento de corrida, para diversas distâncias, baseados em grandes métodos de treinamentoes e livros.',
-    img: '/static/bookmarks/the-product-manifesto.png',
+    title: 'So What',
+    url: 'https://www.youtube.com/watch?v=Bchx4oj7VFU',
+    category: Genres.jazz,
+    description: 'A classic jazz composition by Miles Davis, known for its improvisational style and bold trumpet work.',
+    img: 'static/music/so_what.jpg',
   },
   {
-    title: 'Anatomia Cirurgicamente Relevante das Regiões Medial e Lateral do Joelho',
-    url: 'https://www.sciencedirect.com/science/article/pii/S106018722200020X',
-    category: Genres.aventura,
-    description: 'Compreender as relações dos aspectos mediais e laterais do joelho tem um papel clínico crítico para o atendimento ao paciente.',
+    title: 'Moonlight Sonata',
+    url: 'https://www.youtube.com/watch?v=4Tr0otuiQuU',
+    category: Genres.classical,
+    description: 'A timeless classical piece by Beethoven, renowned for its emotional depth and piano virtuosity.',
+    img: 'static/music/moonlight_sonata.jpg',
   },
-  {
-    title: 'Train like the worlds best endurance athletes',
-    url: 'https://www.youtube.com/watch?v=MALsI0mJ09I&t=2s',
-    category: Genres.comedia,
-    description: 'Como "pessoas normais" podem treinar como os melhores atletas de resistência do mundo | Stephen Seiler',
-    img: '/static/bookmarks/youtube.svg',
-  },
-  {
-    title: 'Defining Training and Performance Caliber',
-    url: 'https://journals.humankinetics.com/view/journals/ijspp/17/2/article-p317.xml',
-    category: Genres.crime,
-    description: 'Ao longo da literatura de ciência do esporte e medicina esportiva, o termo “elite” pode ser um dos termos mais mal usado e definido.',
-  },
-  {
-    title: 'International Olympic Committee consensus statement on load in sport and risk of injury',
-    url: 'https://bjsm.bmj.com/content/50/17/1030',
-    category: Genres.romance,
-    description: 'Os atletas que participam de esportes de elite estão expostos a altas cargas de treinamento e calendários de competição cada vez mais saturados. Evidências emergentes indicam que o mau gerenciamento de carga é um importante fator de risco para lesões.',
-  },
-  {
-    title: 'have i been pwned?',
-    url: 'https://haveibeenpwned.com',
-    category: Genres.comedia,
-    description: 'Verifique se o seu endereço de e-mail está em um vazamento de dados.',
-  },
-  {
-    title: 'Sauce for Strava',
-    url: 'https://www.sauce.llc',
-    category: Genres.romance,
-    description: 'A extensão Sauce atualiza o Strava.com com melhores informações sobre ciclismo e corrida. É uma adição JavaScript simples, leve, de código aberto e pura do lado do cliente.',
-  },
-]
+];
