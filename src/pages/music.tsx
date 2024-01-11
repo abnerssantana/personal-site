@@ -1,19 +1,20 @@
-import Image from 'next/image'
-import { Container, Wrapper, SimpleLayout } from 'src/components/'
-import { LinkIcon } from '@heroicons/react/20/solid'
-import Link from 'next/link'
+import Image from 'next/image';
+import { Container, Wrapper, SimpleLayout } from 'src/components/';
+import { LinkIcon } from '@heroicons/react/20/solid';
+import Link from 'next/link';
 
-import { Album, albums, Genres } from 'src/data/music'
-import clsx from 'clsx'
-import { useState } from 'react'
+import { Album, albums, Genres } from 'src/data/music';
+import clsx from 'clsx';
+import { useState } from 'react';
 
 export const SongCard = ({ title, description, url, img, category }: Album) => {
-  const { hostname } = new URL(url)
+  const { hostname } = new URL(url);
 
   return (
-<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-6xl">
-  {songs.map(({ title, url, category, description, img }) => (
-    <div key={title} className="flex flex-col items-center bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md">
+    <div
+      key={title}
+      className="flex flex-col items-center bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md"
+    >
       <div className="space-y-4 sm:grid sm:grid-cols-8 sm:items-start sm:gap-4 sm:space-y-0">
         <div className="aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4 w-32 sm:col-span-2 sm:w-40">
           {img ? (
@@ -24,8 +25,8 @@ export const SongCard = ({ title, description, url, img, category }: Album) => {
               src={img}
               alt={title}
               style={{
-                aspectRatio: "200/200",
-                objectFit: "cover",
+                aspectRatio: '200/200',
+                objectFit: 'cover',
               }}
               className="object-cover w-full h-60 rounded-lg"
             />
@@ -54,13 +55,11 @@ export const SongCard = ({ title, description, url, img, category }: Album) => {
         </div>
       </div>
     </div>
-  ))}
-</div>
-  )
-}
+  );
+};
 
 export const Albums = () => {
-  const [current, setCurrent] = useState(null)
+  const [current, setCurrent] = useState(null);
 
   const tabs = [
     {
@@ -78,16 +77,17 @@ export const Albums = () => {
     {
       name: 'Hip Hop',
       category: Genres.hipHop,
-    }
-  ]
+    },
+    // Add more genres as needed
+  ];
 
   const filteredAlbums = albums.filter((Album) => {
     if (current == null) {
-      return true
+      return true;
     }
 
-    return Album.category == current
-  })
+    return Album.category == current;
+  });
 
   return (
     <>
@@ -135,16 +135,16 @@ export const Albums = () => {
                 </nav>
               </div>
             </div>
-            <div className="mt-8 grid grid-cols-1 gap-6">
+            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-6xl">
               {filteredAlbums.map((album) => {
-                return <SongCard key={album.title} {...album} />
+                return <SongCard key={album.title} {...album} />;
               })}
             </div>
           </SimpleLayout>
         </Wrapper>
       </Container>
     </>
-  )
-}
+  );
+};
 
-export default Albums
+export default Albums;
