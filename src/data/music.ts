@@ -27,7 +27,7 @@ export const songs: Song[] = [
     title: 'Blinding Lights',
     url: 'https://www.youtube.com/watch?v=4NRXx6U8ABQ',
     category: Genres.pop,
-    description: 'A popular pop song by The Weeknd, characterized by its synthwave and '80s-inspired sound.',
+    description: 'A popular pop song by The Weeknd, characterized by its synthwave and 80s-inspired sound.',
     img: 'static/music/blinding_lights.jpg',
   },
   {
