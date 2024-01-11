@@ -13,7 +13,7 @@ export const SongCard = ({ title, description, url, img, category }: Album) => {
   return (
     <div
       key={title}
-      className="flex flex-col items-center bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md"
+      className="grid-cols-3 items-center bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md"
     >
       <div className="space-y-4 sm:grid sm:grid-cols-8 sm:items-start sm:gap-4 sm:space-y-0">
         <div className="aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4 w-32 sm:col-span-2 sm:w-40">
