@@ -43,7 +43,7 @@ export const SongCard = ({ title, description, spotify, deezer, img, category }:
                 href={spotify}
                 variant="outline"
                 target="_blank"
-                className="bg-green-400"
+                className="bg-green-400 text-slate-100 text-slate-950"
               >
                 Spotify
               </Button>
@@ -51,7 +51,7 @@ export const SongCard = ({ title, description, spotify, deezer, img, category }:
                 href={deezer}
                 variant="outline"
                 target="_blank"
-                className="ml-3 bg-violet-600"
+                className="ml-3 bg-violet-600 text-slate-100"
               >
                 Deezer
               </Button>
