@@ -6,7 +6,7 @@ import { Album, albums, Genres } from 'src/data/music';
 import clsx from 'clsx';
 import { useState } from 'react';
 
-export const SongCard = ({ title, description, url, img, category }: Album) => {
+export const SongCard = ({ title, description, spotify, deezer, img, category }: Album) => {
   const { hostname } = new URL(url);
 
   return (
