@@ -47,8 +47,13 @@ export const SongCard = ({ title, description, url, img, category }: Album) => {
             </p>
             <div className="space-x-3">
               <p className="relative z-10 mt-6 flex text-sm font-medium text-gray-700 transition dark:text-gray-500">
-                <LinkIcon className="h-5 w-5 flex-none" />
-                <span className="ml-2">{url}</span>
+              <Button
+                            href={url}
+                            variant="outline"
+                            target="_blank"
+                          >
+                            ► ouvir
+                          </Button>
               </p>
             </div>
           </div>

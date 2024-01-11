@@ -21,7 +21,7 @@ export const albums: Album[] = [
     url: 'https://www.youtube.com/watch?v=fJ9rUzIMcZQ',
     category: Genres.rock,
     description: 'A legendary rock ballad by Queen, known for its operatic sections and iconic guitar solos.',
-    img: 'static/music/bohemian_rhapsody.jpg',
+    img: 'static/music/bohemian_rhapsody.jpeg',
   },
   {
     title: 'Blinding Lights',
