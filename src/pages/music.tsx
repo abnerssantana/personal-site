@@ -24,11 +24,7 @@ export const SongCard = ({ title, description, url, img, category }: Album) => {
               height={200}
               src={img}
               alt={title}
-              style={{
-                aspectRatio: '200/200',
-                objectFit: 'cover',
-              }}
-              className="object-cover w-full h-60 rounded-lg"
+              className="object-cover rounded-lg"
             />
           ) : null}
         </div>
