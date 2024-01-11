@@ -12,54 +12,50 @@ export const Card = ({ title, description, url, img, category }: Show) => {
 
   return (
 
-    <ul
-      role="list"
-      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-6xl">
-
-      <li key={title} className="flex flex-col items-center">
-        <div className="space-y-4 sm:grid sm:grid-cols-8 sm:items-start sm:gap-4 sm:space-y-0">
-          <div className="aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4 w-32 sm:col-span-2 sm:w-40">
-            {img ? (
-              <Image
-                quality={100}
-                width={200}
-                height={200}
-                src={img}
-                alt={title}
-                style={{
-                  aspectRatio: "200/200",
-                  objectFit: "cover",
-                }}
-                className="object-cover w-full h-60 rounded-lg"
-              />
-            ) : null}
-          </div>
-          <div className="sm:col-span-6 sm:ml-2">
-            <div className="space-y-3">
-              <div className="space-y-1">
-                <h3 className="text-lg font-bold text-gray-900 dark:text-gray-50 sm:text-xl mt-4">
-                  {title}
-                </h3>
-                <p className="text-sm font-medium text-gray-500 dark:text-gray-500">
-                  Autor: {category}
-                </p>
-              </div>
-              <p className="dark:text-gray-4000 text-justify font-sans text-sm text-gray-600 dark:text-gray-400">
-                {description}
+    <ul role="list" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-6xl">
+    <li key={title} class="flex flex-col items-center bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md">
+      <div class="space-y-4 sm:grid sm:grid-cols-8 sm:items-start sm:gap-4 sm:space-y-0">
+        <div class="aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4 w-32 sm:col-span-2 sm:w-40">
+          {img ? (
+            <Image
+              quality={100}
+              width={200}
+              height={200}
+              src={img}
+              alt={title}
+              style={{
+                aspectRatio: "200/200",
+                objectFit: "cover",
+              }}
+              class="object-cover w-full h-60 rounded-lg"
+            />
+          ) : null}
+        </div>
+        <div class="sm:col-span-6 sm:ml-2">
+          <div class="space-y-3">
+            <div class="space-y-1">
+              <h3 class="text-lg font-bold text-gray-900 dark:text-gray-50 sm:text-xl mt-4">
+                {title}
+              </h3>
+              <p class="text-sm font-medium text-gray-500 dark:text-gray-500">
+                Autor: {category}
               </p>
-
-              <div className="space-x-3">
-              <p className="relative z-10 mt-6 flex text-sm font-medium text-gray-700 transition dark:text-gray-500">
-            <LinkIcon className="h-5 w-5 flex-none" />
-            <span className="ml-2">{url}</span>
-          </p>
-              </div>
+            </div>
+            <p class="dark:text-gray-4000 text-justify font-sans text-sm text-gray-600 dark:text-gray-400">
+              {description}
+            </p>
+            <div class="space-x-3">
+              <p class="relative z-10 mt-6 flex text-sm font-medium text-gray-700 transition dark:text-gray-500">
+                <LinkIcon class="h-5 w-5 flex-none" />
+                <span class="ml-2">{url}</span>
+              </p>
             </div>
           </div>
         </div>
-      </li>
-    </ul>
-  )
+      </div>
+    </li>
+  </ul>
+  
 }
 
 export const Shows = () => {
