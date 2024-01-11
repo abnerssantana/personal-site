@@ -13,49 +13,48 @@ export const SongCard = ({ title, description, url, img, category }: Album) => {
   return (
     <div
       key={title}
-      className="grid-cols-3 items-center bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md"
+      className="my-custom-card flex flex-col items-center bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md p-4"
     >
-      <div className="space-y-4 sm:grid sm:grid-cols-8 sm:items-start sm:gap-4 sm:space-y-0">
-        <div className="aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4 w-32 sm:col-span-2 sm:w-40">
-          {img ? (
-            <Image
-              quality={100}
-              width={200}
-              height={200}
-              src={img}
-              alt={title}
-              className="object-cover rounded-lg"
-            />
-          ) : null}
-        </div>
-        <div className="sm:col-span-6 sm:ml-2">
-          <div className="space-y-3">
-            <div className="space-y-1">
-              <h3 className="text-lg font-bold text-gray-900 dark:text-gray-50 sm:text-xl mt-4">
-                {title}
-              </h3>
-              <p className="text-sm font-medium text-gray-500 dark:text-gray-500">
-                Artista: {category}
-              </p>
-            </div>
-            <p className="dark:text-gray-4000 text-justify font-sans text-sm text-gray-600 dark:text-gray-400">
-              {description}
+      <div className="w-full aspect-w-3 aspect-h-2 mb-4">
+        {img ? (
+          <Image
+            quality={100}
+            width={200}
+            height={200}
+            src={img}
+            alt={title}
+            className="object-cover rounded-lg w-full"
+          />
+        ) : null}
+      </div>
+      <div className="sm:col-span-6 sm:ml-2">
+        <div className="space-y-3">
+          <div className="space-y-1">
+            <h3 className="text-lg font-bold text-gray-900 dark:text-gray-50 sm:text-xl mt-4">
+              {title}
+            </h3>
+            <p className="text-sm font-medium text-gray-500 dark:text-gray-500">
+              Artista: {category}
             </p>
-            <div className="space-x-3">
-              <p className="relative z-10 mt-6 flex text-sm font-medium text-gray-700 transition dark:text-gray-500">
+          </div>
+          <p className="dark:text-gray-4000 text-justify font-sans text-sm text-gray-600 dark:text-gray-400">
+            {description}
+          </p>
+          <div className="space-x-3">
+            <p className="relative z-10 mt-6 flex text-sm font-medium text-gray-700 transition dark:text-gray-500">
               <Button
-                            href={url}
-                            variant="outline"
-                            target="_blank"
-                          >
-                            ► ouvir
-                          </Button>
-              </p>
-            </div>
+                href={url}
+                variant="outline"
+                target="_blank"
+              >
+                ► ouvir
+              </Button>
+            </p>
           </div>
         </div>
       </div>
     </div>
+
   );
 };
 
@@ -136,7 +135,7 @@ export const Albums = () => {
                 </nav>
               </div>
             </div>
-            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-6xl">
+            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 w-full max-w-6xl">
               {filteredAlbums.map((album) => {
                 return <SongCard key={album.title} {...album} />;
               })}
