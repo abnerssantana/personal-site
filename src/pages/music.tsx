@@ -10,7 +10,7 @@ export const SongCard = ({ title, description, spotify, deezer, img, category }:
   return (
     <div
       key={title}
-      className="my-custom-card flex flex-col items-center bg-white dark:bg-gray-800 rounded-lg overflow-hidden border p-4"
+      className="my-custom-card flex flex-col items-center bg-white dark:bg-gray-800 rounded-lg overflow-hidden border p-4 dark:border-gray-400"
     >
       <div className="w-full aspect-w-3 aspect-h-2 mb-4">
         {img ? (
@@ -43,6 +43,7 @@ export const SongCard = ({ title, description, spotify, deezer, img, category }:
                 href={spotify}
                 variant="outline"
                 target="_blank"
+                className="bg-green-400"
               >
                 Spotify
               </Button>
@@ -50,7 +51,7 @@ export const SongCard = ({ title, description, spotify, deezer, img, category }:
                 href={deezer}
                 variant="outline"
                 target="_blank"
-                className="ml-6"
+                className="ml-3 bg-violet-600"
               >
                 Deezer
               </Button>
