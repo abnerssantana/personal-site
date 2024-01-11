@@ -10,6 +10,7 @@ export function NavLinks({}) {
     <>
       {[
         ['Blog', '/blog'],
+        ['Músicas', '/music'],
         ['Livros', '/bookshelf'],
         ['Ferramentas', '/toolbox'],
         ['Links', '/bookmarks'],

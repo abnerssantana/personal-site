@@ -169,6 +169,9 @@ export function Header() {
                             <MobileNavLink href="/blog">
                               Blog
                             </MobileNavLink>
+                            <MobileNavLink href="/music">
+                              Músicas
+                            </MobileNavLink>
                             <MobileNavLink href="/bookshelf">
                               Livros
                             </MobileNavLink>

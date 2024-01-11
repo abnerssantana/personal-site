@@ -83,7 +83,14 @@ export const Albums = () => {
       name: 'Hip Hop',
       category: Genres.hipHop,
     },
-    // Add more genres as needed
+    {
+      name: 'Electronic',
+      category: Genres.electronic,
+    },
+    {
+      name: 'MPB',
+      category: Genres.mpb,
+    },
   ];
 
   const filteredAlbums = albums.filter((Album) => {

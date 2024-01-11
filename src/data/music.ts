@@ -30,8 +30,8 @@ export const albums: Album[] = [
     title: 'Aoki Run',
     spotify: 'https://open.spotify.com/playlist/4mOzXpZt2qg3UnmFTLukB5',
     deezer: 'https://www.deezer.com/br/playlist/12252604811',
-    category: Genres.classical,
+    category: Genres.electronic,
     description: 'Músicas do DJ Steve Aoki (Steven Hiroyuki Aoki) boas para motivar sua corrida.',
-    img: 'static/music/aoki.webap',
+    img: 'static/music/aoki.webp',
   },
 ];
