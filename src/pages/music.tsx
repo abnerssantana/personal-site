@@ -107,7 +107,7 @@ export const Albums = () => {
         <Wrapper>
           <SimpleLayout
             title="Playlists"
-            intro="Playlists que gosto de ouvir, para correr, trabalhar e curtir."
+            intro="Playlists que gosto de ouvir para correr, trabalhar e curtir."
           >
             <div className="flex w-full items-center justify-center">
               <div className="sm:hidden">
