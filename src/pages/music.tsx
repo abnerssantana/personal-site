@@ -55,6 +55,14 @@ export const SongCard = ({ title, description, spotify, deezer, img, category }:
               >
                 Deezer
               </Button>
+              <Button
+                href={tidal}
+                variant="outline"
+                target="_blank"
+                className="ml-3 bg-black-600 text-slate-100"
+              >
+                Tidal
+              </Button>
             </p>
           </div>
         </div>
