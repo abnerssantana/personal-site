@@ -59,7 +59,7 @@ export const SongCard = ({ title, description, spotify, deezer, tidal, img, cate
                 href={tidal}
                 variant="outline"
                 target="_blank"
-                className="ml-3 bg-black-600 text-slate-100"
+                className="ml-3 bg-neutral-950 text-slate-100"
               >
                 Tidal
               </Button>
