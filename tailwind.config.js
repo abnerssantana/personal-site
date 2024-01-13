@@ -328,10 +328,6 @@ module.exports = {
       colors: ({ colors }) => ({
         gray: colors.neutral,
       }),
-      fontFamily: {
-        sans: ['var(--inter-font)', ...defaultTheme.fontFamily.sans],
-        serif: ['var(--bitter-font)', ...defaultTheme.fontFamily.serif],
-      },
       keyframes: {
         'fade-in': {
           from: {
