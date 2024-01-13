@@ -2,10 +2,6 @@ import { useEffect, useRef } from 'react'
 import '../styles/tailwind.css'
 import 'focus-visible'
 
-const inter = Inter({
-  subsets: ['latin'],
-})
-
 function usePrevious(value) {
   let ref = useRef()
 
