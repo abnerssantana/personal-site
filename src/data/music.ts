@@ -27,7 +27,7 @@ export const albums: Album[] = [
     deezer: 'https://www.deezer.com/br/playlist/12267682671',
     tidal: 'https://tidal.com/browse/playlist/b9e62a3a-a363-47aa-8e6b-c229734e3d02',
     category: Genres.rap,
-    description: '"Rapmobile, let's go!" Deixe o poder do rap guiar sua corrida, enquanto as rimas afiadas e os beats envolventes mantêm você no ritmo.',
+    description: '"Entre no Rapmobil!" Deixe o poder do rap guiar sua corrida, enquanto as rimas afiadas e os beats envolventes mantêm você no ritmo.',
     img: 'static/music/raprun.jpg',
   },
   {
