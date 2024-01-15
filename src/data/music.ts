@@ -22,12 +22,21 @@ export interface Album {
 
 export const albums: Album[] = [
   {
+    title: 'Rap Run',
+    spotify: 'https://open.spotify.com/playlist/7hjxR0ivKGSXAJcYmRWHqc',
+    deezer: 'https://www.deezer.com/br/playlist/12267682671',
+    tidal: 'https://tidal.com/browse/playlist/b9e62a3a-a363-47aa-8e6b-c229734e3d02',
+    category: Genres.rap,
+    description: '"Rapmobile, let's go!" Deixe o poder do rap guiar sua corrida, enquanto as rimas afiadas e os beats envolventes mantêm você no ritmo.',
+    img: 'static/music/raprun.jpg',
+  },
+  {
     title: 'Time Machine Run',
     spotify: 'https://open.spotify.com/playlist/1SPz8tLBnf5etym8A1odxp',
     deezer: 'https://www.deezer.com/br/playlist/12261762151',
     tidal: 'https://tidal.com/browse/playlist/e6ec0ce1-5bea-477e-bb9b-af0328006b9e',
     category: Genres.pop,
-    description: 'Não estamos apenas correndo; estamos dançando com a energia atemporal desses clássicos que transcenderam décadas. Aperte os cadarços, ajuste o ritmo e prepare-se para uma experiência única. Let the music move you! .',
+    description: 'Não estamos apenas correndo; estamos dançando com a energia atemporal desses clássicos que transcenderam décadas. Aperte os cadarços, ajuste o ritmo e prepare-se para uma experiência única. Let the music move you!',
     img: 'static/music/timemachine.jpg',
   },
   {
