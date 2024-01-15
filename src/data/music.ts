@@ -17,10 +17,19 @@ export interface Album {
   tidal: string
   category: Genres
   description: string
-  img?: string 
+  img?: string
 }
 
 export const albums: Album[] = [
+  {
+    title: 'Time Machine Run',
+    spotify: 'https://open.spotify.com/playlist/1SPz8tLBnf5etym8A1odxp',
+    deezer: 'https://www.deezer.com/br/playlist/12261762151',
+    tidal: 'https://tidal.com/browse/playlist/e6ec0ce1-5bea-477e-bb9b-af0328006b9e',
+    category: Genres.pop,
+    description: 'Não estamos apenas correndo; estamos dançando com a energia atemporal desses clássicos que transcenderam décadas. Aperte os cadarços, ajuste o ritmo e prepare-se para uma experiência única. Let the music move you! .',
+    img: 'static/music/timemachine.jpg',
+  },
   {
     title: 'Blessings Run',
     spotify: 'https://open.spotify.com/playlist/1SPz8tLBnf5etym8A1odxp',
@@ -61,7 +70,7 @@ export const albums: Album[] = [
     title: 'Best Brazil',
     spotify: 'https://open.spotify.com/playlist/5dgdjNXgEmbBkLLJcmlzim',
     deezer: 'https://www.deezer.com/br/playlist/12252277271',
-    tidal:'https://tidal.com/browse/playlist/456851db-85a4-46bb-b45d-8929e11d1bee',
+    tidal: 'https://tidal.com/browse/playlist/456851db-85a4-46bb-b45d-8929e11d1bee',
     category: Genres.mpb,
     description: 'Grandes sucessos brasileiros, músicas que se eternizaram durante os anos e marcaram várias gerações, esteja preparado para um momento aleatório.',
     img: 'static/music/bestbrazil.jpeg',
@@ -70,7 +79,7 @@ export const albums: Album[] = [
     title: 'Aoki Run',
     spotify: 'https://open.spotify.com/playlist/4mOzXpZt2qg3UnmFTLukB5',
     deezer: 'https://www.deezer.com/br/playlist/12252604811',
-    tidal:'https://tidal.com/browse/playlist/e2a34c80-2d0a-4cd2-9ebe-b5503b3bb5ba',
+    tidal: 'https://tidal.com/browse/playlist/e2a34c80-2d0a-4cd2-9ebe-b5503b3bb5ba',
     category: Genres.electronic,
     description: 'Músicas do DJ Steve Aoki (Steven Hiroyuki Aoki) boas para motivar sua corrida.',
     img: 'static/music/aoki.webp',
