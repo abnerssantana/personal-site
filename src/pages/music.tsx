@@ -88,8 +88,8 @@ export const Albums = () => {
       category: Genres.pop,
     },
     {
-      name: 'Hip Hop',
-      category: Genres.hipHop,
+      name: 'Rap',
+      category: Genres.rap,
     },
     {
       name: 'Electronic',
