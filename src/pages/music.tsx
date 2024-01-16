@@ -106,7 +106,7 @@ export const Albums = () => {
       return true;
     }
 
-    return Album.category == current;x
+    return Album.category == current;
   });
 
   return (
