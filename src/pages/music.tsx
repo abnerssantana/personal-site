@@ -106,12 +106,12 @@ export const Albums = () => {
       return true;
     }
 
-    return Album.category == current;
+    return Album.category == current;x
   });
 
   return (
     <>
-      <Container title="Minha coleção de Álbuns">
+      <Container title="Minha coleção de Playlists">
         <Wrapper>
           <SimpleLayout
             title="Playlists"
