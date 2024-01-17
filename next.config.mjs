@@ -1,7 +1,7 @@
-import nextMDX from '@next/mdx';
-import remarkGfm from 'remark-gfm';
-import rehypePrism from '@mapbox/rehype-prism';
-import { createSecureHeaders } from 'next-secure-headers';
+import nextMDX from '@next/mdx'
+import remarkGfm from 'remark-gfm'
+import rehypePrism from '@mapbox/rehype-prism'
+import { createSecureHeaders } from 'next-secure-headers'
 
 const nextConfig = {
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
@@ -22,8 +22,9 @@ const withMDX = nextMDX({
   },
 })
 
-module.exports = {
+export default {
   ...withMDX(nextConfig),
+  poweredByHeader: false,
 
   // Security by next-secure-headers
 
@@ -47,6 +48,5 @@ module.exports = {
       },
     ]
   },
+}
 
-  poweredByHeader: false,
-};
