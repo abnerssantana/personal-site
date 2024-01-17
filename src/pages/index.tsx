@@ -24,26 +24,16 @@ export const Home = () => {
               <p className="text-lg leading-8 text-gray-600 dark:text-gray-400">
                 faça menos, faça melhor, faça uma única vez e faça no lugar certo
               </p>
-              <p className="text-lg leading-8 text-gray-600 dark:text-gray-400">
-              <a
-                  href="https://www.strava.com/clubs/vivendoacorrida"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-lg"
-                >
-                  <FaStrava className="h-34 w-34 text-left" />{' '}
-                  <span className="text-lg">Strava</span>
+              <div class="flex justify-center items-center">
+                <a href="https://www.strava.com/clubs/vivendoacorrida" target="_blank" rel="noopener noreferrer" class="text-lg flex items-center mr-8">
+                  <FaStrava class="h-34 w-34 text-left" />
+                  <span class="text-lg">Strava</span>
                 </a>
-              <a
-                  href="https://discord.gg/9Y9Ph6dMST"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-lg"
-                >
-                  <FaDiscord className="h-34 w-34 text-left" />{' '}
-                  <span className="text-lg">Discord</span>
+                <a href="https://discord.gg/9Y9Ph6dMST" target="_blank" rel="noopener noreferrer" class="text-lg flex items-center">
+                  <FaDiscord class="h-34 w-34 text-left" />
+                  <span class="text-lg">Discord</span>
                 </a>
-              </p>
+              </div>
               <h2 className="text-2xl font-bold text-gray-600 dark:text-gray-400 md:text-lg pt-24 md:pt-36">
                 Apoie minha jornada na corrida
               </h2>
