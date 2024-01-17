@@ -10,7 +10,7 @@ export const Home = () => {
           <div className="mx-auto pb-24 pt-24 md:pb-36 md:pt-36">
             <div className="text-center">
               <h2 className="text-2xl font-normal text-gray-600 dark:text-gray-400 md:text-lg">
-                TECH - NERD - MARATHONER - YOUTUBER
+                TECH - MARATHONER - YOUTUBER
               </h2>
               <h1
                 className={clsx(
