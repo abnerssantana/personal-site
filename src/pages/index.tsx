@@ -1,6 +1,7 @@
 import clsx from 'clsx'
 import Link from 'next/link'
 import { FaDiscord } from 'react-icons/fa'
+import { FaStrava } from 'react-icons/fa'
 import { Container, Wrapper } from 'src/components/'
 
 export const Home = () => {
@@ -25,12 +26,21 @@ export const Home = () => {
               </p>
               <p className="text-lg leading-8 text-gray-600 dark:text-gray-400">
               <a
-                  href="https://github.com/abnerssantana"
+                  href="https://www.strava.com/clubs/vivendoacorrida"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center space-x-2 text-base"
                 >
-                  <FaDiscord className="h-18 w-18" />{' '}
+                  <FaStrava className="h-34 w-34" />{' '}
+                  <span className="text-sm md:hidden">Strava</span>
+                </a>
+              <a
+                  href="https://discord.gg/9Y9Ph6dMST"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center space-x-2 text-base"
+                >
+                  <FaDiscord className="h-34 w-34" />{' '}
                   <span className="text-sm md:hidden">Discord</span>
                 </a>
               </p>
