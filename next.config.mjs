@@ -1,6 +1,7 @@
 import nextMDX from '@next/mdx'
 import remarkGfm from 'remark-gfm'
 import rehypePrism from '@mapbox/rehype-prism'
+import { createSecureHeaders } from 'next-secure-headers'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -23,3 +24,24 @@ const withMDX = nextMDX({
 })
 
 export default withMDX(nextConfig)
+
+module.exports = {
+  ...nextConfig,
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: createSecureHeaders({
+          contentSecurityPolicy: {
+            directives: {
+              defaultSrc: "'self'",
+              styleSrc: ["'self'", "'unsafe-inline'"],
+              scriptSrc: ["'self'", "'unsafe-inline'"],
+              // Adicione outras diretivas conforme necessário
+            },
+          },
+        }),
+      },
+    ]
+  },
+}
