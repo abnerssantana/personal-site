@@ -29,19 +29,19 @@ export const Home = () => {
                   href="https://www.strava.com/clubs/vivendoacorrida"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center space-x-2 text-base"
+                  className="flex items-center justify-center space-x-2 text-lg"
                 >
                   <FaStrava className="h-34 w-34" />{' '}
-                  <span className="text-6xl">Strava</span>
+                  <span className="text-lg">Strava</span>
                 </a>
               <a
                   href="https://discord.gg/9Y9Ph6dMST"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center space-x-2 text-base"
+                  className="flex items-center justify-center space-x-2 text-lg"
                 >
                   <FaDiscord className="h-34 w-34" />{' '}
-                  <span className="text-6xl">Discord</span>
+                  <span className="text-lg">Discord</span>
                 </a>
               </p>
               <h2 className="text-2xl font-bold text-gray-600 dark:text-gray-400 md:text-lg pt-24 md:pt-36">
