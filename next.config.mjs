@@ -36,7 +36,8 @@ export default {
               defaultSrc: "'self'",
               styleSrc: ["'self'", "'unsafe-inline'"],
               scriptSrc: ["'self'", "'unsafe-inline'"],
-              // Adicione outras diretivas conforme necessário
+              frameSrc: ["'self'", 'www.youtube.com', 'youtube.com'],
+              connectSrc: ["'self'"],
             },
           },
         }),
