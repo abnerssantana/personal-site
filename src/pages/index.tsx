@@ -24,13 +24,13 @@ export const Home = () => {
               <p className="text-lg leading-8 text-gray-600 dark:text-gray-400">
                 faça menos, faça melhor, faça uma única vez e faça no lugar certo
               </p>
-              <div className="flex justify-center items-center">
+              <div className="flex justify-center items-center text-gray-600 pt-24 md:pt-36 dark:text-gray-400 ">
                 <a href="https://www.strava.com/clubs/vivendoacorrida" target="_blank" rel="noopener noreferrer" className="text-lg flex items-center mr-8">
-                  <FaStrava className="h-34 w-34 text-left" />
+                  <FaStrava className="h-34 w-34 text-left" />{' '}
                   <span className="text-lg">Strava</span>
                 </a>
                 <a href="https://discord.gg/9Y9Ph6dMST" target="_blank" rel="noopener noreferrer" className="text-lg flex items-center">
-                  <FaDiscord className="h-34 w-34 text-left" />
+                  <FaDiscord className="h-34 w-34 text-left" />{' '}
                   <span className="text-lg">Discord</span>
                 </a>
               </div>
