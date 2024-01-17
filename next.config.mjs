@@ -25,6 +25,8 @@ const withMDX = nextMDX({
 export default {
   ...withMDX(nextConfig),
 
+  // Security by next-secure-headers
+
   async headers() {
     return [
       {
@@ -41,21 +43,12 @@ export default {
             },
           },
           referrerPolicy: 'same-origin',
-          permissionsPolicy: {
-            features: {
-              accelerometer: "'none'",
-              ambientLightSensor: "'none'",
-              camera: "'none'",
-              geolocation: "'none'",
-              gyroscope: "'none'",
-              magnetometer: "'none'",
-              microphone: "'none'",
-              payment: "'none'",
-              usb: "'none'",
-            },
-          },
         }),
       },
     ]
   },
 }
+
+module.exports = {
+  poweredByHeader: false,
+};
