@@ -24,3 +24,25 @@ const withMDX = nextMDX({
 })
 
 export default withMDX(nextConfig)
+
+export default {
+  ...withMDX(nextConfig),
+
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: createSecureHeaders({
+          contentSecurityPolicy: {
+            directives: {
+              defaultSrc: "'self'",
+              styleSrc: ["'self'", "'unsafe-inline'"],
+              scriptSrc: ["'self'", "'unsafe-inline'"],
+              // Adicione outras diretivas conforme necessário
+            },
+          },
+        }),
+      },
+    ]
+  },
+}
