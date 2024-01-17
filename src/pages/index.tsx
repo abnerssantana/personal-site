@@ -26,12 +26,12 @@ export const Home = () => {
               </p>
               <div className="flex justify-center items-center text-gray-600 pt-24 md:pt-36 dark:text-gray-400 ">
                 <a href="https://www.strava.com/clubs/vivendoacorrida" target="_blank" rel="noopener noreferrer" className="text-lg flex items-center mr-8">
-                  <FaStrava className="h-34 w-34 text-left" />{'  '}
-                  <span className="text-lg">Strava</span>
+                  <FaStrava className="h-34 w-34 text-left" />
+                  <span className="text-lg pl-4">Strava</span>
                 </a>
                 <a href="https://discord.gg/9Y9Ph6dMST" target="_blank" rel="noopener noreferrer" className="text-lg flex items-center">
-                  <FaDiscord className="h-34 w-34 text-left" />{'  '}
-                  <span className="text-lg">Discord</span>
+                  <FaDiscord className="h-34 w-34 text-left" />
+                  <span className="text-lg pl-4">Discord</span>
                 </a>
               </div>
               <h2 className="text-2xl font-bold text-gray-600 dark:text-gray-400 md:text-lg pt-24 md:pt-36">
