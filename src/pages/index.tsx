@@ -1,5 +1,6 @@
 import clsx from 'clsx'
 import Link from 'next/link'
+import { FaDiscord } from 'react-icons/fa'
 import { Container, Wrapper } from 'src/components/'
 
 export const Home = () => {
