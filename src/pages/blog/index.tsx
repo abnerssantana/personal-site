@@ -61,7 +61,7 @@ export const Articles = ({ articles }) => {
                   key={article.slug}
                   className="md:grid md:grid-cols-4 md:items-baseline"
                 >
-                  <div className="group relative flex flex-col items-start md:col-span-3">
+                  <div className="group relative flex flex-col items-start md:col-span-7">
                     <Link href={`/blog/${article.slug}`}>
                       <h3 className="text-sm font-sans font-bold text-gray-900 dark:text-gray-100 sm:text-lg hover:text-neutral-400">
                         <span className="absolute inset-0" />
