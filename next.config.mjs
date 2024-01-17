@@ -3,7 +3,6 @@ import remarkGfm from 'remark-gfm'
 import rehypePrism from '@mapbox/rehype-prism'
 import { createSecureHeaders } from 'next-secure-headers'
 
-/** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
   reactStrictMode: true,
@@ -12,7 +11,7 @@ const nextConfig = {
   },
   images: {
     formats: ['image/avif', 'image/webp'],
-  }
+  },
 }
 
 const withMDX = nextMDX({
@@ -38,6 +37,20 @@ export default {
               scriptSrc: ["'self'", "'unsafe-inline'"],
               frameSrc: ["'self'", 'www.youtube.com', 'youtube.com'],
               connectSrc: ["'self'"],
+            },
+          },
+          referrerPolicy: 'same-origin',
+          permissionsPolicy: {
+            features: {
+              accelerometer: "'none'",
+              ambientLightSensor: "'none'",
+              camera: "'none'",
+              geolocation: "'none'",
+              gyroscope: "'none'",
+              magnetometer: "'none'",
+              microphone: "'none'",
+              payment: "'none'",
+              usb: "'none'",
             },
           },
         }),
