@@ -74,7 +74,7 @@ export const Articles = ({ articles }) => {
                   </div>
                   <time
                     dateTime={article.datetime}
-                    className="relative z-10 order-first mb-3 mt-1 flex items-center text-sm text-gray-500 dark:text-gray-500 md:block"
+                    className="relative z-10 order-first mb-3 mt-1 flex items-center text-sm text-gray-500 dark:text-gray-500"
                   >
                     {format(new Date(article.date), 'dd/MM/yyyy')}
                   </time>
