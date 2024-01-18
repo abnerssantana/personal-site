@@ -42,7 +42,6 @@ export default {
             },
           },
           referrerPolicy: 'same-origin',
-          
         }),
       },
     ]
