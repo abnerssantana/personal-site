@@ -42,22 +42,7 @@ export default {
             },
           },
           referrerPolicy: 'same-origin',
-          permissionsPolicy: {
-            features: {
-              accelerometer: "'none'",
-              ambientLightSensor: "'none'",
-              camera: "'none'",
-              geolocation: "'none'",
-              gyroscope: "'none'",
-              magnetometer: "'none'",
-              microphone: "'none'",
-              payment: "'none'",
-              usb: "'none'",
-              encryptedMedia: "'none'",
-              clipboardWrite: "'none'",
-              autoplay: "'none'",
-            },
-          },
+          
         }),
       },
     ]
