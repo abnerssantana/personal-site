@@ -37,7 +37,8 @@ export default {
               scriptSrc: ["'self'", "'unsafe-inline'"],
               frameSrc: ["'self'", 'www.youtube.com', 'youtube.com'],
               connectSrc: ["'self'"],
-              xssProtection: "'sanitize'"
+              xssProtection: "'sanitize'",
+              fullscreen: ["'self'", 'www.youtube.com', 'youtube.com'],
             },
           },
           referrerPolicy: 'same-origin',
