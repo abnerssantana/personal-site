@@ -25,8 +25,6 @@ const withMDX = nextMDX({
 export default {
   ...withMDX(nextConfig),
 
-  // Security by next-secure-headers
-
   async headers() {
     return [
       {
@@ -43,25 +41,21 @@ export default {
             },
           },
           referrerPolicy: 'same-origin',
+          permissionsPolicy: {
+            features: {
+              accelerometer: "'none'",
+              ambientLightSensor: "'none'",
+              camera: "'none'",
+              geolocation: "'none'",
+              gyroscope: "'none'",
+              magnetometer: "'none'",
+              microphone: "'none'",
+              payment: "'none'",
+              usb: "'none'",
+            },
+          },
         }),
       },
     ]
   },
-}
-
-export const corsHeaders = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
-  "Access-Control-Allow-Headers": "Content-Type, Authorization",
-};
-
-
-export async function OPTIONS(req: NextRequest) {
-  return NextResponse.json({}, { headers: corsHeaders });
-}
-
-export async function POST(req: NextRequest) {
-  // ...
-
-  return NextResponse.json({ foo: "bar" }, { headers: corsHeaders });
 }
