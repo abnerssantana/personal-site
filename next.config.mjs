@@ -33,8 +33,8 @@ export default {
           contentSecurityPolicy: {
             directives: {
               defaultSrc: "'self'",
-              styleSrc: "'self'",
-              scriptSrc: "'self'",
+              styleSrc: ["'self'", "'unsafe-inline'"],
+              scriptSrc: ["'self'", "'unsafe-inline'"],
               frameSrc: ["'self'", 'www.youtube.com', 'youtube.com'],
               connectSrc: ["'self'"],
               xssProtection: "'sanitize'"
