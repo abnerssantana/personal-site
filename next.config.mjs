@@ -24,7 +24,6 @@ const withMDX = nextMDX({
 
 export default {
   ...withMDX(nextConfig),
-  poweredByHeader: false,
 
   // Security by next-secure-headers
 
