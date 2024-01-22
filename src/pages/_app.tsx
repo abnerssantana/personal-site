@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import '../styles/tailwind.css'
 import 'focus-visible'
 
@@ -19,6 +20,7 @@ export default function App({ Component, pageProps, router }) {
       <main className={``}>
         <Component previousPathname={previousPathname} {...pageProps} />
       </main>
+      <Analytics />
     </>
   )
 }
