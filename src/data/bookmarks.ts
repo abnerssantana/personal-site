@@ -16,6 +16,13 @@ export interface Bookmark {
 
 export const bookmarks: Bookmark[] = [
   {
+    title: 'Eliud Kipchoge & David Bedford | Full Address and Q&A | Oxford Union',
+    url: 'https://www.youtube.com/watch?v=nDLb8_wgX50',
+    category: Category.video,
+    description: 'O famoso discurso sobre disciplina de Eliud Kipchoge em Oxford Union.',
+    icon: '/static/bookmarks/youtube.svg',
+  },
+  {
     title: 'David Goggins: How to Build Immense Inner Strength',
     url: 'https://www.youtube.com/watch?v=nDLb8_wgX50',
     category: Category.video,
