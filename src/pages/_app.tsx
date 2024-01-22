@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import '../styles/tailwind.css'
 import 'focus-visible'
 
@@ -21,6 +22,7 @@ export default function App({ Component, pageProps, router }) {
         <Component previousPathname={previousPathname} {...pageProps} />
       </main>
       <Analytics />
+      <SpeedInsights/>
     </>
   )
 }
