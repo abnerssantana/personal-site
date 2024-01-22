@@ -22,7 +22,7 @@ export default function App({ Component, pageProps, router }) {
         <Component previousPathname={previousPathname} {...pageProps} />
       </main>
       <Analytics />
-      <SpeedInsights/>
+      <SpeedInsights />
     </>
   )
 }
