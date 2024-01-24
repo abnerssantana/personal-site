@@ -1,6 +1,6 @@
 import { useForm } from 'react-hook-form';
 import { useEffect, useState } from 'react';
-import { Link } from 'next/link';
+import Link from 'next/link';
 import { Container, Wrapper, SimpleLayout } from 'src/components/';
 import { getAllArticles } from 'src/lib/getAllArticles';
 
