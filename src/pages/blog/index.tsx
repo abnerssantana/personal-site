@@ -53,7 +53,7 @@ export const Articles = ({ articles }) => {
             </form>
             <ul
               role="list"
-              className="mt-8 mb-8 grid grid-cols-1 gap-x-12 gap-y-4 sm:grid-cols-1 divide-y divide-gray-200 dark:divide-gray-800"
+              className="mt-8 grid grid-cols-1 gap-x-12 gap-y-4 sm:grid-cols-1 divide-y divide-gray-200 dark:divide-gray-800"
             >
               {filteredArticles.map((article) => (
                 <article
@@ -66,7 +66,7 @@ export const Articles = ({ articles }) => {
                         <span className="absolute inset-0" />
                         {article.title}
                       </h3>
-                      <p className="mt-1 line-clamp-3 font-sans text-sm leading-6 text-gray-600 dark:text-gray-400">
+                      <p className="mt-1 mb-8 line-clamp-3 font-sans text-sm leading-6 text-gray-600 dark:text-gray-400">
                         {article.description}
                       </p>
                     </Link>
