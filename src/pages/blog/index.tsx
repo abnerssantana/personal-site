@@ -78,6 +78,7 @@ export const Articles = ({ articles }) => {
                   >
                     {format(new Date(article.date), 'dd/MM/yyyy')}
                   </time>
+                  <hr/>
                 </article>
               ))}
             </ul>
