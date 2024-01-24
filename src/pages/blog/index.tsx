@@ -72,13 +72,13 @@ export const Articles = ({ articles }) => {
                       </p>
                     </Link>
                   </div>
-                  <hr></hr>
                   <time
-                    dateTime={article.datetime}
+                    dateTime={article.date}
                     className="relative z-10 mb-3 mt-1 flex items-center text-sm text-gray-500 dark:text-gray-500 md:block"
                   >
-                    {format(new Date(article.datetime), 'dd/MM/yyyy')}
+                    {format(new Date(article.date), 'dd/MM/yyyy')}
                   </time>
+                  <hr />
                 </article>
               ))}
             </ul>
