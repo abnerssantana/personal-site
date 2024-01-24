@@ -53,7 +53,7 @@ export const Articles = ({ articles }) => {
             </form>
             <ul
               role="list"
-              className="mt-8 mb-3 grid grid-cols-1 gap-x-12 gap-y-4 sm:grid-cols-1 divide-y divide-gray-200 dark:divide-gray-800"
+              className="mt-8 mb-8 grid grid-cols-1 gap-x-12 gap-y-4 sm:grid-cols-1 divide-y divide-gray-200 dark:divide-gray-800"
             >
               {filteredArticles.map((article) => (
                 <article
