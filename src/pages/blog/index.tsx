@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Container, Wrapper, SimpleLayout } from 'src/components/';
 import { getAllArticles } from 'src/lib/getAllArticles';
-import { format } from 'date-fns';
 
 export const Articles = ({ articles }) => {
   const { register, handleSubmit, setValue } = useForm();
@@ -66,18 +65,20 @@ export const Articles = ({ articles }) => {
                       <h3 className="text-sm font-sans font-bold text-gray-900 dark:text-gray-100 sm:text-lg hover:text-neutral-400">
                         <span className="absolute inset-0" />
                         {article.title}
-                      </h3> <time
-                    dateTime={article.date}
-                    className="relative z-10 mb-3 mt-1 flex items-center text-sm text-gray-500 dark:text-gray-500 md:block"
-                  >
-                    {format(new Date(article.date), 'dd/MM/yyyy')}
-                  </time>
+                      </h3>
                       <p className="mt-1 line-clamp-3 font-sans text-sm leading-6 text-gray-600 dark:text-gray-400">
                         {article.description}
                       </p>
                     </Link>
                   </div>
-                  <hr />
+           
+                  <time
+                    dateTime={article.date}
+                    className="relative z-10 mb-3 mt-1 flex items-center text-sm text-gray-500 dark:text-gray-500 md:block"
+                  >
+                    {new Date(article.date)}
+                  </time>
+                  
                 </article>
               ))}
             </ul>
