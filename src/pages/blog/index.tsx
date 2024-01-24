@@ -73,12 +73,13 @@ export const Articles = ({ articles }) => {
                     </Link>
                   </div>
                   <hr></hr>
+              
                   <time
-                    dateTime={article.datetime}
-                    className="relative z-10 mb-3 mt-1 flex items-center text-sm text-gray-500 dark:text-gray-500 md:block"
-                  > 
-                    {format(new Date(article.datetime), 'dd de MMMM de yyyy')}
-                  </time>
+              dateTime={`${article.metadata.date}T00:00:00`}
+              className="relative z-10 order-first mb-3 mt-1 flex items-center text-sm text-gray-500 dark:text-gray-500 md:block"
+            >
+              {article.metadata.date}
+            </time>
                 </article>
               ))}
             </ul>
