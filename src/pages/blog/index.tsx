@@ -1,11 +1,11 @@
 import { useForm } from 'react-hook-form';
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
+import { Link } from 'next/link';
 import { Container, Wrapper, SimpleLayout } from 'src/components/';
 import { getAllArticles } from 'src/lib/getAllArticles';
 
 export const Articles = ({ articles }) => {
-  const { register, handleSubmit, setValue } = useForm();
+  const { register, handleSubmit } = useForm();
   const [filteredArticles, setFilteredArticles] = useState(articles);
 
   const onSubmit = (data) => {
@@ -28,7 +28,7 @@ export const Articles = ({ articles }) => {
 
           <SimpleLayout
             title="Meus pensamentos"
-            intro="Corrida, tecnologia, reflexões e um pouco de choro/drama as vezes..."
+            intro="Corrida, tecnologia, reflexões e um pouco de choro/drama às vezes..."
           >
             <form onSubmit={handleSubmit(onSubmit)} className="mb-4 flex items-center">
               <input
@@ -71,14 +71,6 @@ export const Articles = ({ articles }) => {
                       </p>
                     </Link>
                   </div>
-           
-                  <time
-                    dateTime={article.date}
-                    className="relative z-10 mb-3 mt-1 flex items-center text-sm text-gray-500 dark:text-gray-500 md:block"
-                  >
-                    {new Date(article.date)}
-                  </time>
-                  
                 </article>
               ))}
             </ul>
