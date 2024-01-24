@@ -70,72 +70,72 @@ export const About = () => {
           <div className="mt-2 space-y-4 text-lg font-bold text-gray-900 dark:text-gray-50 sm:text-xl">
             <p>
               1ª Etapa Copa Paulista de Meio-Fundo e Fundo
-                <span className="text-sm font-medium text-gray-500 dark:text-gray-500">5.000 metros rasos – 9º colocado – 15:42</span>
+                <p className="text-sm font-medium text-gray-500 dark:text-gray-500">5.000 metros rasos – 9º colocado – 15:42</p>
             </p>
 
             <p>
               35ª 10Km Tribuna FM – UNILUS (05/12/2021)
-              <span className="text-sm font-medium text-gray-500 dark:text-gray-500">10 km – 1º colocado na categoria 32:02 – 18º Geral</span>
+              <p className="text-sm font-medium text-gray-500 dark:text-gray-500">10 km – 1º colocado na categoria 32:02 – 18º Geral</p>
             </p>
 
             <p>
               97º CAMPEONATO PAULISTA ADULTO DE ATLETISMO (26/06/2021)
-              <span className="text-sm font-medium text-gray-500 dark:text-gray-500">10.000 metros rasos – 11º colocado – 33:19</span>
+              <p className="text-sm font-medium text-gray-500 dark:text-gray-500">10.000 metros rasos – 11º colocado – 33:19</p>
             </p>
 
             <p>
               97º CAMPEONATO PAULISTA ADULTO DE ATLETISMO (25/06/2021)
-              <span className="text-sm font-medium text-gray-500 dark:text-gray-500">5.000 metros rasos – 21º colocado – 15:53</span>
+              <p className="text-sm font-medium text-gray-500 dark:text-gray-500">5.000 metros rasos – 21º colocado – 15:53</p>
             </p>
 
             <p>
               9° TORNEIO ATLETISMO PAULISTA - ADULTO E SUB-20 (03/10/2020)
-              <span className="text-sm font-medium text-gray-500 dark:text-gray-500">10.000 metros rasos - 2º colocado – 33:25</span>
+              <p className="text-sm font-medium text-gray-500 dark:text-gray-500">10.000 metros rasos - 2º colocado – 33:25</p>
             </p>
 
             <p>
               Unimed Run Rio Preto 2019 (29/09/2019)
-              <span className="text-sm font-medium text-gray-500 dark:text-gray-500">10 km – 2º colocado - 35:39</span>
+              <p className="text-sm font-medium text-gray-500 dark:text-gray-500">10 km – 2º colocado - 35:39</p>
             </p>
 
             <p>
               MARATONA INTERNACIONAL DE FLORIPA (25/08/2019)
-              <span className="text-sm font-medium text-gray-500 dark:text-gray-500">meia maratona (21km) – 3º colocado na categoria 17º colocado - 01:17:06</span>
+              <p className="text-sm font-medium text-gray-500 dark:text-gray-500">meia maratona (21km) – 3º colocado na categoria 17º colocado - 01:17:06</p>
             </p>
 
             <p>
               14ª Corrida Seven Rio Preto Shopping (07/07/2019)
-              <span className="text-sm font-medium text-gray-500 dark:text-gray-500">10 km - 4º colocado - 33:48</span>
+              <p className="text-sm font-medium text-gray-500 dark:text-gray-500">10 km - 4º colocado - 33:48</p>
             </p>
 
             <p>
               MARATONA INTERNACIONAL DA CIDADE DE FLORIANÓPOLIS (23/06/2019)
-              <span className="text-sm font-medium text-gray-500 dark:text-gray-500">meia maratona (21km) – 1º colocado na categoria - 8º colocado geral – 01:18:13</span>
+              <p className="text-sm font-medium text-gray-500 dark:text-gray-500">meia maratona (21km) – 1º colocado na categoria - 8º colocado geral – 01:18:13</p>
             </p>
 
             <p>
               TRACK&FIELD RUN Iguatemi SJRP (26/05/2019)
-              <span className="text-sm font-medium text-gray-500 dark:text-gray-500">10 km – 5º colocado – 34:56</span>
+              <p className="text-sm font-medium text-gray-500 dark:text-gray-500">10 km – 5º colocado – 34:56</p>
             </p>
 
             <p>
               EMS Sprint Triathlon 2019 – 1ª Etapa (06/04/2019)
-              <span className="text-sm font-medium text-gray-500 dark:text-gray-500">5 km – 2º colocado – 17:07</span>
+              <p className="text-sm font-medium text-gray-500 dark:text-gray-500">5 km – 2º colocado – 17:07</p>
             </p>
 
             <p>
               13ª MEIA MARATONA INTERNACIONAL DE SÃO PAULO (17/02/2019)
-              <span className="text-sm font-medium text-gray-500 dark:text-gray-500">meia maratona (21km) – 1º colocado na categoria e 27º Geral 01:17:28</span>
+              <p className="text-sm font-medium text-gray-500 dark:text-gray-500">meia maratona (21km) – 1º colocado na categoria e 27º Geral 01:17:28</p>
             </p>
 
             <p>
               1° Corrida MRV Rio Prado – Rio Preto (20/01/2019)
-              <span className="text-sm font-medium text-gray-500 dark:text-gray-500">5 km - 2º colocado – 17:02</span>
+              <p className="text-sm font-medium text-gray-500 dark:text-gray-500">5 km - 2º colocado – 17:02</p>
             </p>
 
             <p>
               SEGURALTA HALF MARATHON SJP CITY 2019 (10/06/2018)
-              <span className="text-sm font-medium text-gray-500 dark:text-gray-500">meia maratona (21km) – 4º colocado – 01:22:01</span>
+              <p className="text-sm font-medium text-gray-500 dark:text-gray-500">meia maratona (21km) – 4º colocado – 01:22:01</p>
             </p>
 
           </div>
