@@ -77,7 +77,7 @@ export const Articles = ({ articles }) => {
                     dateTime={article.datetime}
                     className="relative z-10 mb-3 mt-1 flex items-center text-sm text-gray-500 dark:text-gray-500 md:block"
                   > 
-                    {format(new Date(article.datetime), 'dd de MMMM de yyyy', { locale: ptBR })}
+                    {format(new Date(article.datetime), 'dd de MMMM de yyyy')}
                   </time>
                 </article>
               ))}
