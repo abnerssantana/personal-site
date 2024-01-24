@@ -1,0 +1,3 @@
+Contact: mailto:abnssantana@gmail.com
+Expires: 2025-12-31T03:00:00.000Z
+Preferred-Languages: en, pt-br
