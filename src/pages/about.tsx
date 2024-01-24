@@ -61,16 +61,16 @@ export const About = () => {
               , como nos velhos tempos.
             </p>
           </div>
-          <div>
-            <h2 className="mt-8 font-sans text-lg font-medium tracking-wide text-gray-900 dark:text-gray-100 sm:text-xl">
+          <h2 className="mt-8 font-sans text-lg font-medium tracking-wide text-gray-900 dark:text-gray-100 sm:text-xl">
               Últimas competições
             </h2>
             <p className="mt-2 font-sans text-sm text-gray-600 dark:text-gray-400 sm:text-base">
               Últimas corridas que participei:
             </p>
+          <div className="mt-2 space-y-4 text-justify font-sans text-sm text-gray-600 dark:text-gray-400 sm:text-base">
             <p>
               1ª Etapa Copa Paulista de Meio-Fundo e Fundo
-                <span>5.000 metros rasos – 9º colocado – 15:42</span>
+                <span className="underline decoration-sky-500">5.000 metros rasos – 9º colocado – 15:42</span>
             </p>
 
             <p>
