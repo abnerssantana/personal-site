@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Container, Wrapper, SimpleLayout } from 'src/components/';
 import { getAllArticles } from 'src/lib/getAllArticles';
+import { format } from 'date-fns';
 
 export const Articles = ({ articles }) => {
   const { register, handleSubmit, setValue } = useForm();
@@ -73,10 +74,10 @@ export const Articles = ({ articles }) => {
                   </div>
                   <hr></hr>
                   <time
-                    dateTime={'${article.metadata.date}T00:00:00'}
+                    dateTime={article.datetime}
                     className="relative z-10 mb-3 mt-1 flex items-center text-sm text-gray-500 dark:text-gray-500 md:block"
                   >
-                    {article.metadata.date}
+                    {format(new Date(article.datetime), 'dd/MM/yyyy')}
                   </time>
                 </article>
               ))}
