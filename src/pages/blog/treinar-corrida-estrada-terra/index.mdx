@@ -9,12 +9,13 @@ export const meta = {
   image: '/static/blog/estrada-terra.jpg',
   description:
   'Quando se inicia a prática da corrida, muitos corredores têm uma preferência por superfícies mais tradicionais, como o asfalto, evitando as trilhas de terra. No entanto, ao longo do tempo, percebem que correr na terra vai além do desafio inicial, proporcionando uma série de benefícios físicos e mentais. Neste artigo, exploraremos as razões pelas quais correr na terra pode ser uma experiência transformadora para os corredores.'
+}
 
-<Image src={pic} alt="Abner correndo em estrada de terra" />
+export default (props) => <ArticleLayout meta={meta} {...props} />
 
 Quando se inicia a prática da corrida, muitos corredores têm uma preferência por superfícies mais tradicionais, como o asfalto, evitando as trilhas de terra. No entanto, ao longo do tempo, percebem que correr na terra vai além do desafio inicial, proporcionando uma série de benefícios físicos e mentais. Neste artigo, exploraremos as razões pelas quais correr na terra pode ser uma experiência transformadora para os corredores.
 
-export default (props) => <ArticleLayout meta={meta} {...props} />
+<Image src={pic} alt="Abner correndo em estrada de terra" />
 
 ***
 
