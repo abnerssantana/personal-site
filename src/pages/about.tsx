@@ -59,12 +59,12 @@ export const About = () => {
                 E-mail
               </TextLink>
               , como nos velhos tempos.
-            </p>
+            </p> 
           </div>
           <h2 className="mt-8 font-sans text-xl font-medium tracking-wide text-gray-900 dark:text-gray-100 sm:text-2xl">
               Últimas competições
             </h2>
-          <div className="mt-2 text-left space-y-4 text-xl font-medium text-gray-900 dark:text-gray-50 sm:text-2xl">
+          <div className="mt-2 text-left uppercase space-y-4 text-lg font-medium text-gray-900 dark:text-gray-50 sm:text-xl">
             <p>
               1ª Etapa Copa Paulista de Meio-Fundo e Fundo
                 <p className="text-sm font-medium text-gray-500 dark:text-gray-500">5.000 metros rasos – 9º colocado – 15:42</p>
