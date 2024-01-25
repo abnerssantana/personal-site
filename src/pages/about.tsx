@@ -59,15 +59,24 @@ export const About = () => {
                 E-mail
               </TextLink>
               , como nos velhos tempos.
-            </p> 
+            </p>
           </div>
           <h2 className="mt-8 font-sans text-xl font-medium tracking-wide text-gray-900 dark:text-gray-100 sm:text-2xl">
-              Últimas competições
-            </h2>
+            Últimas competições
+          </h2>
           <div className="mt-2 text-left uppercase space-y-4 text-lg font-medium text-gray-900 dark:text-gray-50 sm:text-lg">
+          <p>
+              Virtual TCS New York City Marathon Challenge</p>
+            <p className="text-sm font-medium text-gray-500 dark:text-gray-500">42 km - Desafio – 2:49:42 - 04/11/2023</p>
+            <p>
+              38ª MARATONA INTERNACIONAL DE PORTO ALEGRE</p>
+            <p className="text-sm font-medium text-gray-500 dark:text-gray-500">42 km – 6º colocado na categoria – 2:34:08 - 18º Geral - 04/06/2023</p>
+            <p>
+              Meia Maratona São Paulo 2023</p>
+            <p className="text-sm font-medium text-gray-500 dark:text-gray-500">21 km – 1º Geral "amadores" – 2:34:08 - 05/02/2023</p>
             <p>
               1ª Etapa Copa Paulista de Meio-Fundo e Fundo
-                <p className="text-sm font-medium text-gray-500 dark:text-gray-500">5.000 metros – 9º colocado – 15:42</p>
+              <p className="text-sm font-medium text-gray-500 dark:text-gray-500">5.000 metros – 9º colocado – 15:42</p>
             </p>
 
             <p>
@@ -134,7 +143,6 @@ export const About = () => {
               SEGURALTA HALF MARATHON SJP CITY 2018
               <p className="text-sm font-medium text-gray-500 dark:text-gray-500">21km – 4º colocado – 01:22:01 - 10/06/2018</p>
             </p>
-
           </div>
           <div>
             <h2 className="mt-8 font-sans text-lg font-medium tracking-wide text-gray-900 dark:text-gray-100 sm:text-xl">
