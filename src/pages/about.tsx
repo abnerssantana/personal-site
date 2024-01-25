@@ -76,7 +76,7 @@ export const About = () => {
             <p className="text-sm font-medium text-gray-500 dark:text-gray-500">21 km – 1º Geral "amadores" – 2:34:08 - 05/02/2023</p>
             <p>
               1ª Etapa Copa Paulista de Meio-Fundo e Fundo
-              <p className="text-sm font-medium text-gray-500 dark:text-gray-500">5.000 metros – 9º colocado – 15:42</p>
+              <p className="text-sm font-medium text-gray-500 dark:text-gray-500">5.000 metros – 9º colocado – 15:42 - 19/03/2022</p>
             </p>
 
             <p>
