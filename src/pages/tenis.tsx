@@ -12,7 +12,7 @@ export const TenisCard = ({ title, description, link, review, img, category, kms
       key={title}
       className="my-custom-card flex flex-col items-center overflow-hidden p-4 rounded-lg border border-gray-200 border-transparent transition-colors hover:border-gray-400 dark:border-gray-800 dark:hover:border-gray-500"
     >
-      <div className="w-full aspect-w-3 aspect-h-2 mb-4">
+      <div className="w-1/3 float-left aspect-w-3 aspect-h-2 mb-4">
         {img ? (
           <Image
             quality={100}
