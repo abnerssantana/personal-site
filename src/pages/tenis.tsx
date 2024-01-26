@@ -23,8 +23,8 @@ export const TenisCard = ({ title, description, link, review, img, category, kms
             />
           ) : null}
         </div>
-        <div className="col-span-2 ...">
-        <div className="space-y-3">
+        <div className="col-span-2">
+        <div className="mt-2">
           <div className="space-y-1">
             <h3 className="text-lg font-bold text-gray-900 dark:text-gray-50 sm:text-xl mt-4">
               {title}
