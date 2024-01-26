@@ -8,12 +8,13 @@ import { useState } from 'react';
 export const TenisCard = ({ title, description, link, img, category }: Shoes) => {
 
   return (
+
     <div
       key={title}
       className="my-custom-card flex flex-col items-center bg-white dark:bg-gray-800 rounded-lg overflow-hidden border p-4 dark:border-gray-400"
     >
-      <div className="w-full aspect-w-3 aspect-h-2 mb-4">
-        {img ? (
+      <div className="grid grid-rows-3 grid-flow-col gap-4">
+        <div className="row-span-3 ..."> {img ? (
           <Image
             quality={100}
             width={200}
@@ -22,36 +23,31 @@ export const TenisCard = ({ title, description, link, img, category }: Shoes) =>
             alt={title}
             className="object-cover rounded-lg w-full"
           />
-        ) : null}
-      </div>
-      <div className="sm:col-span-6 sm:ml-2">
-        <div className="space-y-3">
-          <div className="space-y-1">
-            <h3 className="text-lg font-bold text-gray-900 dark:text-gray-50 sm:text-xl mt-4">
-              {title}
-            </h3>
-            <p className="text-sm font-medium text-gray-500 dark:text-gray-500">
-               Categoria: {category}
-            </p>
-          </div>
-          <p className="dark:text-gray-4000 text-justify font-sans text-sm text-gray-600 dark:text-gray-400">
-            {description}
+        ) : null}</div>
+        <div className="row-span-2 ...">  <h3 className="text-lg font-bold text-gray-900 dark:text-gray-50 sm:text-xl mt-4">
+          {title}
+        </h3><p className="text-sm font-medium text-gray-500 dark:text-gray-500">
+            Categoria: {category}
+          </p></div>
+        <div className="row-span-2 col-span-2 ..."> <p className="dark:text-gray-4000 text-justify font-sans text-sm text-gray-600 dark:text-gray-400">
+          {description}
+        </p>
+
+          <p className="relative z-10 mt-6 flex text-sm font-medium text-gray-700 transition dark:text-gray-500">
+            <Button
+              href={Link}
+              variant="outline"
+              target="_blank"
+              className="bg-green-400 text-slate-950 dark:text-slate-950"
+            >
+              Comprar
+            </Button>
           </p>
-          <div className="space-x-3">
-            <p className="relative z-10 mt-6 flex text-sm font-medium text-gray-700 transition dark:text-gray-500">
-              <Button
-                href={Link}
-                variant="outline"
-                target="_blank"
-                className="bg-green-400 text-slate-950 dark:text-slate-950"
-              >
-                Comprar
-              </Button>
-            </p>
-          </div>
+
         </div>
       </div>
     </div>
+
   );
 };
 
@@ -87,11 +83,11 @@ export const Tenis = () => {
 
   return (
     <>
-      <Container title="Minha coleção de Playlists">
+      <Container title="Tênis de corrida">
         <Wrapper>
           <SimpleLayout
-            title="Playlists"
-            intro="Playlists que gosto de ouvir para correr, trabalhar e curtir."
+            title="Tênis"
+            intro="Os tênis que utilizei para correr desde da primeira corrida."
           >
             <div className="flex w-full items-center justify-center">
               <div className="sm:hidden">
