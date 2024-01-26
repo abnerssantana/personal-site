@@ -4,7 +4,7 @@ export enum Cat {
   dailytrainer = 'Daily trainer'
 }
 
-export interface Tenis {
+export interface Shoes {
   title: string
   link: string
   category: Cat
@@ -12,7 +12,7 @@ export interface Tenis {
   img?: string
 }
 
-export const ten: Tenis[] = [
+export const ten: Shoes[] = [
   {
     title: 'Rap Run',
     link: 'https://open.spotify.com/playlist/7hjxR0ivKGSXAJcYmRWHqc',

@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import { Container, Wrapper, SimpleLayout, Button } from 'src/components/';
 import Link from 'next/link';
-import { Tenis, ten, Cat } from 'src/data/tenis';
+import { Shoes, ten, Cat } from 'src/data/tenis';
 import clsx from 'clsx';
 import { useState } from 'react';
 
-export const TenisCard = ({ title, description, link, img, category }: Tenis) => {
+export const ShoesCard = ({ title, description, link, img, category }: Shoes) => {
 
   return (
     <div
@@ -55,7 +55,7 @@ export const TenisCard = ({ title, description, link, img, category }: Tenis) =>
   );
 };
 
-export const Tenis = () => {
+export const Shoes = () => {
   const [current, setCurrent] = useState(null);
 
   const tabs = [
@@ -73,12 +73,12 @@ export const Tenis = () => {
     },
   ];
 
-  const filteredTenis= ten.filter((Tenis) => {
+  const filteredShoes= ten.filter((Shoes) => {
     if (current == null) {
       return true;
     }
 
-    return Tenis.category == current;
+    return Shoes.category == current;
   });
 
   return (
@@ -128,8 +128,8 @@ export const Tenis = () => {
               </div>
             </div>
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 w-full max-w-6xl">
-              {filteredTenis.map((ten) => {
-                return <TenisCard key={ten.title} {...ten} />;
+              {filteredShoes.map((ten) => {
+                return <ShoesCard key={ten.title} {...ten} />;
               })}
             </div>
           </SimpleLayout>
@@ -139,4 +139,4 @@ export const Tenis = () => {
   );
 };
 
-export default Tenis;
+export default Shoes;
