@@ -11,7 +11,7 @@ export const TenisCard = ({ title, description, link, review, img, category, kms
     <div key={title}
       className="my-custom-card grid grid-cols-3 gap-4 items-center overflow-hidden p-4 rounded-lg border border-gray-200 border-transparent transition-colors hover:border-gray-400 dark:border-gray-800 dark:hover:border-gray-500"
     >
-      <div className="col-span-3 flex flex-col items-center justify-center">
+      <div className="col-span-2 md:col-span-1">
         <div className="aspect-w-3 aspect-h-2">
           {img ? (
             <Image
@@ -24,7 +24,7 @@ export const TenisCard = ({ title, description, link, review, img, category, kms
             />
           ) : null}
         </div>
-        <div className="col-span-2">
+        <div className="col-span-1 md:col-span-2 mt-4">
         <div className="mt-2">
           <div className="space-y-1">
             <h3 className="text-lg font-bold text-gray-900 dark:text-gray-50 sm:text-xl mt-4">
