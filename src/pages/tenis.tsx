@@ -9,10 +9,9 @@ export const TenisCard = ({ title, description, link, review, img, category, kms
 
   return (
     <div key={title}
-      className="my-custom-card flex flex-col items-center overflow-hidden p-4 rounded-lg border border-gray-200 border-transparent transition-colors hover:border-gray-400 dark:border-gray-800 dark:hover:border-gray-500"
+      className="my-custom-card grid grid-cols-3 gap-4 items-center overflow-hidden p-4 rounded-lg border border-gray-200 border-transparent transition-colors hover:border-gray-400 dark:border-gray-800 dark:hover:border-gray-500"
     >
-      <div className="sm:col-span-6 sm:ml-2">
-        <div className="w-1/3 float-left aspect-w-3 aspect-h-2 mb-4">
+        <div className="... w-1/3 aspect-w-3 aspect-h-2 mb-4">
           {img ? (
             <Image
               quality={100}
@@ -24,6 +23,7 @@ export const TenisCard = ({ title, description, link, review, img, category, kms
             />
           ) : null}
         </div>
+        <div className="col-span-2 ...">
         <div className="space-y-3">
           <div className="space-y-1">
             <h3 className="text-lg font-bold text-gray-900 dark:text-gray-50 sm:text-xl mt-4">
