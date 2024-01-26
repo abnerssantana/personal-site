@@ -14,7 +14,7 @@ export const TenisCard = ({ title, description, link, img, category }: Shoes) =>
       className="my-custom-card flex flex-col items-center bg-white dark:bg-gray-800 rounded-lg overflow-hidden border p-4 dark:border-gray-400"
     >
       <div className="grid grid-rows-3 grid-flow-col gap-4">
-        <div className="row-span-3 ..."> {img ? (
+        <div className="row-span-3"> {img ? (
           <Image
             quality={100}
             width={200}
@@ -24,12 +24,12 @@ export const TenisCard = ({ title, description, link, img, category }: Shoes) =>
             className="object-cover rounded-lg w-full"
           />
         ) : null}</div>
-        <div className="row-span-2 ...">  <h3 className="text-lg font-bold text-gray-900 dark:text-gray-50 sm:text-xl mt-4">
+        <div className="col-span-2">  <h3 className="text-lg font-bold text-gray-900 dark:text-gray-50 sm:text-xl mt-4">
           {title}
         </h3><p className="text-sm font-medium text-gray-500 dark:text-gray-500">
             Categoria: {category}
           </p></div>
-        <div className="row-span-2 col-span-2 ..."> <p className="dark:text-gray-4000 text-justify font-sans text-sm text-gray-600 dark:text-gray-400">
+        <div className="row-span-2 col-span-2"> <p className="dark:text-gray-4000 text-justify font-sans text-sm text-gray-600 dark:text-gray-400">
           {description}
         </p>
 
