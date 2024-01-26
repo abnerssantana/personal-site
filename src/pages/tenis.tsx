@@ -77,12 +77,12 @@ export const Tenis = () => {
     },
   ];
 
-  const filteredAlbums = albums.filter((Album) => {
+  const filteredShoess = ten.filter((Shoes) => {
     if (current == null) {
       return true;
     }
 
-    return Album.category == current;
+    return Shoes.category == current;
   });
 
   return (
@@ -132,8 +132,8 @@ export const Tenis = () => {
               </div>
             </div>
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 w-full max-w-6xl">
-              {filteredAlbums.map((album) => {
-                return <TenisCard key={album.title} {...album} />;
+              {filteredShoess.map((ten) => {
+                return <TenisCard key={ten.title} {...ten} />;
               })}
             </div>
           </SimpleLayout>
