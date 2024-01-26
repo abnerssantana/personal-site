@@ -55,7 +55,7 @@ export const TenisCard = ({ title, description, link, img, category }: Tenis) =>
   );
 };
 
-export const Albums = () => {
+export const Tenis = () => {
   const [current, setCurrent] = useState(null);
 
   const tabs = [
