@@ -31,6 +31,9 @@ export const TenisCard = ({ title, description, link, review, img, category }: S
           <p className="text-sm font-medium text-gray-500 dark:text-gray-500">
             Categoria: {category}
           </p>
+          <p className="text-sm font-medium text-gray-500 dark:text-gray-500">
+            Quilômetros: {kms}
+          </p>
         </div>
         <div className="row-span-2 col-span-2">
           <p className="dark:text-gray-4000 text-justify font-sans text-sm text-gray-600 dark:text-gray-400">
