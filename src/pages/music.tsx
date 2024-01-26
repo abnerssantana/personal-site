@@ -10,7 +10,7 @@ export const SongCard = ({ title, description, spotify, deezer, tidal, img, cate
   return (
     <div
       key={title}
-      className="my-custom-card flex flex-col items-center bg-white dark:bg-gray-800 rounded-lg overflow-hidden border p-4 dark:border-gray-400"
+      className="my-custom-card flex flex-col items-center overflow-hidden p-4 rounded-lg border border-gray-200 border-transparent transition-colors hover:border-gray-400 dark:border-gray-800 dark:hover:border-gray-500"
     >
       <div className="w-full aspect-w-3 aspect-h-2 mb-4">
         {img ? (
