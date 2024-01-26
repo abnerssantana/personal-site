@@ -8,58 +8,36 @@ import { useState } from 'react';
 export const TenisCard = ({ title, description, link, review, img, category, kms }: Shoes) => {
 
   return (
-    <div
-      key={title}
-      className="my-custom-card flex flex-col items-center overflow-hidden p-4 rounded-lg border border-gray-200 border-transparent transition-colors hover:border-gray-400 dark:border-gray-800 dark:hover:border-gray-500"
-    >
-      <div className="aspect-w-3 aspect-h-2 mb-4 sm:w-full md:w-full">
-        {img ? (
-          <Image
-            quality={100}
-            width={200}
-            height={200}
-            src={img}
-            alt={title}
-            className="object-cover rounded-lg w-full"
-          />
-        ) : null}
-      </div>
-      <div className="sm:col-span-6 sm:ml-2">
-        <div className="space-y-3">
-          <div className="space-y-1">
-            <h3 className="text-lg font-bold text-gray-900 dark:text-gray-50 sm:text-xl mt-4">
-              {title}
-            </h3>
-            <p className="text-sm font-medium text-gray-500 dark:text-gray-500">
-              Categoria: {category}
-            </p>
-            <p className="text-sm font-medium text-gray-500 dark:text-gray-500">
-              Quilômetros: {kms} km
-            </p>
-          </div>
-          <p className="dark:text-gray-4000 text-justify font-sans text-sm text-gray-600 dark:text-gray-400">
-            {description}
-          </p>
-          <div className="space-x-3">
-            <p className="relative z-10 mt-6 flex text-sm font-medium text-gray-700 transition dark:text-gray-500">
-              <Button
-                href={link}
-                variant="outline"
-                target="_blank"
-                className="bg-green-400 text-slate-950 dark:text-slate-950"
-              >
-                Review
-              </Button>
-              <Button
-                href={review}
-                variant="outline"
-                target="_blank"
-                className="ml-3 bg-green-400 text-slate-950 dark:text-slate-950"
-              >
-                Comprar
-              </Button>
-            </p>
-          </div>
+
+    <div className="bg-white">
+      <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+        <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+          {products.map((product) => (
+            <div key={title} className="group relative">
+              <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+                {img ? (
+                  <Image
+                    quality={100}
+                    width={200}
+                    height={200}
+                    src={img}
+                    alt={title}
+                    className="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                  />
+                ) : null}
+              </div>
+              <div className="mt-4 flex justify-between">
+                <div>
+                  <h3 className="text-sm text-gray-700">
+                    <span aria-hidden="true" className="absolute inset-0" />
+                    {title}
+                  </h3>
+                  <p className="mt-1 text-sm text-gray-500">Categoria: {category}</p>
+                </div>
+                <p className="text-sm font-medium text-gray-900">Quilômetros: {kms} km</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
