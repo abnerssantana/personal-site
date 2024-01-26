@@ -66,7 +66,7 @@ export default function Document() {
         <meta name="theme-color" content="#ffffff" />
         <script dangerouslySetInnerHTML={{ __html: modeScript }} />
       </Head>
-      <body className="flex h-full flex-col bg-gradient-to-br from-lime-200 via-neutral-50 to-slate-50 dark:bg-gray-900">
+      <body className="flex h-full flex-col bg-white dark:bg-gray-900">
         <Main />
         <NextScript />
       </body>
