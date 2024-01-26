@@ -5,7 +5,7 @@ import { Shoes, ten, Cat } from 'src/data/tenis';
 import clsx from 'clsx';
 import { useState } from 'react';
 
-export const ShoesCard = ({ title, description, link, img, category }: Shoes) => {
+export const TenisCard = ({ title, description, link, img, category }: Shoes) => {
 
   return (
     <div
@@ -40,10 +40,10 @@ export const ShoesCard = ({ title, description, link, img, category }: Shoes) =>
           <div className="space-x-3">
             <p className="relative z-10 mt-6 flex text-sm font-medium text-gray-700 transition dark:text-gray-500">
               <Button
-                href={link}
+                href={Link}
                 variant="outline"
                 target="_blank"
-                className="ml-3 bg-neutral-950 text-slate-100"
+                className="bg-green-400 text-slate-950 dark:text-slate-950"
               >
                 Comprar
               </Button>
@@ -55,7 +55,7 @@ export const ShoesCard = ({ title, description, link, img, category }: Shoes) =>
   );
 };
 
-export const Shoes = () => {
+export const Tenis = () => {
   const [current, setCurrent] = useState(null);
 
   const tabs = [
@@ -64,21 +64,25 @@ export const Shoes = () => {
       category: null,
     },
     {
+      name: 'Amortecimento',
+      category: Cat.amortecimento,
+    },
+    {
       name: 'Daily trainer',
       category: Cat.dailytrainer,
     },
     {
-      name: 'Performance',
+      name: 'Perfomance',
       category: Cat.performance,
     },
   ];
 
-  const filteredShoes= ten.filter((Shoes) => {
+  const filteredAlbums = albums.filter((Album) => {
     if (current == null) {
       return true;
     }
 
-    return Shoes.category == current;
+    return Album.category == current;
   });
 
   return (
@@ -128,8 +132,8 @@ export const Shoes = () => {
               </div>
             </div>
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 w-full max-w-6xl">
-              {filteredShoes.map((ten) => {
-                return <ShoesCard key={ten.title} {...ten} />;
+              {filteredAlbums.map((album) => {
+                return <TenisCard key={album.title} {...album} />;
               })}
             </div>
           </SimpleLayout>
@@ -139,4 +143,4 @@ export const Shoes = () => {
   );
 };
 
-export default Shoes;
+export default Tenis;
