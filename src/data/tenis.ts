@@ -21,7 +21,7 @@ export const ten: Shoes[] = [
     review: 'https://youtu.be/ZXPoXwXJ57k',
     category: Cat.dailytrainer,
     kms: '1.177',
-    description: 'O melhor tênis sem placa, boa resposta, amortecimento e conforto acima da média, sem ser pesado demais, um perfeito companheiro para seus treinos diários.',
+    description: 'Novablast 3 se destaca como o suprassumo dos tênis sem placa, oferecendo uma resposta excepcional, amortecimento superior e um conforto que ultrapassa a média. Sua leveza é notável, proporcionando uma experiência de corrida ágil sem sacrificar a qualidade premium e a durabilidade.',
     img: 'static/tenis/asics-novablast-3.jpg',
   },
   {
