@@ -5,7 +5,7 @@ import { Shoes, ten, Cat } from 'src/data/tenis';
 import clsx from 'clsx';
 import { useState } from 'react';
 
-export const TenisCard = ({ title, description, link, img, category }: Shoes) => {
+export const TenisCard = ({ title, description, link, review, img, category }: Shoes) => {
 
   return (
 
@@ -34,8 +34,16 @@ export const TenisCard = ({ title, description, link, img, category }: Shoes) =>
         </p>
 
           <p className="relative z-10 mt-6 flex text-sm font-medium text-gray-700 transition dark:text-gray-500">
+          <Button
+              href={link}
+              variant="outline"
+              target="_blank"
+              className="bg-green-400 text-slate-950 dark:text-slate-950"
+            >
+              Review
+            </Button>
             <Button
-              href={Link}
+              href={review}
               variant="outline"
               target="_blank"
               className="bg-green-400 text-slate-950 dark:text-slate-950"
