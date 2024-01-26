@@ -5,7 +5,7 @@ import { Shoes, ten, Cat } from 'src/data/tenis';
 import clsx from 'clsx';
 import { useState } from 'react';
 
-export const TenisCard = ({ title, description, link, review, img, category }: Shoes) => {
+export const TenisCard = ({ title, description, link, review, img, category, kms }: Shoes) => {
 
   return (
 
