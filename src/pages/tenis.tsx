@@ -18,23 +18,26 @@ export const TenisCard = ({ title, description, link, review, img, category }: S
           <Image
             quality={100}
             width={200}
-            height={200}
+            height={150}
             src={img}
             alt={title}
             className="object-cover rounded-lg w-full"
           />
         ) : null}</div>
-        <div className="col-span-2">  <h3 className="text-lg font-bold text-gray-900 dark:text-gray-50 sm:text-xl mt-4">
-          {title}
-        </h3><p className="text-sm font-medium text-gray-500 dark:text-gray-500">
+        <div className="col-span-2">
+          <h3 className="text-lg font-bold text-gray-900 dark:text-gray-50 sm:text-xl mt-4">
+            {title}
+          </h3>
+          <p className="text-sm font-medium text-gray-500 dark:text-gray-500">
             Categoria: {category}
-          </p></div>
-        <div className="row-span-2 col-span-2"> <p className="dark:text-gray-4000 text-justify font-sans text-sm text-gray-600 dark:text-gray-400">
-          {description}
-        </p>
-
+          </p>
+        </div>
+        <div className="row-span-2 col-span-2">
+          <p className="dark:text-gray-4000 text-justify font-sans text-sm text-gray-600 dark:text-gray-400">
+            {description}
+          </p>
           <p className="relative z-10 mt-6 flex text-sm font-medium text-gray-700 transition dark:text-gray-500">
-          <Button
+            <Button
               href={link}
               variant="outline"
               target="_blank"
@@ -46,7 +49,7 @@ export const TenisCard = ({ title, description, link, review, img, category }: S
               href={review}
               variant="outline"
               target="_blank"
-              className="bg-green-400 text-slate-950 dark:text-slate-950"
+              className="ml-3 bg-green-400 text-slate-950 dark:text-slate-950"
             >
               Comprar
             </Button>
