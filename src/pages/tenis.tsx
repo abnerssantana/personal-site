@@ -11,7 +11,7 @@ export const TenisCard = ({ title, description, link, review, img, category, kms
     <div key={title}
       className="my-custom-card grid grid-cols-3 gap-4 items-center overflow-hidden p-4 rounded-lg border border-gray-200 border-transparent transition-colors hover:border-gray-400 dark:border-gray-800 dark:hover:border-gray-500"
     >
-      <div className="col-span-2 md:col-span-1">
+      <div className="col-span-2 md:col-span-3">
         <div className="aspect-w-3 aspect-h-2">
           {img ? (
             <Image
@@ -24,45 +24,46 @@ export const TenisCard = ({ title, description, link, review, img, category, kms
             />
           ) : null}
         </div>
-        <div className="col-span-1 md:col-span-2 mt-4">
-        <div className="mt-2">
-          <div className="space-y-1">
-            <h3 className="text-lg font-bold text-gray-900 dark:text-gray-50 sm:text-xl mt-4">
-              {title}
-            </h3>
-            <p className="text-sm font-medium text-gray-500 dark:text-gray-500">
-              Categoria: {category}
-            </p>
-            <p className="text-sm font-medium text-gray-500 dark:text-gray-500">
-              Quilômetros: {kms} km
+        <div className="col-span-1 md:col-span-3 mt-4">
+          <div className="mt-2">
+            <div className="space-y-1">
+              <h3 className="text-lg font-bold text-gray-900 dark:text-gray-50 sm:text-xl mt-4">
+                {title}
+              </h3>
+              <p className="text-sm font-medium text-gray-500 dark:text-gray-500">
+                Categoria: {category}
+              </p>
+              <p className="text-sm font-medium text-gray-500 dark:text-gray-500">
+                Quilômetros: {kms} km
+              </p>
+            </div>
+            <p className="dark:text-gray-4000 text-justify font-sans text-sm text-gray-600 dark:text-gray-400">
+              {description}
             </p>
           </div>
-          <p className="dark:text-gray-4000 text-justify font-sans text-sm text-gray-600 dark:text-gray-400">
-            {description}
+        </div>
+        <div className="space-x-3">
+          <p className="relative z-10 mt-6 flex text-sm font-medium text-gray-700 transition dark:text-gray-500">
+            <Button
+              href={link}
+              variant="outline"
+              target="_blank"
+              className="bg-green-400 text-slate-950 dark:text-slate-950"
+            >
+              Review
+            </Button>
+            <Button
+              href={review}
+              variant="outline"
+              target="_blank"
+              className="ml-3 bg-green-400 text-slate-950 dark:text-slate-950"
+            >
+              Comprar
+            </Button>
           </p>
         </div>
       </div>
-      </div>
-      <div className="space-x-3">
-            <p className="relative z-10 mt-6 flex text-sm font-medium text-gray-700 transition dark:text-gray-500">
-              <Button
-                href={link}
-                variant="outline"
-                target="_blank"
-                className="bg-green-400 text-slate-950 dark:text-slate-950"
-              >
-                Review
-              </Button>
-              <Button
-                href={review}
-                variant="outline"
-                target="_blank"
-                className="ml-3 bg-green-400 text-slate-950 dark:text-slate-950"
-              >
-                Comprar
-              </Button>
-            </p>
-          </div>
+
     </div>
   );
 };
