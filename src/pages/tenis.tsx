@@ -8,56 +8,56 @@ import { useState } from 'react';
 export const TenisCard = ({ title, description, link, review, img, category, kms }: Shoes) => {
 
   return (
-    <div
-      key={title}
+    <div key={title}
       className="my-custom-card flex flex-col items-center overflow-hidden p-4 rounded-lg border border-gray-200 border-transparent transition-colors hover:border-gray-400 dark:border-gray-800 dark:hover:border-gray-500"
     >
-      <div className="w-1/3 float-left aspect-w-3 aspect-h-2 mb-4">
-        {img ? (
-          <Image
-            quality={100}
-            width={200}
-            height={200}
-            src={img}
-            alt={title}
-            className="object-cover rounded-lg w-full"
-          />
-        ) : null}
-      </div>
       <div className="sm:col-span-6 sm:ml-2">
+        <div className="w-1/3 float-left aspect-w-3 aspect-h-2 mb-4">
+          {img ? (
+            <Image
+              quality={100}
+              width={200}
+              height={200}
+              src={img}
+              alt={title}
+              className="object-cover rounded-lg w-full"
+            />
+          ) : null}
+        </div>
+
         <div className="space-y-3">
           <div className="space-y-1">
             <h3 className="text-lg font-bold text-gray-900 dark:text-gray-50 sm:text-xl mt-4">
               {title}
             </h3>
             <p className="text-sm font-medium text-gray-500 dark:text-gray-500">
-            Categoria: {category}
-          </p>
-          <p className="text-sm font-medium text-gray-500 dark:text-gray-500">
-            Quilômetros: {kms} km
-          </p>
+              Categoria: {category}
+            </p>
+            <p className="text-sm font-medium text-gray-500 dark:text-gray-500">
+              Quilômetros: {kms} km
+            </p>
           </div>
           <p className="dark:text-gray-4000 text-justify font-sans text-sm text-gray-600 dark:text-gray-400">
             {description}
           </p>
           <div className="space-x-3">
             <p className="relative z-10 mt-6 flex text-sm font-medium text-gray-700 transition dark:text-gray-500">
-            <Button
-              href={link}
-              variant="outline"
-              target="_blank"
-              className="bg-green-400 text-slate-950 dark:text-slate-950"
-            >
-              Review
-            </Button>
-            <Button
-              href={review}
-              variant="outline"
-              target="_blank"
-              className="ml-3 bg-green-400 text-slate-950 dark:text-slate-950"
-            >
-              Comprar
-            </Button>
+              <Button
+                href={link}
+                variant="outline"
+                target="_blank"
+                className="bg-green-400 text-slate-950 dark:text-slate-950"
+              >
+                Review
+              </Button>
+              <Button
+                href={review}
+                variant="outline"
+                target="_blank"
+                className="ml-3 bg-green-400 text-slate-950 dark:text-slate-950"
+              >
+                Comprar
+              </Button>
             </p>
           </div>
         </div>
