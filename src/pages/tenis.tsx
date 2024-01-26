@@ -131,7 +131,7 @@ export const Tenis = () => {
                 </nav>
               </div>
             </div>
-            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 w-full max-w-6xl">
+            <div className="mt-8 grid grid-cols-1 gap-6 w-full max-w-6xl">
               {filteredShoess.map((ten) => {
                 return <TenisCard key={ten.title} {...ten} />;
               })}
