@@ -24,7 +24,6 @@ export const TenisCard = ({ title, description, link, review, img, category, kms
             />
           ) : null}
         </div>
-
         <div className="space-y-3">
           <div className="space-y-1">
             <h3 className="text-lg font-bold text-gray-900 dark:text-gray-50 sm:text-xl mt-4">
@@ -40,7 +39,9 @@ export const TenisCard = ({ title, description, link, review, img, category, kms
           <p className="dark:text-gray-4000 text-justify font-sans text-sm text-gray-600 dark:text-gray-400">
             {description}
           </p>
-          <div className="space-x-3">
+        </div>
+      </div>
+      <div className="space-x-3">
             <p className="relative z-10 mt-6 flex text-sm font-medium text-gray-700 transition dark:text-gray-500">
               <Button
                 href={link}
@@ -60,8 +61,6 @@ export const TenisCard = ({ title, description, link, review, img, category, kms
               </Button>
             </p>
           </div>
-        </div>
-      </div>
     </div>
   );
 };
