@@ -11,7 +11,7 @@ export const TenisCard = ({ title, description, link, img, category }: Shoes) =>
 
     <div
       key={title}
-      className="my-custom-card flex flex-col items-center bg-white dark:bg-gray-800 rounded-lg overflow-hidden border p-4 dark:border-gray-400"
+      className="my-custom-card flex flex-col p-4 border border-gray-200 border-transparent transition-colors hover:border-gray-400 dark:border-gray-800 dark:hover:border-gray-500"
     >
       <div className="grid grid-rows-3 grid-flow-col gap-4">
         <div className="row-span-3"> {img ? (
