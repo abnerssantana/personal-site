@@ -16,6 +16,13 @@ export interface Bookmark {
 
 export const bookmarks: Bookmark[] = [
   {
+    title: 'Método de um campeão | Kristian Blummenfelt: Desconhecido',
+    url: 'https://www.youtube.com/watch?v=w4pW1_yadW8',
+    category: Category.video,
+    description: 'Kristian Blummenfelt conquistou o mundo entre 2021 e 2022, vencendo quase tudo antes dele – um ouro olímpico, o Campeonato Mundial de Ironman e o Campeonato Mundial de Ironman 70.3.',
+    icon: '/static/bookmarks/youtube.svg',
+  },
+  {
     title: 'Eliud Kipchoge & David Bedford | Full Address and Q&A | Oxford Union',
     url: 'https://www.youtube.com/watch?v=nDLb8_wgX50',
     category: Category.video,
