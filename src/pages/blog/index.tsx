@@ -57,10 +57,10 @@ export const Articles = ({ articles }) => {
               className="mt-8 grid grid-cols-1 gap-x-12 gap-y-4 sm:grid-cols-1 divide-y divide-gray-200 dark:divide-gray-800"
             >
               {filteredArticles.map((article) => (
-                <article key={article.slug} className="md:grid md:grid-cols-4 md:items-baseline">
+                <article key={article.slug} className="md:grid md:grid-cols-4 md:items-baseline hover:gray-900">
                   <div className="group relative flex flex-col items-start md:col-span-7">
                     <Link href={`/blog/${article.slug}`}>
-                      <div className="float-left mr-4 flex">
+                      <div className="float-left mt-8 mr-4 flex">
                         <img src={article.image} alt={`${article.title}`} className="w-28 h-28 object-cover rounded-lg" />
                       </div>
                       <h3 className="text-sm mt-6 font-sans font-bold text-gray-900 dark:text-gray-100 sm:text-lg hover:text-neutral-400">
