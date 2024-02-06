@@ -68,9 +68,8 @@ export const Articles = ({ articles }) => {
                       <p className="mt-1 mb-2 line-clamp-3 font-sans text-sm leading-6 text-gray-600 dark:text-gray-400">
                         {article.description}
                       </p>
-                      {/* Adicione a exibição da data e imagem aqui */}
                       <div className="flex items-center">
-                        <img src={article.image} alt={`Imagem de ${article.title}`} className="w-100 h-100 object-cover rounded-lg" />
+                        <img src={article.image} alt={`Imagem de ${article.title}`} className="w-28 h-28 object-cover rounded-lg" />
                       </div>
                     </Link>
                   </div>
