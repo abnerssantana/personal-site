@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Container, Wrapper, SimpleLayout } from 'src/components/';
 import { getAllArticles } from 'src/lib/getAllArticles';
+import { formatDate } from '@/lib/formatDate'
 
 export const Articles = ({ articles }) => {
   const { register, handleSubmit } = useForm();

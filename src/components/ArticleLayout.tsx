@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowSmallLeftIcon } from '@heroicons/react/20/solid'
-
 import { Container, Prose } from '@/components/'
 import { formatDate } from '@/lib/formatDate'
 
