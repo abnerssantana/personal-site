@@ -60,8 +60,8 @@ export const Articles = ({ articles }) => {
                 <article key={article.slug} className="md:grid md:grid-cols-4 md:items-baseline">
                   <div className="group relative flex flex-col items-start md:col-span-7">
                     <Link href={`/blog/${article.slug}`}>
-                      <div className="flex">
-                        <img src={article.image} alt={`Imagem de ${article.title}`} className="w-28 h-28 object-cover rounded-lg" />
+                      <div className="float-left mr-4 flex">
+                        <img src={article.image} alt={`${article.title}`} className="w-28 h-28 object-cover rounded-lg" />
                       </div>
                       <h3 className="text-sm mt-6 font-sans font-bold text-gray-900 dark:text-gray-100 sm:text-lg hover:text-neutral-400">
                         <span className="absolute inset-0" />
