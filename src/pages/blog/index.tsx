@@ -56,10 +56,7 @@ export const Articles = ({ articles }) => {
               className="mt-8 grid grid-cols-1 gap-x-12 gap-y-4 sm:grid-cols-1 divide-y divide-gray-200 dark:divide-gray-800"
             >
               {filteredArticles.map((article) => (
-                <article
-                  key={article.slug}
-                  className="md:grid md:grid-cols-4 md:items-baseline"
-                >
+                <article key={article.slug} className="md:grid md:grid-cols-4 md:items-baseline">
                   <div className="group relative flex flex-col items-start md:col-span-7">
                     <Link href={`/blog/${article.slug}`}>
                       <h3 className="text-sm mt-6 font-sans font-bold text-gray-900 dark:text-gray-100 sm:text-lg hover:text-neutral-400">
@@ -69,10 +66,16 @@ export const Articles = ({ articles }) => {
                       <p className="mt-1 mb-2 line-clamp-3 font-sans text-sm leading-6 text-gray-600 dark:text-gray-400">
                         {article.description}
                       </p>
+                      {/* Adicione a exibição da data e imagem aqui */}
+                      <div className="flex items-center">
+                        <p className="text-xs text-gray-500">{article.date}</p>
+                        <img src={article.image} alt={`Imagem de ${article.title}`} className="w-10 h-10 rounded-full ml-2" />
+                      </div>
                     </Link>
                   </div>
                 </article>
               ))}
+
             </ul>
           </SimpleLayout>
         </Wrapper>
