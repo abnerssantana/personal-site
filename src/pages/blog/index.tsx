@@ -63,12 +63,12 @@ export const Articles = ({ articles }) => {
                         <span className="absolute inset-0" />
                         {article.title}
                       </h3>
+                      <p className="text-xs text-gray-500">{formatDate(article.date)}</p>
                       <p className="mt-1 mb-2 line-clamp-3 font-sans text-sm leading-6 text-gray-600 dark:text-gray-400">
                         {article.description}
                       </p>
                       {/* Adicione a exibição da data e imagem aqui */}
                       <div className="flex items-center">
-                        <p className="text-xs text-gray-500">{formatDate(meta.date)}{article.date}</p>
                         <img src={article.image} alt={`Imagem de ${article.title}`} className="w-10 h-10 rounded-full ml-2" />
                       </div>
                     </Link>
