@@ -70,7 +70,7 @@ export const Articles = ({ articles }) => {
                       </p>
                       {/* Adicione a exibição da data e imagem aqui */}
                       <div className="flex items-center">
-                        <img src={article.image} alt={`Imagem de ${article.title}`} className="w-10 h-10 rounded-full ml-2" />
+                        <img src={article.image} alt={`Imagem de ${article.title}`} className="w-100 h-100 object-cover rounded-lg" />
                       </div>
                     </Link>
                   </div>
