@@ -57,7 +57,7 @@ export const Articles = ({ articles }) => {
               className="mt-8 grid grid-cols-1 gap-x-12 gap-y-4 sm:grid-cols-1 divide-y divide-gray-200 dark:divide-gray-800"
             >
               {filteredArticles.map((article) => (
-                <article key={article.slug} className="md:grid md:grid-cols-4 md:items-baseline hover:gray-900">
+                <article key={article.slug} className="md:grid md:grid-cols-4 md:items-baseline">
                   <div className="group relative flex flex-col items-start md:col-span-7">
                     <Link href={`/blog/${article.slug}`}>
                       <div className="float-left mt-6 mr-4 flex">
