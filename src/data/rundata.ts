@@ -1,5 +1,5 @@
 export interface RunData {
-  semana: string;
+  dia: string;
   type: string;
   distance: string;
   duration: string;
@@ -16,14 +16,14 @@ export const plans: PlanData[] = [
     title: 'Beginner Plan',
     runs: [
       {
-        semana: 'semana 1',
+        dia: 'dia 1',
         type: 'Easy',
         distance: '3 mi',
         duration: '30 min',
         notes: 'Easy start',
       },
       {
-        semana: 'semana 2',
+        dia: 'dia 2',
         type: 'Speed',
         distance: '2 mi',
         duration: '20 min',
@@ -36,14 +36,14 @@ export const plans: PlanData[] = [
     title: 'Intermediate Plan',
     runs: [
       {
-        semana: 'semana 1',
+        dia: 'dia 1',
         type: 'Endurance',
         distance: '4 mi',
         duration: '40 min',
         notes: 'Building stamina',
       },
       {
-        semana: 'semana 2',
+        dia: 'dia 2',
         type: 'Tempo',
         distance: '3 mi',
         duration: '25 min',
@@ -60,14 +60,14 @@ export const defaultPlan: PlanData = {
   title: 'Default Plan',
   runs: [
     {
-      semana: 'semana 1',
+      dia: 'dia 1',
       type: 'Rest',
       distance: '-',
       duration: '-',
       notes: 'Rest day',
     },
     {
-      semana: 'semana 2',
+      dia: 'Week 2',
       type: 'Easy',
       distance: '2 mi',
       duration: '18 min',
