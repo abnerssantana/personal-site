@@ -1,5 +1,5 @@
 import { Container, Wrapper } from 'src/components/';
-import { RunData, runs } from 'src/plans/plan1';
+import { RunData, runs } from 'src/data/rundata';
 
 export const Magic = () => {
   return (
