@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Container, Wrapper } from 'src/components/';
-import { defaultPlan, plans } from 'src/components/rundata';
+import { defaultPlan, plans } from 'src/data/rundata';
 
 export const Magic = () => {
   const [selectedPlan, setSelectedPlan] = useState(defaultPlan);
