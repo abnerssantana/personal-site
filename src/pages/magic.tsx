@@ -20,7 +20,7 @@ export const Magic = () => {
               <label htmlFor="planSelect" className="mr-2">
                 Select Plan:
               </label>
-              <select id="planSelect" onChange={handlePlanChange} value={selectedPlan.title}>
+              <select id="planSelect" onChange={handlePlanChange} value={selectedPlan.title} className="w-full md:w-auto">
                 {plans.map((plan) => (
                   <option key={plan.title} value={plan.title}>
                     {plan.title}
@@ -28,7 +28,11 @@ export const Magic = () => {
                 ))}
               </select>
             </div>
-            <div key="1" className="w-full overflow-auto rounded-lg border">
+
+            <div key="1" className="w-full md:w-auto overflow-auto rounded-lg border">
+              <div className="md:hidden mb-2">
+                {/* Adiciona espaço extra abaixo do seletor de plano em telas pequenas */}
+              </div>
               <table className="w-full text-sm leading-none">
                 <thead>
                   <tr className="border-b last:border-b-0 border-t">
@@ -52,6 +56,7 @@ export const Magic = () => {
                 </tbody>
               </table>
             </div>
+
           </div>
         </Wrapper>
       </Container>
