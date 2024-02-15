@@ -113,7 +113,7 @@ export function Header() {
   return (
     <header>
       <nav>
-        <div className="max-w-[1440px] mx-auto flex justify-between items-center sm:px-16 px-6 py-4 bg-white align-middle rounded-full">
+        <div className="relative z-50 mx-auto flex max-w-4xl justify-between px-6 py-8 sm:px-0">
           <div className="relative z-10 flex w-full items-center justify-between gap-8">
             <Link href="/" aria-label="Abner Santana">
               <Logo className="h-10 w-auto text-gray-900 hover:text-lime-300 dark:text-white dark:hover:text-lime-300" />
