@@ -1,7 +1,7 @@
 import { Container, Wrapper, TextLink } from 'src/components/'
 import clsx from 'clsx'
-import plans from './plans/index.js';
-import { activityDefaults } from './lib/constants.js';
+import plans from 'src/plans/index.js';
+import { activityDefaults } from 'src/lib/constants.js';
 
 export const Magic = () => {
   return (
