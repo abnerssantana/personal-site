@@ -1,5 +1,6 @@
 import { Container, Wrapper, TextLink } from 'src/components/'
 import clsx from 'clsx'
+import Link from 'next/link'
 import plans from 'src/plans/index.js';
 import { activityDefaults } from 'src/lib/constants.js';
 
