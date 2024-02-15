@@ -2,7 +2,6 @@
 import Link from 'next/link'
 import { Popover } from '@headlessui/react'
 import { AnimatePresence, motion } from 'framer-motion'
-
 import { Logo, NavLinks } from '.'
 
 function MenuIcon(props) {
