@@ -14,35 +14,6 @@ export const Magic = () => {
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 Planos de treinamento gratuitos para corrida, triatlo e fortalecimento, inspirados em renomados livros e elaborados por experientes treinadores.
               </p>
-              <div className="mt-10 flex items-center justify-center gap-x-6">
-                <a
-                  href="https://vivendoacorrida.com"
-                  className="text-sm font-semibold leading-6 text-gray-900"
-                >
-                  Site
-                </a>
-                <a
-                  href="https://magic.vivendoacorrida.com/legendas"
-                  className="text-sm font-semibold leading-6 text-gray-900"
-                >
-                  Legendas
-                </a>
-                <a
-                  href="https://vivendoacorrida.com"
-                  className="text-sm font-semibold text-indigo-600 leading-6"
-                >
-                  Tutorial
-                </a>
-                <a
-                  href="https://www.youtube.com/@abnerssantana"
-                  className="text-sm font-semibold leading-6 text-gray-900"
-                >
-                  Vídeos
-                </a>
-                <a href="https://vivendoacorrida.com/about" className="text-sm font-semibold leading-6 text-gray-900">
-                  Sobre
-                </a>
-              </div>
               <div className="sm:mb-8 sm:flex sm:justify-center">
                 <div className="relative rounded-full px-3 py-1 mt-8 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                   Apoie minha jornada na corrida. <a href="https://www.youtube.com/channel/UCKl5xev9VFkTV0YTHO74DIQ/join" className="font-semibold text-indigo-600"><span className="absolute inset-0" aria-hidden="true"></span>Seja membro<span aria-hidden="true">&rarr;</span></a>
