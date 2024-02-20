@@ -168,6 +168,9 @@ export function Header() {
                             <MobileNavLink href="/blog">
                               Blog
                             </MobileNavLink>
+                            <MobileNavLink href="https://magic.vivendoacorrida.com">
+                              Planilhas
+                            </MobileNavLink>
                             <MobileNavLink href="/tenis">
                               Tênis
                             </MobileNavLink>

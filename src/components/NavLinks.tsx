@@ -10,6 +10,7 @@ export function NavLinks({}) {
     <>
       {[
         ['Blog', '/blog'],
+        ['Planilhas', 'https://magic.vivendoacorrida.com'],
         ['Tênis', '/tenis'],
         ['Músicas', '/music'],
         ['Livros', '/bookshelf'],
