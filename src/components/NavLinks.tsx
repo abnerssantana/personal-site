@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 import clsx from 'clsx'
 
 export function NavLinks({}) {
-  let [hoveredIndex, setHoveredIndex] = useState(null)
+  const [hoveredIndex, setHoveredIndex] = useState(null)
   return (
     <>
       {[
