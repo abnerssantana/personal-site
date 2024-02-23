@@ -19,3 +19,5 @@ Content-Security-Policy Referrer-Policy Strict-Transport-Security X-Content-Type
 - https://securityheaders.com/
 
 Feel free to use it in your projects.
+
+[![CodeFactor](https://www.codefactor.io/repository/github/abnerssantana/personal-site/badge)](https://www.codefactor.io/repository/github/abnerssantana/personal-site)
