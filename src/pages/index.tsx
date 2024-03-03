@@ -29,7 +29,7 @@ export const Home = () => {
                   <FaStrava className="h-34 w-34 text-left" />
                   <span className="text-lg pl-4">Strava</span>
                 </a>
-                <a href="https://discord.gg/9Y9Ph6dMST" target="_blank" rel="noopener noreferrer" className="text-lg flex items-center">
+                <a href="https://discord.gg/pGcDZjhRry" target="_blank" rel="noopener noreferrer" className="text-lg flex items-center">
                   <FaDiscord className="h-34 w-34 text-left" />
                   <span className="text-lg pl-4">Discord</span>
                 </a>
